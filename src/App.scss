@@ -1,0 +1,22 @@
+@import 'topodesigns.com/scss/Base/reset';  
+@import 'topodesigns.com/scss/Base/typography';
+@import 'topodesigns.com/scss/Base/animations';
+@import 'topodesigns.com/scss/Base/utilities';
+
+//Page main
+@import 'topodesigns.com/scss/Components/content';
+@import 'topodesigns.com/scss/Components/img_wraper';
+@import 'topodesigns.com/scss/Components/shops_content';
+//Page shop
+@import 'topodesigns.com/scss/Components/card';
+@import 'topodesigns.com/scss/Components/banner';
+// Page detail
+@import 'topodesigns.com/scss/Components/card--detail';
+@import 'topodesigns.com/scss/Components/slide_gallery';
+//Header Footer
+@import 'topodesigns.com/scss/Components/cart';
+@import 'topodesigns.com/scss/Layouts/header';
+@import 'topodesigns.com/scss/Layouts/footer';
+
+@import 'topodesigns.com/scss/Pages/home';
+@import 'topodesigns.com/scss/Pages/news';

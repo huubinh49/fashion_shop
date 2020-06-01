@@ -1,0 +1,1 @@
+curSwatch.color_name = swatch.attribs.class.match(/bg_color_[a-z]+/g)[0].replace("bg_color_","");

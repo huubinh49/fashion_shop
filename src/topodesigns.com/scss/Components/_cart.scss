@@ -1,0 +1,247 @@
+.cart__showup{
+    width: 400px !important;
+    transition: 0.2s;
+}
+.cart {
+    transition: 0.2s;
+
+    width: 0;
+    overflow: hidden;
+    height: 100vh;
+
+    position: fixed;
+    z-index: 1000;
+    right: 0;
+    
+
+    background-color: white;
+
+    .cart__header--wrapper {
+        width: 100%;
+        height: 50px;
+        background-color: black;
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+
+        .cart__header {
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+
+
+            a {
+                color: white;
+                font-size: 1em;
+                position: relative;
+            }
+
+            .cart__header-close {
+                cursor: pointer;
+                width: 75px;
+                display: flex;
+                color: white;
+                justify-content: space-between;
+                align-items: center;
+
+                .icon--close {
+                    width: 1.1em;
+                    position: relative;
+                }
+            }
+        }
+    }
+}
+
+
+.cart__header a::after {
+    content: "";
+    width: 100%;
+    height: 1.5px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+}
+
+// Effect close
+.cart__header-close .icon--close::after {
+    content: "";
+    width: 1.1em;
+    background-color: white;
+    height: 2px;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.cart__header-close .icon--close::before {
+    content: "";
+    width: 1.1em;
+    transition: 0.5s;
+    background-color: white;
+    height: 2px;
+    position: absolute;
+}
+
+.cart__header-close:hover .icon--close::after {
+    transform: rotate(45deg);
+    transition: 0.5s;
+}
+
+.cart__header-close:hover .icon--close::before {
+    transform: rotate(-45deg);
+    transition: 0.5s;
+}
+
+/* Done Header */
+.cart__body {
+    width: 100%;
+
+    flex-flow: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cart__body--product {
+    width: 100%;
+    height: 40vh;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    overflow: auto;
+
+    .cart__product {
+        padding: 15px 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 90%;
+        border-top: 0.5px solid gray;
+        border-bottom: 0.5px solid rgb(187, 187, 187);
+    }
+}
+
+
+
+.product__img--wrapper {
+    width: 45%;
+
+    img {
+        width: 100%;
+    }
+}
+
+
+.product__info {
+    display: flex;
+    flex-flow: column;
+
+    a {
+        display: flex;
+        color: black;
+
+        i {
+            color: rgb(199, 167, 87);
+        }
+
+        i:hover {
+            color: rgb(245, 51, 51);
+        }
+    }
+
+    .product__name {
+        font-size: 1em;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: rgb(199, 167, 87);
+
+    }
+}
+
+
+
+.product__info--detail {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 5px 0 10px 0;
+}
+
+.product__info-text {
+    font-size: 0.8em;
+    font-weight: 400;
+    color: rgb(182, 177, 177);
+}
+
+.product__quantity {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+
+    input {
+        text-align: center;
+        color: black;
+        width: 50px;
+        height: 30px;
+    }
+}
+
+
+/* Done product */
+
+.cart__body--sideinfo {
+    width: 100%;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    .jumbotron {
+        width: 90%;
+        display: flex;
+        flex-flow: column;
+    }
+}
+
+.cart__body--subtotal {
+    width: 90%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-top: 0.5px solid rgb(192, 190, 190);
+    border-bottom: 0.5px solid rgb(192, 190, 190);
+
+    padding: 10px;
+
+    h3 {
+        margin: 0;
+        font-size: 1.2em;
+    }
+}
+
+
+
+.cart__body--buy {
+    width: 90%;
+    height: 140px;
+
+    padding: 20px 0;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+        width: 100%;
+
+        padding: 10px;
+    }
+}

@@ -1,0 +1,170 @@
+.card--detail {
+    background-color: rgb(255, 255, 255);
+    .card__name {
+        font-family: sans-serif;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-size: 2em;
+        font-weight: 1000;
+    }
+}
+// Price
+.card__detail--price {
+    .other__price {
+        margin: 0;
+        font-size: 0.9em;
+    }
+    .other__price img {
+        width: 60px;
+        vertical-align: text-bottom;
+    }
+}
+
+.card__detail--color {
+    /* Color */
+    .switch_color {
+        display: flex;
+        margin-left: 20px;
+        .color {
+            position: relative;
+            height: 16px;
+            width: 16px;
+            margin: 0 10px 0 0;
+            border-radius: 999px;
+            background-color: blue;
+            input {
+                display: none;
+            }
+            input[type="radio"]:checked ~ .stuff {
+                display: block;
+                margin: 0;
+            }
+            .stuff {
+                display: none;
+                position: relative;
+                height: 26px;
+                width: 26px;
+                top: -5px;
+                left: -5px;
+                border-radius: 999px;
+                border: 1px solid black;
+            }
+        }
+    }
+}
+
+.card__detail--color,
+.card__detail--size {
+    p {
+        margin-top: 20px;
+        margin-bottom: 5px;
+        font-size: 0.9em;
+    }
+    span {
+        color: gray;
+    }
+    strong {
+        font-weight: lighter;
+    }
+}
+
+/* Size */
+.card__detail--size {
+    .switch_size {
+        margin-top: 5px;
+        display: flex;
+        .size {
+            margin-right: 5px;
+            input {
+                display: none;
+            }
+            input[type="radio"]:checked ~ em {
+                border: 0.5px solid rgb(0, 0, 0);
+            }
+            em {
+                box-sizing: border-box;
+                padding: 8px 12px;
+                border: 0.5px solid rgba(0, 0, 0, 0);
+                display: block;
+                height: 100%;
+                font-size: 0.85em;
+            }
+        }
+    }
+}
+
+.card__detail--cart {
+    margin-top: 20px;
+    input {
+        width: 40px;
+        height: 40px;
+        margin-right: 5px;
+        text-align: center;
+        color: gray;
+    }
+    .btn {
+        border-radius: 0;
+        width: calc(100% + -50px);
+    }
+}
+
+.jumbotron {
+    height: fit-content;
+    padding: 20px 0 20px 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    strong {
+        margin-top: 3px;
+    }
+    .jumbotron__MAP {
+        color: red;
+    }
+}
+
+/* Accordian */
+#accordianId {
+
+    .card {
+        border: 0 !important;
+        .card-header {
+            background-color: white;
+            border-top: 0;
+            border-right: 0;
+            border-left: 0;
+            .accordian__toggle {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                text-decoration: none;
+                h6 {
+                    font-size: 1em;
+                    font-weight: 800;
+                    color: black;
+                    margin: 0;
+                }
+            }
+            .plus {
+                position: relative;
+                width: 10px;
+                height: 2px;
+                background-color: gray;
+                transform: rotateZ(0deg);
+            }
+            .plus::before {
+                content: "";
+                position: absolute;
+                transform: rotateZ(90deg);
+                width: 10px;
+                height: 2px;
+                background-color: gray;
+            }
+            .accordian__toggle:hover {
+                text-decoration: none;
+            }
+        }
+        .card-body {
+            border-bottom: 0.5px solid rgb(184, 181, 181);
+        }
+    }
+}

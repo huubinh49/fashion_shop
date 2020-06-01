@@ -1,0 +1,17 @@
+@import 'Base/reset';  
+@import 'Base/typography';
+@import './Base/animations';
+@import './Base/utilities';
+
+
+@import 'Components/content';
+@import 'Components/img_wraper';
+@import 'Components/shops_content';
+@import 'Components/card';
+@import 'Components/banner';
+
+@import 'Layouts/header';
+@import 'Layouts/footer';
+
+@import 'Pages/home';
+@import 'Pages/news';

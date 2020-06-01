@@ -1,0 +1,68 @@
+    #home{
+        display: grid;
+        grid-column-gap: 32px;
+        grid-row-gap: 32px;
+    }
+        #home > div{
+            position: relative;
+        }
+
+
+    .shop_sale{
+        grid-area: shop_sale;
+    }
+    .shop_lookbook{
+        grid-area: shop_lookbook;
+    }
+    .earn_rewards{
+        grid-area: earn_rewards;
+    }
+    .shop_bags{
+        grid-area: shop_bags;
+    }
+    .shop_men{
+        grid-area:shop_men;
+    }
+    .shop_women{
+        grid-area:shop_women;
+    }
+    .shop_rovers{
+        grid-area:shop_rovers;
+    }
+    .read_more{
+        grid-area:read_more;
+    }
+
+
+@media screen and (max-width:989px)
+{
+    #home{
+        grid-template-areas: "shop_sale shop_sale shop_sale shop_sale shop_sale shop_sale shop_sale shop_sale shop_sale shop_sale shop_sale shop_sale"
+                             "shop_lookbook shop_lookbook shop_lookbook shop_lookbook shop_lookbook shop_lookbook shop_lookbook shop_lookbook shop_lookbook shop_lookbook shop_lookbook shop_lookbook"
+                             "earn_rewards earn_rewards earn_rewards earn_rewards earn_rewards earn_rewards earn_rewards earn_rewards earn_rewards earn_rewards earn_rewards earn_rewards"
+                             "shop_bags shop_bags shop_bags shop_bags shop_bags shop_bags shop_bags shop_bags shop_bags shop_bags shop_bags shop_bags"
+                             "shop_men shop_men shop_men shop_men shop_men shop_men shop_men shop_men shop_men shop_men shop_men shop_men"
+                             "shop_women shop_women shop_women shop_women shop_women shop_women shop_women shop_women shop_women shop_women shop_women shop_women"
+                             "shop_rovers shop_rovers shop_rovers shop_rovers shop_rovers shop_rovers shop_rovers shop_rovers shop_rovers shop_rovers shop_rovers shop_rovers"
+                             "read_more read_more read_more read_more read_more read_more read_more read_more read_more read_more read_more read_more"
+                             ;
+        
+        .shops_content{
+            height: 25%;
+            top:75%;
+            .btn{
+                margin-top: 5px;
+            }
+        }
+    }
+}
+@media screen and (min-width:989px)
+{
+    #home{
+    grid-template-areas: "shop_sale shop_sale shop_sale shop_sale shop_sale shop_sale shop_sale shop_sale shop_sale shop_sale shop_sale shop_sale"
+                         "shop_lookbook shop_lookbook shop_lookbook shop_lookbook shop_lookbook shop_lookbook earn_rewards earn_rewards earn_rewards earn_rewards earn_rewards earn_rewards"
+                         "shop_bags shop_bags shop_bags shop_bags shop_men shop_men shop_men shop_men shop_women shop_women shop_women shop_women"
+                         "shop_rovers shop_rovers shop_rovers shop_rovers shop_rovers shop_rovers read_more read_more read_more read_more read_more read_more"
+                         ;
+    }
+}

@@ -1,0 +1,30 @@
+.content{
+    padding: 15px;
+    display: flex;
+    flex-flow: column;
+    width: 90%;
+    height: 90%;
+    top:5%;
+    left: 5%;
+    max-height: 90%;
+    max-width: 90%;
+    position: absolute;
+    z-index:2;
+    .btn{
+        clear: both;
+        border-radius: 3px;
+        float: left;
+    }
+}
+
+.shop_sale_content{
+    justify-content: center;
+}
+.shop_lookbook_content, .read_more_content{
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.shop_rovers_content{
+    justify-content: flex-end;
+    align-items: flex-start;
+}

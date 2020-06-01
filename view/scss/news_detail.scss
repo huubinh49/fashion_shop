@@ -1,0 +1,12 @@
+@import './Base/reset';
+@import './Base/animations';
+@import './Base/typography';
+@import './Base/utilities';
+
+@import './Layouts/header';
+@import './Layouts/footer';
+
+@import './Components/card--detail';
+@import './Components/slide_gallery';
+
+@import './Pages/news--detail';

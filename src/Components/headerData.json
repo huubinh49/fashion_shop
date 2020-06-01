@@ -1,0 +1,525 @@
+[
+    {
+        "title":"News",
+        "url" : "/shop/shop_news",
+        "isHuge":false,
+        "menu":[
+            {
+                "title":"LOOKBOOK",
+                "url":"https://topodesigns.com/pages/s20lookbook"
+            },
+            {
+                "title":"rover packs",
+                "url":"https://topodesigns.com/pages/the-rover-collection"
+            },
+            {
+                "title":"new pack &amps; bags",
+                "url":"https://topodesigns.com/collections/new-arrivals-bags"
+            },
+            {
+                "title":"new men's",
+                "url":"https://topodesigns.com/collections/new-arrivals-men"
+            },
+            {
+                "title":"new women's",
+                "url":"https://topodesigns.com/collections/new-arrivals-women"
+            },
+            {
+                "title":"new accesories",
+                "url":"https://topodesigns.com/collections/new-arrivals-accessories"
+            },
+            {
+                "title":"all new arrivals",
+                "url":"https://topodesigns.com/collections/new-arrivals"
+            }
+        ]
+    },
+    {
+        "title":"Packs & Bags",
+        "url" : "/shop/shop_bags",
+        "isHuge":true,
+        "menuHuge":
+        [
+            {
+                "url":"https://topodesigns.com/collections/bags-by-style",
+                "title":"Shop by style",
+                "footer":"shop all",
+                "listMenu":[
+                    {
+                        "title":"LOOKBOOK",
+                        "url":"https://topodesigns.com/pages/s20lookbook"
+                    },
+                    {
+                        "title":"rover packs",
+                        "url":"https://topodesigns.com/pages/the-rover-collection"
+                    },
+                    {
+                        "title":"new pack &amps; bags",
+                        "url":"https://topodesigns.com/collections/new-arrivals-bags"
+                    },
+                    {
+                        "title":"new men's",
+                        "url":"https://topodesigns.com/collections/new-arrivals-men"
+                    },
+                    {
+                        "title":"new women's",
+                        "url":"https://topodesigns.com/collections/new-arrivals-women"
+                    },
+                    {
+                        "title":"new accesories",
+                        "url":"https://topodesigns.com/collections/new-arrivals-accessories"
+                    },
+                    {
+                        "title":"all new arrivals",
+                        "url":"https://topodesigns.com/collections/new-arrivals"
+                    }
+                ]
+            },
+            {
+                "url":"https://topodesigns.com/collections/bags-by-style",
+                "title":"Shop by style",
+                "footer":"shop all",
+                "listMenu":[
+                    {
+                        "title":"LOOKBOOK",
+                        "url":"https://topodesigns.com/pages/s20lookbook"
+                    },
+                    {
+                        "title":"rover packs",
+                        "url":"https://topodesigns.com/pages/the-rover-collection"
+                    },
+                    {
+                        "title":"new pack &amps; bags",
+                        "url":"https://topodesigns.com/collections/new-arrivals-bags"
+                    },
+                    {
+                        "title":"new men's",
+                        "url":"https://topodesigns.com/collections/new-arrivals-men"
+                    },
+                    {
+                        "title":"new women's",
+                        "url":"https://topodesigns.com/collections/new-arrivals-women"
+                    },
+                    {
+                        "title":"new accesories",
+                        "url":"https://topodesigns.com/collections/new-arrivals-accessories"
+                    },
+                    {
+                        "title":"all new arrivals",
+                        "url":"https://topodesigns.com/collections/new-arrivals"
+                    }
+                ]
+            },
+            {
+                "url":"https://topodesigns.com/collections/bags-by-style",
+                "title":"Shop by style",
+                "footer":"shop all",
+                "listMenu":[
+                    {
+                        "title":"LOOKBOOK",
+                        "url":"https://topodesigns.com/pages/s20lookbook"
+                    },
+                    {
+                        "title":"rover packs",
+                        "url":"https://topodesigns.com/pages/the-rover-collection"
+                    },
+                    {
+                        "title":"new pack &amps; bags",
+                        "url":"https://topodesigns.com/collections/new-arrivals-bags"
+                    },
+                    {
+                        "title":"new men's",
+                        "url":"https://topodesigns.com/collections/new-arrivals-men"
+                    },
+                    {
+                        "title":"new women's",
+                        "url":"https://topodesigns.com/collections/new-arrivals-women"
+                    },
+                    {
+                        "title":"new accesories",
+                        "url":"https://topodesigns.com/collections/new-arrivals-accessories"
+                    },
+                    {
+                        "title":"all new arrivals",
+                        "url":"https://topodesigns.com/collections/new-arrivals"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title":"Men's",
+        "url" : "/shop/shop_mens",
+        "isHuge":true,
+        "menuHuge":
+        [
+            {
+                "url":"https://topodesigns.com/collections/bags-by-style",
+                "title":"Shop by style",
+                "footer":"shop all",
+                "listMenu":[
+                    {
+                        "title":"LOOKBOOK",
+                        "url":"https://topodesigns.com/pages/s20lookbook"
+                    },
+                    {
+                        "title":"rover packs",
+                        "url":"https://topodesigns.com/pages/the-rover-collection"
+                    },
+                    {
+                        "title":"new pack &amps; bags",
+                        "url":"https://topodesigns.com/collections/new-arrivals-bags"
+                    },
+                    {
+                        "title":"new men's",
+                        "url":"https://topodesigns.com/collections/new-arrivals-men"
+                    },
+                    {
+                        "title":"new women's",
+                        "url":"https://topodesigns.com/collections/new-arrivals-women"
+                    },
+                    {
+                        "title":"new accesories",
+                        "url":"https://topodesigns.com/collections/new-arrivals-accessories"
+                    },
+                    {
+                        "title":"all new arrivals",
+                        "url":"https://topodesigns.com/collections/new-arrivals"
+                    }
+                ]
+            },
+            {
+                "url":"https://topodesigns.com/collections/bags-by-style",
+                "title":"Shop by style",
+                "footer":"shop all",
+                "listMenu":[
+                    {
+                        "title":"LOOKBOOK",
+                        "url":"https://topodesigns.com/pages/s20lookbook"
+                    },
+                    {
+                        "title":"rover packs",
+                        "url":"https://topodesigns.com/pages/the-rover-collection"
+                    },
+                    {
+                        "title":"new pack &amps; bags",
+                        "url":"https://topodesigns.com/collections/new-arrivals-bags"
+                    },
+                    {
+                        "title":"new men's",
+                        "url":"https://topodesigns.com/collections/new-arrivals-men"
+                    },
+                    {
+                        "title":"new women's",
+                        "url":"https://topodesigns.com/collections/new-arrivals-women"
+                    },
+                    {
+                        "title":"new accesories",
+                        "url":"https://topodesigns.com/collections/new-arrivals-accessories"
+                    },
+                    {
+                        "title":"all new arrivals",
+                        "url":"https://topodesigns.com/collections/new-arrivals"
+                    }
+                ]
+            },
+            {
+                "url":"https://topodesigns.com/collections/bags-by-style",
+                "title":"Shop by style",
+                "footer":"shop all",
+                "listMenu":[
+                    {
+                        "title":"LOOKBOOK",
+                        "url":"https://topodesigns.com/pages/s20lookbook"
+                    },
+                    {
+                        "title":"rover packs",
+                        "url":"https://topodesigns.com/pages/the-rover-collection"
+                    },
+                    {
+                        "title":"new pack &amps; bags",
+                        "url":"https://topodesigns.com/collections/new-arrivals-bags"
+                    },
+                    {
+                        "title":"new men's",
+                        "url":"https://topodesigns.com/collections/new-arrivals-men"
+                    },
+                    {
+                        "title":"new women's",
+                        "url":"https://topodesigns.com/collections/new-arrivals-women"
+                    },
+                    {
+                        "title":"new accesories",
+                        "url":"https://topodesigns.com/collections/new-arrivals-accessories"
+                    },
+                    {
+                        "title":"all new arrivals",
+                        "url":"https://topodesigns.com/collections/new-arrivals"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title":"Women's",
+        "url" : "/shop/shop_womens",
+        "isHuge":true,
+        "menuHuge":
+        [
+            {
+                "url":"https://topodesigns.com/collections/bags-by-style",
+                "title":"Shop by style",
+                "footer":"shop all",
+                "listMenu":[
+                    {
+                        "title":"LOOKBOOK",
+                        "url":"https://topodesigns.com/pages/s20lookbook"
+                    },
+                    {
+                        "title":"rover packs",
+                        "url":"https://topodesigns.com/pages/the-rover-collection"
+                    },
+                    {
+                        "title":"new pack &amps; bags",
+                        "url":"https://topodesigns.com/collections/new-arrivals-bags"
+                    },
+                    {
+                        "title":"new men's",
+                        "url":"https://topodesigns.com/collections/new-arrivals-men"
+                    },
+                    {
+                        "title":"new women's",
+                        "url":"https://topodesigns.com/collections/new-arrivals-women"
+                    },
+                    {
+                        "title":"new accesories",
+                        "url":"https://topodesigns.com/collections/new-arrivals-accessories"
+                    },
+                    {
+                        "title":"all new arrivals",
+                        "url":"https://topodesigns.com/collections/new-arrivals"
+                    }
+                ]
+            },
+            {
+                "url":"https://topodesigns.com/collections/bags-by-style",
+                "title":"Shop by style",
+                "footer":"shop all",
+                "listMenu":[
+                    {
+                        "title":"LOOKBOOK",
+                        "url":"https://topodesigns.com/pages/s20lookbook"
+                    },
+                    {
+                        "title":"rover packs",
+                        "url":"https://topodesigns.com/pages/the-rover-collection"
+                    },
+                    {
+                        "title":"new pack &amps; bags",
+                        "url":"https://topodesigns.com/collections/new-arrivals-bags"
+                    },
+                    {
+                        "title":"new men's",
+                        "url":"https://topodesigns.com/collections/new-arrivals-men"
+                    },
+                    {
+                        "title":"new women's",
+                        "url":"https://topodesigns.com/collections/new-arrivals-women"
+                    },
+                    {
+                        "title":"new accesories",
+                        "url":"https://topodesigns.com/collections/new-arrivals-accessories"
+                    },
+                    {
+                        "title":"all new arrivals",
+                        "url":"https://topodesigns.com/collections/new-arrivals"
+                    }
+                ]
+            },
+            {
+                "url":"https://topodesigns.com/collections/bags-by-style",
+                "title":"Shop by style",
+                "footer":"shop all",
+                "listMenu":[
+                    {
+                        "title":"LOOKBOOK",
+                        "url":"https://topodesigns.com/pages/s20lookbook"
+                    },
+                    {
+                        "title":"rover packs",
+                        "url":"https://topodesigns.com/pages/the-rover-collection"
+                    },
+                    {
+                        "title":"new pack &amps; bags",
+                        "url":"https://topodesigns.com/collections/new-arrivals-bags"
+                    },
+                    {
+                        "title":"new men's",
+                        "url":"https://topodesigns.com/collections/new-arrivals-men"
+                    },
+                    {
+                        "title":"new women's",
+                        "url":"https://topodesigns.com/collections/new-arrivals-women"
+                    },
+                    {
+                        "title":"new accesories",
+                        "url":"https://topodesigns.com/collections/new-arrivals-accessories"
+                    },
+                    {
+                        "title":"all new arrivals",
+                        "url":"https://topodesigns.com/collections/new-arrivals"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title":"Accessories",
+        "url" : "/shop/shop_accessories",
+        "isHuge":true,
+        "menuHuge":
+        [
+            {
+                "url":"https://topodesigns.com/collections/bags-by-style",
+                "title":"Shop by style",
+                "footer":"shop all",
+                "listMenu":[
+                    {
+                        "title":"LOOKBOOK",
+                        "url":"https://topodesigns.com/pages/s20lookbook"
+                    },
+                    {
+                        "title":"rover packs",
+                        "url":"https://topodesigns.com/pages/the-rover-collection"
+                    },
+                    {
+                        "title":"new pack &amps; bags",
+                        "url":"https://topodesigns.com/collections/new-arrivals-bags"
+                    },
+                    {
+                        "title":"new men's",
+                        "url":"https://topodesigns.com/collections/new-arrivals-men"
+                    },
+                    {
+                        "title":"new women's",
+                        "url":"https://topodesigns.com/collections/new-arrivals-women"
+                    },
+                    {
+                        "title":"new accesories",
+                        "url":"https://topodesigns.com/collections/new-arrivals-accessories"
+                    },
+                    {
+                        "title":"all new arrivals",
+                        "url":"https://topodesigns.com/collections/new-arrivals"
+                    }
+                ]
+            },
+            {
+                "url":"https://topodesigns.com/collections/bags-by-style",
+                "title":"Shop by style",
+                "footer":"shop all",
+                "listMenu":[
+                    {
+                        "title":"LOOKBOOK",
+                        "url":"https://topodesigns.com/pages/s20lookbook"
+                    },
+                    {
+                        "title":"rover packs",
+                        "url":"https://topodesigns.com/pages/the-rover-collection"
+                    },
+                    {
+                        "title":"new pack &amps; bags",
+                        "url":"https://topodesigns.com/collections/new-arrivals-bags"
+                    },
+                    {
+                        "title":"new men's",
+                        "url":"https://topodesigns.com/collections/new-arrivals-men"
+                    },
+                    {
+                        "title":"new women's",
+                        "url":"https://topodesigns.com/collections/new-arrivals-women"
+                    },
+                    {
+                        "title":"new accesories",
+                        "url":"https://topodesigns.com/collections/new-arrivals-accessories"
+                    },
+                    {
+                        "title":"all new arrivals",
+                        "url":"https://topodesigns.com/collections/new-arrivals"
+                    }
+                ]
+            },
+            {
+                "url":"https://topodesigns.com/collections/bags-by-style",
+                "title":"Shop by style",
+                "footer":"shop all",
+                "listMenu":[
+                    {
+                        "title":"LOOKBOOK",
+                        "url":"https://topodesigns.com/pages/s20lookbook"
+                    },
+                    {
+                        "title":"rover packs",
+                        "url":"https://topodesigns.com/pages/the-rover-collection"
+                    },
+                    {
+                        "title":"new pack &amps; bags",
+                        "url":"https://topodesigns.com/collections/new-arrivals-bags"
+                    },
+                    {
+                        "title":"new men's",
+                        "url":"https://topodesigns.com/collections/new-arrivals-men"
+                    },
+                    {
+                        "title":"new women's",
+                        "url":"https://topodesigns.com/collections/new-arrivals-women"
+                    },
+                    {
+                        "title":"new accesories",
+                        "url":"https://topodesigns.com/collections/new-arrivals-accessories"
+                    },
+                    {
+                        "title":"all new arrivals",
+                        "url":"https://topodesigns.com/collections/new-arrivals"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title":"About",
+        "url" : "/lookbook",
+        "isHuge":false,
+        "menu":[
+            {
+                "title":"LOOKBOOK",
+                "url":"https://topodesigns.com/pages/s20lookbook"
+            },
+            {
+                "title":"rover packs",
+                "url":"https://topodesigns.com/pages/the-rover-collection"
+            },
+            {
+                "title":"new pack &amps; bags",
+                "url":"https://topodesigns.com/collections/new-arrivals-bags"
+            },
+            {
+                "title":"new men's",
+                "url":"https://topodesigns.com/collections/new-arrivals-men"
+            },
+            {
+                "title":"new women's",
+                "url":"https://topodesigns.com/collections/new-arrivals-women"
+            },
+            {
+                "title":"new accesories",
+                "url":"https://topodesigns.com/collections/new-arrivals-accessories"
+            },
+            {
+                "title":"all new arrivals",
+                "url":"https://topodesigns.com/collections/new-arrivals"
+            }
+        ]
+    }
+
+]
