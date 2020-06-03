@@ -1,5 +1,5 @@
 {
-  "homepage":"http://huubinh49.github.io/fashion_shop",
+  
   "name": "topodesigns",
   "version": "0.1.0",
   "private": true,
@@ -15,13 +15,14 @@
     "react-scripts": "3.4.1",    "redux": "^4.0.5",
     "request": "^2.88.2"
   },
+  "engines": {
+    "npm": "6.14.5",
+    "node": "12.16.2"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "test": "react-scripts test"
   },
   "eslintConfig": {
     "extends": "react-app"

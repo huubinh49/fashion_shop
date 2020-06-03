@@ -6,9 +6,7 @@ import { deleteCart } from '../../Redux/Cart/action';
  class Cart extends Component {
   constructor(props){
     super(props);
-    this.state={
-      subtotal : 0
-    }
+  
   }
   componentDidUpdate = ()=>{
     // 400px
@@ -40,7 +38,7 @@ import { deleteCart } from '../../Redux/Cart/action';
     <div className="cart__body--sideinfo">
       <div className="cart__body--subtotal">
         <h3>SUBTOTAL</h3>
-      <strong>${this.state.subtotal}</strong>
+      <strong>${this.props.products.reduce((sum, cur)=>sum+cur.quantity*parseFloat(cur.price.split("").slice(1).join("")),0)}</strong>
       </div>
       <div className="cart__body--buy">
         <button type="button" className="btn btn-danger">

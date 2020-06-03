@@ -9,7 +9,7 @@ const productsData = [];
                         //span.price // maybe <ins></ins>
 
 const getUrl = new RegExp("\((.*?)\)", "g");
-axios.get("https://topodesigns.com/collections/new-arrivals")
+axios.get("https://topodesigns.com/collections/accessories")
 .then(res=>{
     const $ = cheerio.load(res.data);
     let products = $("div.product-grid-item");

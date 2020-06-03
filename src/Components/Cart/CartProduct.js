@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
-import { deleteCart } from '../../Redux/Cart/action';
+import { deleteCart, updateCart } from '../../Redux/Cart/action';
 
 class CartProduct extends Component {
   constructor(props) {
@@ -22,7 +22,7 @@ class CartProduct extends Component {
             <i className="fa fa-times" aria-hidden="true" onClick={()=>this.props.delete_cart(this.props.product)}/>
           </a>
           <div className="product__info--detail">
-            <strong className="product__info-text">{this.props.product.color}</strong>
+            <strong className="product__info-text">{this.props.product.color.toUpperCase()}</strong>
         <strong className="product__info-text">{this.props.product.size}</strong>
           </div>
           <div className="product__quantity">
@@ -32,8 +32,8 @@ class CartProduct extends Component {
               name = "something"
               max={21}
               min={1}
-
-              value = {this.props.product.quantity}
+              onChange={(event)=> this.props.update_cart({...this.props.product, quantity:event.target.value})}
+              defaultValue = {this.props.product.quantity}
             />
             <strong className="product__price">${parseFloat(this.props.product.price.split("").slice(1).join(""))*this.props.product.quantity}</strong>
           </div>
@@ -44,7 +44,8 @@ class CartProduct extends Component {
 }
 
 const mapDispatchToProps = (dispatch) =>({
-  delete_cart: (product) => dispatch(deleteCart(product))
+  delete_cart: (product) => dispatch(deleteCart(product)),
+  update_cart: (product) => dispatch(updateCart(product))
 })
 
 

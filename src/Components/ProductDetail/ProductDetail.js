@@ -160,7 +160,7 @@ function convertName(str){
             
             {
               this.state.product["swatches"]&&this.state.product["swatches"].map((swatch, index) =>{
-                if(index==0)
+                if(index===0)
                 return(
                   <label className="color" key={index} style={{
                     //`${this.props.product["name"]}_${item["color_name"]}_color.png`

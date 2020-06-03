@@ -60,13 +60,19 @@ header{
                 // Menu Dropdown
                 .dropdown__menu{
 
-        transition-duration: 0.3s;
+                transition-duration: 0.3s;
                     list-style-type: none;
                     display: none;
                 }
 
                 .dropdown__menu--huge{
                     @extend .dropdown__menu;
+
+                    a.dropdown__toggle{
+                        span.dropdown__icon{
+                            
+                        }
+                    }
                     li{
                         padding: 10px 0; 
                         ul{
@@ -96,8 +102,8 @@ header{
             align-items: center;
             
             cursor: pointer;
-            width: 49px;
-            height: 49px;
+            width: 28.863px;
+            height: 34px;
             .fa-times{
                 display: none;
             }

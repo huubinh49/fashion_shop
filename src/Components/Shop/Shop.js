@@ -11,7 +11,7 @@ export default class Shop extends Component {
     componentDidMount = () =>{
         var data = require(`./${this.props.match.params.slug}.json`)
         this.setState({products: data});
-        console.log(data)
+        
     }
     render() {
         return (

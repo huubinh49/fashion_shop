@@ -3,7 +3,6 @@ import { root_reducer } from ".";
 
 const saveState = (state)=>{
     localStorage.setItem("cart", JSON.stringify(state))
-    console.log("saving...")
 }
 
 const redux = require("redux");

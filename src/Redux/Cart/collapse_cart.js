@@ -4,7 +4,6 @@ let initialState = false;
 const collapse_reducer = (state=initialState, action)=>{
     switch (action.type) {
         case "COLLAPSE_CART":
-            console.log("eheeqd");
             return !state;
     
         default:

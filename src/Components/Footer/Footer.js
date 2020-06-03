@@ -15,7 +15,7 @@ export default class Footer extends Component {
     </div>
     <div className="signup__form">
       <input type="text"  placeholder="Email Address" />
-      <input type="submit" defaultValue="SIGN UP" />
+      <input type="submit" value="SIGN UP" /> 
     </div>
   </div>
   <div className="footer__more">

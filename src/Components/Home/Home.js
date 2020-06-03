@@ -9,37 +9,37 @@ export default class Home extends Component {
                 <div className="shop_sale">
                   <div className="img-wrapper">
                     <img
-                      src="https://cdn.shopify.com/s/files/1/0277/0693/files/trail-shorts-sport-2_600x@2x.progressive.jpg?v=1585610182"
+                      src="/img/img_home/shop_sales.jpg"
                       alt="something"
                     />
                   </div>
                   <div className="content shop_sale_content">
                     <h2>25% off sitewide spring sale.</h2>
                     <strong>Use code Spring25 at checkout.</strong>
-                    <Link to ="/shop/shop_news" className="btn-wrapper">
+                    <a to ="/shop/shop_news" className="btn-wrapper">
                       <div className="btn btn-danger">Shop sale</div>
-                    </Link>
+                    </a>
                   </div>
                 </div>
                 <div className="shop_lookbook">
                   <div className="img-wrapper">
                     <img
-                      src="https://cdn.shopify.com/s/files/1/0277/0693/files/49593839851_04de08660a_o_300x@2x.progressive.jpg?v=1585023215"
+                      src="/img/img_home/shop_lookbook.jpg"
                       alt="something"
                     />
                   </div>
                   <div className="content shop_lookbook_content">
                     <h2>Fresh for spring.</h2>
                     <strong>New styles are in.</strong>
-                    <div className="btn-wrapper">
+                    <a href="/lookbook" className="btn-wrapper">
                       <div className="btn btn-danger">Shop lookbook</div>
-                    </div>
+                    </a>
                   </div>
                 </div>
                 <div className="earn_rewards">
                   <div className="img-wrapper">
                     <img
-                      src="https://cdn.shopify.com/s/files/1/0277/0693/files/49488980266_87e85a8c02_o_copy_300x@2x.progressive.jpg?v=1585238842"
+                      src="/img/img_home/earn_rewards.jpg"
                       alt="something"
                     />
                   </div>
@@ -54,7 +54,7 @@ export default class Home extends Component {
                 <div className="shops shop_bags">
                   <div className="img-wrapper img_shops">
                     <img
-                      src="https://cdn.shopify.com/s/files/1/0277/0693/files/Website_Pack_BagsCollection_Block_Spring20Launch_031919_200x@2x.progressive.jpg?v=1584589900"
+                      src="/img/img_home/shop_bags.jpg"
                       alt="something"
                     />
                   </div>
@@ -66,7 +66,7 @@ export default class Home extends Component {
                 <div className="shops shop_men">
                   <div className="img-wrapper img_shops">
                     <img
-                      src="https://cdn.shopify.com/s/files/1/0277/0693/files/Website_MensCollection_Block_Option2_Spring20Launch_031919_200x@2x.progressive.jpg?v=1584589978"
+                      src="/img/img_home/shop_mens.jpg"
                       alt="something"
                     />
                   </div>
@@ -78,19 +78,19 @@ export default class Home extends Component {
                 <div className="shops shop_women">
                   <div className="img-wrapper img_shops">
                     <img
-                      src="https://cdn.shopify.com/s/files/1/0277/0693/files/Website_WomensCollection_Block_Spring20Launch_031919_200x@2x.progressive.jpg?v=1584590023"
+                      src="/img/img_home/shop_womens.jpg"
                       alt="something"
                     />
                   </div>
                   <div className="shops_content">
                     <h2>New women's apparel</h2>
-                    <div className="btn btn-danger">Shop women's</div>
+                    <a href = "shop/shop_womens" className="btn btn-danger">Shop women's</a>
                   </div>
                 </div>
                 <div className="shop_rovers">
                   <div className="img-wrapper img_shops">
                     <img
-                      src="https://cdn.shopify.com/s/files/1/0277/0693/files/ezgif.com-webp-to-jpg_300x@2x.progressive.jpg?v=1584719872"
+                      src="/img/img_home/shop_packs.jpg"
                       alt="something"
                     />
                   </div>
@@ -105,7 +105,7 @@ export default class Home extends Component {
                 <div className="read_more">
                   <div className="img-wrapper img_shops">
                     <img
-                      src="https://cdn.shopify.com/s/files/1/0277/0693/files/JoeySchusler-1_copy_300x@2x.progressive.jpg?v=1585582028"
+                      src="/img/img_home/read_mores.jpg"
                       alt="something"
                     />
                   </div>
