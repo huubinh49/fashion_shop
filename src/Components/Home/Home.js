@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
 
 export default class Home extends Component {
     render() {
@@ -16,7 +15,7 @@ export default class Home extends Component {
                   <div className="content shop_sale_content">
                     <h2>25% off sitewide spring sale.</h2>
                     <strong>Use code Spring25 at checkout.</strong>
-                    <a to ="/shop/shop_news" className="btn-wrapper">
+                    <a href ="/shop/shop_news" className="btn-wrapper">
                       <div className="btn btn-danger">Shop sale</div>
                     </a>
                   </div>

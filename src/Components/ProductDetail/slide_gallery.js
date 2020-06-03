@@ -39,7 +39,7 @@ function show_img(num) {
 
     // deblur another img
     for(let i = 0; i<imgs.length;i++){
-        if(i != img__current){
+        if(i !== img__current){
             imgs[i].style.filter = "none";
         }
     }

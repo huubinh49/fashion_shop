@@ -1,7 +1,4 @@
 import React, { Component } from 'react'
-import cardStyle from "./style.css";
-import { Route } from 'react-router-dom';
-import ProductDetail from '../ProductDetail/ProductDetail';
 function convertName(str){
   return str.toLowerCase().split("").filter(item => item!==" ").join("").replace("'","");
 }
@@ -37,12 +34,12 @@ export default class ProductCard extends Component {
     }
     render() {
         return (
-            <div className={"card col-lg-3 col-md-4 col-sm-6"} style = {(this.props.inHeader)? (this.state.isShow==false)?{display:"none"}:{borderLeft:"1px solid gray"}:{}}>
+            <div className={"card col-lg-3 col-md-4 col-sm-6"} style = {(this.props.inHeader)? (this.state.isShow===false)?{display:"none"}:{borderLeft:"1px solid gray"}:{}}>
               
                 <div className="badge__wrapper">
                   <strong className="card__badge">NEW</strong>
                 </div>
-                <a href={`/product/${this.props.shop}/${this.props.product["name"].split("").filter(item => item != " ").join("")}/${this.props.ID}`} className="img__wrapper">
+                <a href={`/product/${this.props.shop}/${this.props.product["name"].split("").filter(item => item !== " ").join("")}/${this.props.ID}`} className="img__wrapper">
                   <img alt="product" className="card__img" src={`/img/img_${this.props.shop}/asset/${convertName(this.state.product_img)}`} />
                 </a>
                 <div className="info__wrapper">

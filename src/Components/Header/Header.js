@@ -80,7 +80,7 @@ class Header extends Component {
 
                   <li className="nav__item--signin">
                     <i className="fa fa-user-circle" aria-hidden="true" />
-                    <a href="#" className="signin">
+                    <a href="/" className="signin">
                       JOIN/SIGN IN
                     </a>
                   </li>
@@ -89,7 +89,7 @@ class Header extends Component {
               </nav>
 
               <div className="header__action">
-                <a href="#" className="signin">
+                <a href="/" className="signin">
                   Join/Sign In
                 </a>
                 <i className="fa fa-search" aria-hidden="true" />

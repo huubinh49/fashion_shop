@@ -3,9 +3,6 @@ import { connect } from 'react-redux';
 import { deleteCart, updateCart } from '../../Redux/Cart/action';
 
 class CartProduct extends Component {
-  constructor(props) {
-      super(props);
-  }
     render() {
         return (
     <div className="cart__product">
@@ -17,7 +14,7 @@ class CartProduct extends Component {
           />
         </div>
         <div className="product__info">
-          <a  >
+          <a href ="/" onClick = {(event)=> event.preventDefault()}>
             <h3 className="product__name">{this.props.product.name}</h3>
             <i className="fa fa-times" aria-hidden="true" onClick={()=>this.props.delete_cart(this.props.product)}/>
           </a>

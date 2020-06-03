@@ -1,13 +1,9 @@
 import React, { Component } from 'react'
 import CartProduct from './CartProduct';
 import { connect } from 'react-redux';
-import { deleteCart } from '../../Redux/Cart/action';
+
 
  class Cart extends Component {
-  constructor(props){
-    super(props);
-  
-  }
   componentDidUpdate = ()=>{
     // 400px
     if(this.props.display_cart===true){
