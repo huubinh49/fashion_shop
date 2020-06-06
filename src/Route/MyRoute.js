@@ -9,9 +9,9 @@ export default class MyRoute extends Component {
         return (
             <Switch>
                 <Route path = "/" exact children = {<Home />} />
-                <Route path = "/shop/:slug" exact component = {Shop} />
+                <Route path = "/shop/:slug" component = {Shop} />
                 {/* <Route path ="/detail/:slug\_:color" exact component ={ProductDetail} /> */}
-                <Route path = "/product/:shop/:name/:id" exact component={ProductDetail} />
+                <Route path = "/product/:shop/:name/:id" component={ProductDetail} />
                 <Route path = "/lookbook" component = {LookBook} />
             </Switch>
         )
