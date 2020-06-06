@@ -1,4 +1,5 @@
 {
+  "homepage": "https://huubinh49.github.io/fashion_shop/",
   "name": "topodesigns",
   "version": "0.1.0",
   "private": true,
@@ -26,9 +27,10 @@
     "test": "react-scripts test",
     "heroku-postbuild": "npm run build",
     "start:dev": "webpack-dev-server --config webpack.dev.js",
-    "build:prod": "webpack --config webpack.prod.js"
+    "build:prod": "webpack --config webpack.prod.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
-  "homepage": ".",
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -49,6 +51,7 @@
     "gh-pages": "^3.0.0",
     "node-sass": "^4.14.1",
     "url-loader": "^4.1.0",
-    "webpack": "^4.43.0"
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
   }
 }
