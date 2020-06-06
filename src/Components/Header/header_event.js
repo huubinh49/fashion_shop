@@ -66,6 +66,7 @@ function menu_scroll() {
     let currentWidth = window.innerWidth;
     let currentY = window.pageYOffset;
     let header = document.querySelector("header");
+    if(header){
     let header_height = header.offsetHeight;
     if(currentY<header_height)
     {
@@ -82,7 +83,7 @@ function menu_scroll() {
             header.classList.remove("header__mobile--onFix")
             header.classList.add("header__pc--onFix", currentY >= header_height)
         }
-    }
+    }}
 }
 ////
 //Show menu dropdown on PC

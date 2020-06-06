@@ -46,7 +46,7 @@ export default class SubMenuHuge extends Component {
                       <div className="menu--huge row">
                           {this.props.menuHuge.map((menu, index)=>{
                               return(
-                                    <li key={index}>
+                                    <li style={{width:"100%"}} key={index}>
                                         <Toggle url={menu.url} title={menu.title}></Toggle>
                                         <SubMenu menu ={menu.listMenu}></SubMenu>
                                         <div className="dropdown__footer">{menu.footer}</div>
