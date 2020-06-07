@@ -6,6 +6,7 @@ function close_collapse(my_btn) {
     let black_div = document.querySelector(".over--black");
     black_div.style.display = "none";
 }
+
 function open_collapse(my_btn) {
     let black_div = document.querySelector(".over--black");
     black_div.style.display = "block";
@@ -33,7 +34,7 @@ function hide_dropdown(my_icon) {
         black_div.style.display = "none";
         my_icon.getElementsByClassName("fa-angle-down")[0].style.display = "block";
         my_icon.getElementsByClassName("fa-times")[0].style.display = "none";
-        my_icon.style.backgroundColor = "whitesmoke";
+        my_icon.style.backgroundColor = "white";
         my_icon.setAttribute("data-onshow", "false");
         menu_dropdown.style.display = "none"
     
@@ -53,7 +54,7 @@ function toggle_dropdown(my_icon) {
         else {
             my_icon.getElementsByClassName("fa-angle-down")[0].style.display = "block";
             my_icon.getElementsByClassName("fa-times")[0].style.display = "none";
-            my_icon.style.backgroundColor = "whitesmoke";
+            my_icon.style.backgroundColor = "white";
             my_icon.setAttribute("data-onshow", "false");
             menu_dropdown.style.display = "none"
         }

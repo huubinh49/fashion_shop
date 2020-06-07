@@ -8,7 +8,6 @@ $header_color : white;
 header{
     position: relative;
     height: 60px;
-
     img[class ^="header__brand"]
     {
         box-sizing: border-box;
@@ -41,7 +40,7 @@ header{
         overflow-y: scroll;
         padding: 0 15px;
         z-index: 999;
-        background-color: whitesmoke;
+        background-color: $header_color;
 
 
         .nav__menu{
@@ -104,7 +103,7 @@ header{
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: white !important;
+            background-color: white;
             cursor: pointer;
             width: 28.863px;
             height: 34px;

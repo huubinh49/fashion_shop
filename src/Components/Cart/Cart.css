@@ -124,11 +124,13 @@
             
                 .product__info {
                     display: flex;
+                    width: 55%;
                     flex-flow: column;
                 }
             
                 .product__info a {
                     display: flex;
+                    justify-content: space-between;
                     color: black;
                 }
                 .product__info a i{
