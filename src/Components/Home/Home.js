@@ -1,10 +1,19 @@
 import React, { Component } from 'react'
 
 export default class Home extends Component {
-    render() {
-        return (
-            
-              <section id="home" className="container--96">
+  constructor(props){
+    super(props);
+  }
+  componentDidMount=()=>{
+    setTimeout(()=>this.props.doneLoading(), 3000);
+  }
+    render=() => (
+           <section id="home" className="container--96">
+            {
+              this.props.isLoading && <div style={{width: '100vw', height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor:"white", position:"fixed", top:"0", left:"0", zIndex:"9999999"}}>
+              <img src="/preloader.gif" alt="preloader" />
+              </div>
+            }
                 <div className="shop_sale">
                   <div className="img-wrapper">
                     <img
@@ -118,6 +127,7 @@ export default class Home extends Component {
                     </div>
                   </div>
                 </div>
-              </section>)
-    }
+              </section>
+            
+    )
 }

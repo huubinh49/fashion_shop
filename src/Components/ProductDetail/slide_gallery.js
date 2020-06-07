@@ -71,4 +71,4 @@ function change_img(num) {
     show_img(img__current)
 }
 }
-export {show_img, change_img}
+export {show_img, change_img, adjustment}

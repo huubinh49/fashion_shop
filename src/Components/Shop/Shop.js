@@ -11,10 +11,12 @@ export default class Shop extends Component {
     componentDidMount = () =>{
         var data = require(`./${this.props.match.params.slug}.json`)
         this.setState({products: data});
-        
+        setTimeout(()=>this.props.doneLoading(),2000);
     }
     render() {
-        return (
+      return (this.props.isLoading)?  ( <div style={{width: '100vw', height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor:"white"}}>
+      <img src="/preloader.gif" alt="" />
+    </div>): (
         <section id="shop--news">
         <div className="banner">
           <h1>{this.props.match.params.slug.replace("_", " ")}</h1>
@@ -27,6 +29,6 @@ export default class Shop extends Component {
           </div>
         </main>
       </section>
-        )
+        ) 
     }
 }

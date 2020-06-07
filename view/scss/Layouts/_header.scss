@@ -86,9 +86,14 @@ header{
        // News , Packs and Bags, ....
     .dropdown__toggle{
         width: 100%;
+        padding:0;
+        
         display: flex;
         justify-content: space-between;
         align-items: center;
+        a{
+            padding: 0 !important;
+        }
         // v and X
         .dropdown__icon{
             display: flex;

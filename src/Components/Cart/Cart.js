@@ -28,7 +28,7 @@ import { connect } from 'react-redux';
   <div className="cart__body">
     <div className="cart__body--product">
       {
-        this.props.products.map(product => <CartProduct product = {product}/>) 
+        this.props.products.map((product, index) => <CartProduct key = {index} product = {product}/>) 
       }
     </div>
     <div className="cart__body--sideinfo">

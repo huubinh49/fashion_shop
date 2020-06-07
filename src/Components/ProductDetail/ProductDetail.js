@@ -49,7 +49,7 @@ function convertName(str){
       const data_shop = await require(`./../Shop/${this.props.match.params.shop}.json`);
       return data_shop
     }
-
+    
     fetchData().then(
       (data_shop)=>{
         const product_data = data_shop[parseInt(this.props.match.params.id)];
@@ -59,12 +59,13 @@ function convertName(str){
           color_name:product_data["swatches"][0]["color_name"]
         
         });
-      }
-      
-    );
-    
+       setTimeout(()=>this.props.doneLoading(),2000);
+      })
     
   }
+  // componentDidUpdate = ()=>{
+  //     eventSlide.adjustment()
+  // }
   changeQuantityByKey = (event)=>{
     switch (event.key) {
       case "ArrowUp":
@@ -81,9 +82,13 @@ function convertName(str){
     }
     
   }
-    render() {
-        return (
-            <main className="container--96">
+  render=()=>(
+  <main className="container--96">
+    { 
+      this.props.isLoading && <div style={{width: '100vw', height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor:"white", position:"absolute", zIndex:"9999999"}}>
+        <img src="/preloader.gif" alt="preloader" />
+      </div>
+    }
   <div className="row product--details">
     {/* Gallery Slide */}
     <div style={{ padding: 0 }} className="col-lg-8 slide_show">
@@ -94,7 +99,7 @@ function convertName(str){
             {
               this.state.product["swatches"]&&this.state.product["swatches"].map((swatch, index) =>{
                 return(
-                <div className="img">
+                <div className="img" key = {index}>
                 <img
                   onClick={()=> eventSlide.show_img(index)}
                   src={`/img/img_${this.props.match.params.shop}/asset/${convertName(this.state.product["name"])}_${convertName(swatch["color_name"])}_img.jpg`}
@@ -180,7 +185,7 @@ function convertName(str){
                   </label>
                 )
                 else return(
-                  <label className="color" style={{
+                  <label className="color" key = {index} style={{
                     //`${this.props.product["name"]}_${item["color_name"]}_color.png`
                     //techshirtpopover-women's_khaki_color.png
                     backgroundImage:`url(/img/img_${this.props.match.params.shop}/asset/${convertName(`${this.state.product["name"]}_${swatch["color_name"]}_color.png`)})`,
@@ -353,9 +358,8 @@ function convertName(str){
   {/* Product on Real */}
   <div className="row model_album"></div>
 </main>
-
-        )
-    }
+  )
+    
 }
 
 const mapDispatchToProps = (dispatch)=>{
