@@ -28,7 +28,9 @@
       }
     ],
     "name": "Standard Pack",
-    "price": "$99.00"
+    "price": "$99.00",
+    "shop": "shop_news",
+    "ID": 0
   },
   {
     "swatches": [
@@ -54,7 +56,9 @@
       }
     ],
     "name": "Wind Anorak - Sport - Men's",
-    "price": "$149.00"
+    "price": "$149.00",
+    "shop": "shop_news",
+    "ID": 1
   },
   {
     "swatches": [
@@ -70,7 +74,9 @@
       }
     ],
     "name": "Tour Shirt - Floral - Women's",
-    "price": "$69.00"
+    "price": "$69.00",
+    "shop": "shop_news",
+    "ID": 2
   },
   {
     "swatches": [
@@ -91,7 +97,9 @@
       }
     ],
     "name": "Bandana - Print",
-    "price": "$18.00"
+    "price": "$18.00",
+    "shop": "shop_news",
+    "ID": 3
   },
   {
     "swatches": [
@@ -117,7 +125,9 @@
       }
     ],
     "name": "Ultralight Jacket - Women's",
-    "price": "$89.00"
+    "price": "$89.00",
+    "shop": "shop_news",
+    "ID": 4
   },
   {
     "swatches": [
@@ -183,7 +193,9 @@
       }
     ],
     "name": "Rover Pack - Classic",
-    "price": "$99.00"
+    "price": "$99.00",
+    "shop": "shop_news",
+    "ID": 5
   },
   {
     "swatches": [
@@ -234,7 +246,9 @@
       }
     ],
     "name": "Dopp Kit",
-    "price": "$34.00"
+    "price": "$34.00",
+    "shop": "shop_news",
+    "ID": 6
   },
   {
     "swatches": [
@@ -260,7 +274,9 @@
       }
     ],
     "name": "Mountain Shirt - Lightweight - Men's",
-    "price": "$89.00"
+    "price": "$89.00",
+    "shop": "shop_news",
+    "ID": 7
   },
   {
     "swatches": [
@@ -316,7 +332,9 @@
       }
     ],
     "name": "Light Pack",
-    "price": "$69.00"
+    "price": "$69.00",
+    "shop": "shop_news",
+    "ID": 8
   },
   {
     "swatches": [
@@ -337,7 +355,9 @@
       }
     ],
     "name": "Mountain Shirt - Lightweight - Women's",
-    "price": "$89.00"
+    "price": "$89.00",
+    "shop": "shop_news",
+    "ID": 9
   },
   {
     "swatches": [
@@ -368,7 +388,9 @@
       }
     ],
     "name": "Ultralight Jacket - Men's",
-    "price": "$89.00"
+    "price": "$89.00",
+    "shop": "shop_news",
+    "ID": 10
   },
   {
     "swatches": [
@@ -394,7 +416,9 @@
       }
     ],
     "name": "Camera Cube",
-    "price": "$59.00"
+    "price": "$59.00",
+    "shop": "shop_news",
+    "ID": 11
   },
   {
     "swatches": [
@@ -420,7 +444,9 @@
       }
     ],
     "name": "Mountain Shorts - Women's",
-    "price": "$69.00"
+    "price": "$69.00",
+    "shop": "shop_news",
+    "ID": 12
   },
   {
     "swatches": [
@@ -456,7 +482,9 @@
       }
     ],
     "name": "Cinch Tote",
-    "price": "$59.00"
+    "price": "$59.00",
+    "shop": "shop_news",
+    "ID": 13
   },
   {
     "swatches": [
@@ -482,7 +510,9 @@
       }
     ],
     "name": "Field Shirt - Short Sleeve - Men's",
-    "price": "$69.00"
+    "price": "$69.00",
+    "shop": "shop_news",
+    "ID": 14
   },
   {
     "swatches": [
@@ -513,7 +543,9 @@
       }
     ],
     "name": "Web Belt - 1.5",
-    "price": "$39.00"
+    "price": "$39.00",
+    "shop": "shop_news",
+    "ID": 15
   },
   {
     "swatches": [
@@ -524,7 +556,9 @@
       }
     ],
     "name": "Topo Designs x Danner Mountain Pack",
-    "price": "$189.00"
+    "price": "$189.00",
+    "shop": "shop_news",
+    "ID": 16
   },
   {
     "swatches": [
@@ -535,7 +569,9 @@
       }
     ],
     "name": "Topo Designs x Danner Trail 2650 - Men's",
-    "price": "$159.95"
+    "price": "$159.95",
+    "shop": "shop_news",
+    "ID": 17
   },
   {
     "swatches": [
@@ -546,7 +582,9 @@
       }
     ],
     "name": "Topo Designs x Danner Trail 2650 - Women's",
-    "price": "$159.95"
+    "price": "$159.95",
+    "shop": "shop_news",
+    "ID": 18
   },
   {
     "swatches": [
@@ -557,7 +595,9 @@
       }
     ],
     "name": "Topo Designs x Danner Tech Tee - Long Sleeve - Men's",
-    "price": "$69.00"
+    "price": "$69.00",
+    "shop": "shop_news",
+    "ID": 19
   },
   {
     "swatches": [
@@ -583,7 +623,9 @@
       }
     ],
     "name": "Face Mask",
-    "price": "$16.00"
+    "price": "$16.00",
+    "shop": "shop_news",
+    "ID": 20
   },
   {
     "swatches": [
@@ -609,7 +651,9 @@
       }
     ],
     "name": "Wind Jacket - Sport - Men's",
-    "price": "$129.00"
+    "price": "$129.00",
+    "shop": "shop_news",
+    "ID": 21
   },
   {
     "swatches": [
@@ -650,7 +694,9 @@
       }
     ],
     "name": "Accessory Bags",
-    "price": "$15.00 – $19.00"
+    "price": "$15.00 – $19.00",
+    "shop": "shop_news",
+    "ID": 22
   },
   {
     "swatches": [
@@ -671,7 +717,9 @@
       }
     ],
     "name": "Tour Shirt - Floral - Men's",
-    "price": "$69.00"
+    "price": "$69.00",
+    "shop": "shop_news",
+    "ID": 23
   },
   {
     "swatches": [
@@ -692,7 +740,9 @@
       }
     ],
     "name": "Trail Shorts - Sport - Men's",
-    "price": "$59.00"
+    "price": "$59.00",
+    "shop": "shop_news",
+    "ID": 24
   },
   {
     "swatches": [
@@ -718,7 +768,9 @@
       }
     ],
     "name": "Wind Jacket - Sport - Women's",
-    "price": "$129.00"
+    "price": "$129.00",
+    "shop": "shop_news",
+    "ID": 25
   },
   {
     "swatches": [
@@ -749,7 +801,9 @@
       }
     ],
     "name": "Standard Pack",
-    "price": "$99.00"
+    "price": "$99.00",
+    "shop": "shop_news",
+    "ID": 26
   },
   {
     "swatches": [
@@ -765,7 +819,9 @@
       }
     ],
     "name": "Tour Shirt - Floral - Women's",
-    "price": "$69.00"
+    "price": "$69.00",
+    "shop": "shop_news",
+    "ID": 27
   },
   {
     "swatches": [
@@ -781,7 +837,9 @@
       }
     ],
     "name": "Sport Skirt - Women's",
-    "price": "$89.00"
+    "price": "$89.00",
+    "shop": "shop_news",
+    "ID": 28
   },
   {
     "swatches": [
@@ -807,7 +865,9 @@
       }
     ],
     "name": "Global Hat",
-    "price": "$32.00"
+    "price": "$32.00",
+    "shop": "shop_news",
+    "ID": 29
   },
   {
     "swatches": [
@@ -848,7 +908,9 @@
       }
     ],
     "name": "Mini Quick Pack",
-    "price": "$49.00"
+    "price": "$49.00",
+    "shop": "shop_news",
+    "ID": 30
   },
   {
     "swatches": [
@@ -864,7 +926,9 @@
       }
     ],
     "name": "Tour Shirt - Geo - Men's",
-    "price": "$69.00"
+    "price": "$69.00",
+    "shop": "shop_news",
+    "ID": 31
   },
   {
     "swatches": [
@@ -890,7 +954,9 @@
       }
     ],
     "name": "Wind Anorak - Sport - Men's",
-    "price": "$149.00"
+    "price": "$149.00",
+    "shop": "shop_news",
+    "ID": 32
   },
   {
     "swatches": [
@@ -921,7 +987,9 @@
       }
     ],
     "name": "Route Shirt - Men's",
-    "price": "$69.00"
+    "price": "$69.00",
+    "shop": "shop_news",
+    "ID": 33
   },
   {
     "swatches": [
@@ -942,7 +1010,9 @@
       }
     ],
     "name": "Bike Bag",
-    "price": "$49.00"
+    "price": "$49.00",
+    "shop": "shop_news",
+    "ID": 34
   },
   {
     "swatches": [
@@ -968,7 +1038,9 @@
       }
     ],
     "name": "Tech Shirt Popover - Women's",
-    "price": "$119.00"
+    "price": "$119.00",
+    "shop": "shop_news",
+    "ID": 35
   },
   {
     "swatches": [
@@ -1004,7 +1076,9 @@
       }
     ],
     "name": "Y-Pack",
-    "price": "$79.00"
+    "price": "$79.00",
+    "shop": "shop_news",
+    "ID": 36
   },
   {
     "swatches": [
@@ -1025,7 +1099,9 @@
       }
     ],
     "name": "Tech Shirt - Short Sleeve - Men's",
-    "price": "$98.00"
+    "price": "$98.00",
+    "shop": "shop_news",
+    "ID": 37
   },
   {
     "swatches": [
@@ -1051,7 +1127,9 @@
       }
     ],
     "name": "Tech Tank - Women's",
-    "price": "$89.00"
+    "price": "$89.00",
+    "shop": "shop_news",
+    "ID": 38
   },
   {
     "swatches": [
@@ -1082,6 +1160,8 @@
       }
     ],
     "name": "Smash Pack",
-    "price": "$69.00"
+    "price": "$69.00",
+    "shop": "shop_news",
+    "ID": 39
   }
 ]

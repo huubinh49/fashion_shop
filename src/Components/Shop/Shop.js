@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import ProductCard from '../ProductCard/ProductCard'
+import { connect } from 'react-redux';
 
-export default class Shop extends Component {
+export class Shop extends Component {
     constructor(props){
         super(props);
         this.state = {
@@ -9,8 +10,15 @@ export default class Shop extends Component {
         }
     }
     componentDidMount = () =>{
+      
+      if(!this.props.products){  
         var data = require(`./${this.props.match.params.slug}.json`)
         this.setState({products: data});
+      }
+      else{
+        this.setState({products: this.props.products});
+      }
+      console.log(this.props)
         setTimeout(()=>this.props.doneLoading(),2000);
     }
     render() {
@@ -24,7 +32,7 @@ export default class Shop extends Component {
         <main className="container--96">
           <div className="row">
              {
-                 this.state.products.map((product, index )=> <ProductCard ID={index} shop={this.props.match.params.slug} product={product} />)
+                 this.state.products.map((product, index )=> <ProductCard ID={index} shop={product["shop"]} product={product} />)
              }
           </div>
         </main>
@@ -32,3 +40,10 @@ export default class Shop extends Component {
         ) 
     }
 }
+const mapStateToProps = (state) => ({
+  products : state.search
+})
+
+
+
+export default connect(mapStateToProps, null)(Shop)

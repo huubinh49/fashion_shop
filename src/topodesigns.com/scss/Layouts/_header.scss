@@ -167,6 +167,8 @@ header{
 .header__mobile--onFix{
     position: fixed;
     z-index: 100;
+    top:0;
+    left: 0;
     height: 40px;
     width: 100vw;
     background-color: $header_color;

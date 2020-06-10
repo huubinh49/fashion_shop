@@ -28,7 +28,9 @@
       }
     ],
     "name": "Standard Pack",
-    "price": "$99.00"
+    "price": "$99.00",
+    "shop": "shop_mens",
+    "ID": 0
   },
   {
     "swatches": [
@@ -54,7 +56,9 @@
       }
     ],
     "name": "Wind Anorak - Sport - Men's",
-    "price": "$149.00"
+    "price": "$149.00",
+    "shop": "shop_mens",
+    "ID": 1
   },
   {
     "swatches": [
@@ -70,7 +74,9 @@
       }
     ],
     "name": "Tour Shirt - Floral - Women's",
-    "price": "$69.00"
+    "price": "$69.00",
+    "shop": "shop_mens",
+    "ID": 2
   },
   {
     "swatches": [
@@ -91,7 +97,9 @@
       }
     ],
     "name": "Bandana - Print",
-    "price": "$18.00"
+    "price": "$18.00",
+    "shop": "shop_mens",
+    "ID": 3
   },
   {
     "swatches": [
@@ -122,7 +130,9 @@
       }
     ],
     "name": "Ultralight Jacket - Men's",
-    "price": "$89.00"
+    "price": "$89.00",
+    "shop": "shop_mens",
+    "ID": 4
   },
   {
     "swatches": [
@@ -148,7 +158,9 @@
       }
     ],
     "name": "Mountain Shirt - Lightweight - Men's",
-    "price": "$89.00"
+    "price": "$89.00",
+    "shop": "shop_mens",
+    "ID": 5
   },
   {
     "swatches": [
@@ -159,7 +171,9 @@
       }
     ],
     "name": "Topo Designs x Danner Tech Tee - Long Sleeve - Men's",
-    "price": "$69.00"
+    "price": "$69.00",
+    "shop": "shop_mens",
+    "ID": 6
   },
   {
     "swatches": [
@@ -170,7 +184,9 @@
       }
     ],
     "name": "Topo Designs x Danner Trail 2650 - Men's",
-    "price": "$159.95"
+    "price": "$159.95",
+    "shop": "shop_mens",
+    "ID": 7
   },
   {
     "swatches": [
@@ -196,7 +212,9 @@
       }
     ],
     "name": "Wind Jacket - Sport - Men's",
-    "price": "$129.00"
+    "price": "$129.00",
+    "shop": "shop_mens",
+    "ID": 8
   },
   {
     "swatches": [
@@ -217,7 +235,9 @@
       }
     ],
     "name": "Tour Shirt - Floral - Men's",
-    "price": "$69.00"
+    "price": "$69.00",
+    "shop": "shop_mens",
+    "ID": 9
   },
   {
     "swatches": [
@@ -238,7 +258,9 @@
       }
     ],
     "name": "Trail Shorts - Sport - Men's",
-    "price": "$59.00"
+    "price": "$59.00",
+    "shop": "shop_mens",
+    "ID": 10
   },
   {
     "swatches": [
@@ -264,7 +286,9 @@
       }
     ],
     "name": "Global Hat",
-    "price": "$32.00"
+    "price": "$32.00",
+    "shop": "shop_mens",
+    "ID": 11
   },
   {
     "swatches": [
@@ -295,7 +319,9 @@
       }
     ],
     "name": "Web Belt - 1.5",
-    "price": "$39.00"
+    "price": "$39.00",
+    "shop": "shop_mens",
+    "ID": 12
   },
   {
     "swatches": [
@@ -321,7 +347,9 @@
       }
     ],
     "name": "Wind Anorak - Sport - Men's",
-    "price": "$149.00"
+    "price": "$149.00",
+    "shop": "shop_mens",
+    "ID": 13
   },
   {
     "swatches": [
@@ -337,7 +365,9 @@
       }
     ],
     "name": "Tour Shirt - Geo - Men's",
-    "price": "$69.00"
+    "price": "$69.00",
+    "shop": "shop_mens",
+    "ID": 14
   },
   {
     "swatches": [
@@ -368,7 +398,9 @@
       }
     ],
     "name": "Route Shirt - Men's",
-    "price": "$69.00"
+    "price": "$69.00",
+    "shop": "shop_mens",
+    "ID": 15
   },
   {
     "swatches": [
@@ -399,7 +431,9 @@
       }
     ],
     "name": "Pocket Tee Long Sleeve - Men's",
-    "price": "$44.00"
+    "price": "$44.00",
+    "shop": "shop_mens",
+    "ID": 16
   },
   {
     "swatches": [
@@ -420,7 +454,9 @@
       }
     ],
     "name": "Tech Shirt - Short Sleeve - Men's",
-    "price": "$98.00"
+    "price": "$98.00",
+    "shop": "shop_mens",
+    "ID": 17
   },
   {
     "swatches": [
@@ -446,7 +482,9 @@
       }
     ],
     "name": "Field Shirt - Short Sleeve - Men's",
-    "price": "$69.00"
+    "price": "$69.00",
+    "shop": "shop_mens",
+    "ID": 18
   },
   {
     "swatches": [
@@ -457,7 +495,9 @@
       }
     ],
     "name": "Tech Shirt - Long Sleeve - Men's",
-    "price": "$129.00"
+    "price": "$129.00",
+    "shop": "shop_mens",
+    "ID": 19
   },
   {
     "swatches": [
@@ -483,7 +523,9 @@
       }
     ],
     "name": "Mountain Shorts - Men's",
-    "price": "$69.00"
+    "price": "$69.00",
+    "shop": "shop_mens",
+    "ID": 20
   },
   {
     "swatches": [
@@ -499,7 +541,9 @@
       }
     ],
     "name": "Tech Popover - Men's",
-    "price": "$69.00"
+    "price": "$69.00",
+    "shop": "shop_mens",
+    "ID": 21
   },
   {
     "swatches": [
@@ -530,7 +574,9 @@
       }
     ],
     "name": "River Shorts - Men's",
-    "price": "$79.00"
+    "price": "$79.00",
+    "shop": "shop_mens",
+    "ID": 22
   },
   {
     "swatches": [
@@ -546,7 +592,9 @@
       }
     ],
     "name": "Hybrid Hoodie - Men's",
-    "price": "$129.00"
+    "price": "$129.00",
+    "shop": "shop_mens",
+    "ID": 23
   },
   {
     "swatches": [
@@ -572,7 +620,9 @@
       }
     ],
     "name": "Global Shorts - Men's",
-    "price": "$59.00"
+    "price": "$59.00",
+    "shop": "shop_mens",
+    "ID": 24
   },
   {
     "swatches": [
@@ -598,7 +648,9 @@
       }
     ],
     "name": "Sport Socks",
-    "price": "$15.00"
+    "price": "$15.00",
+    "shop": "shop_mens",
+    "ID": 25
   },
   {
     "swatches": [
@@ -614,7 +666,9 @@
       }
     ],
     "name": "Team Tee - Long Sleeve - Men's",
-    "price": "$44.00"
+    "price": "$44.00",
+    "shop": "shop_mens",
+    "ID": 26
   },
   {
     "swatches": [
@@ -630,7 +684,9 @@
       }
     ],
     "name": "Moab Tee - Long Sleeve - Men's",
-    "price": "$44.00"
+    "price": "$44.00",
+    "shop": "shop_mens",
+    "ID": 27
   },
   {
     "swatches": [
@@ -646,7 +702,9 @@
       }
     ],
     "name": "Climber Tee - Long Sleeve - Men's",
-    "price": "$44.00"
+    "price": "$44.00",
+    "shop": "shop_mens",
+    "ID": 28
   },
   {
     "swatches": [
@@ -672,7 +730,9 @@
       }
     ],
     "name": "Face Mask",
-    "price": "$16.00"
+    "price": "$16.00",
+    "shop": "shop_mens",
+    "ID": 29
   },
   {
     "swatches": [
@@ -688,7 +748,9 @@
       }
     ],
     "name": "Trad Tee - Men's",
-    "price": "$36.00"
+    "price": "$36.00",
+    "shop": "shop_mens",
+    "ID": 30
   },
   {
     "swatches": [
@@ -709,7 +771,9 @@
       }
     ],
     "name": "Sun Tee - Men's",
-    "price": "$36.00"
+    "price": "$36.00",
+    "shop": "shop_mens",
+    "ID": 31
   },
   {
     "swatches": [
@@ -725,6 +789,8 @@
       }
     ],
     "name": "Bikes Tee - Men's",
-    "price": "$36.00"
+    "price": "$36.00",
+    "shop": "shop_mens",
+    "ID": 32
   }
 ]

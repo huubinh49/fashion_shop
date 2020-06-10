@@ -28,7 +28,9 @@
       }
     ],
     "name": "Standard Pack",
-    "price": "$99.00"
+    "price": "$99.00",
+    "shop": "shop_womens",
+    "ID": 0
   },
   {
     "swatches": [
@@ -54,7 +56,9 @@
       }
     ],
     "name": "Wind Anorak - Sport - Men's",
-    "price": "$149.00"
+    "price": "$149.00",
+    "shop": "shop_womens",
+    "ID": 1
   },
   {
     "swatches": [
@@ -70,7 +74,9 @@
       }
     ],
     "name": "Tour Shirt - Floral - Women's",
-    "price": "$69.00"
+    "price": "$69.00",
+    "shop": "shop_womens",
+    "ID": 2
   },
   {
     "swatches": [
@@ -91,7 +97,9 @@
       }
     ],
     "name": "Bandana - Print",
-    "price": "$18.00"
+    "price": "$18.00",
+    "shop": "shop_womens",
+    "ID": 3
   },
   {
     "swatches": [
@@ -117,7 +125,9 @@
       }
     ],
     "name": "Ultralight Jacket - Women's",
-    "price": "$89.00"
+    "price": "$89.00",
+    "shop": "shop_womens",
+    "ID": 4
   },
   {
     "swatches": [
@@ -128,7 +138,9 @@
       }
     ],
     "name": "Topo Designs x Danner Trail 2650 - Women's",
-    "price": "$159.95"
+    "price": "$159.95",
+    "shop": "shop_womens",
+    "ID": 5
   },
   {
     "swatches": [
@@ -149,7 +161,9 @@
       }
     ],
     "name": "Mountain Shirt - Lightweight - Women's",
-    "price": "$89.00"
+    "price": "$89.00",
+    "shop": "shop_womens",
+    "ID": 6
   },
   {
     "swatches": [
@@ -175,7 +189,9 @@
       }
     ],
     "name": "Wind Jacket - Sport - Women's",
-    "price": "$129.00"
+    "price": "$129.00",
+    "shop": "shop_womens",
+    "ID": 7
   },
   {
     "swatches": [
@@ -191,7 +207,9 @@
       }
     ],
     "name": "Tour Shirt - Floral - Women's",
-    "price": "$69.00"
+    "price": "$69.00",
+    "shop": "shop_womens",
+    "ID": 8
   },
   {
     "swatches": [
@@ -207,7 +225,9 @@
       }
     ],
     "name": "Sport Skirt - Women's",
-    "price": "$89.00"
+    "price": "$89.00",
+    "shop": "shop_womens",
+    "ID": 9
   },
   {
     "swatches": [
@@ -233,7 +253,9 @@
       }
     ],
     "name": "Global Hat",
-    "price": "$32.00"
+    "price": "$32.00",
+    "shop": "shop_womens",
+    "ID": 10
   },
   {
     "swatches": [
@@ -259,7 +281,9 @@
       }
     ],
     "name": "Tech Tank - Women's",
-    "price": "$89.00"
+    "price": "$89.00",
+    "shop": "shop_womens",
+    "ID": 11
   },
   {
     "swatches": [
@@ -285,7 +309,9 @@
       }
     ],
     "name": "Tech Shirt Popover - Women's",
-    "price": "$119.00"
+    "price": "$119.00",
+    "shop": "shop_womens",
+    "ID": 12
   },
   {
     "swatches": [
@@ -301,7 +327,9 @@
       }
     ],
     "name": "Road Shirt - Women's",
-    "price": "$69.00"
+    "price": "$69.00",
+    "shop": "shop_womens",
+    "ID": 13
   },
   {
     "swatches": [
@@ -322,7 +350,9 @@
       }
     ],
     "name": "Coverall - Women's",
-    "price": "$189.00"
+    "price": "$189.00",
+    "shop": "shop_womens",
+    "ID": 14
   },
   {
     "swatches": [
@@ -353,7 +383,9 @@
       }
     ],
     "name": "Nylon Camp Hat",
-    "price": "$32.00"
+    "price": "$32.00",
+    "shop": "shop_womens",
+    "ID": 15
   },
   {
     "swatches": [
@@ -374,7 +406,9 @@
       }
     ],
     "name": "Tech Trench 3L - Women's",
-    "price": "$249.00"
+    "price": "$249.00",
+    "shop": "shop_womens",
+    "ID": 16
   },
   {
     "swatches": [
@@ -390,7 +424,9 @@
       }
     ],
     "name": "Boulder Pants - Women's",
-    "price": "$89.00"
+    "price": "$89.00",
+    "shop": "shop_womens",
+    "ID": 17
   },
   {
     "swatches": [
@@ -406,7 +442,9 @@
       }
     ],
     "name": "Subalpine Fleece - Women's",
-    "price": "$189.00"
+    "price": "$189.00",
+    "shop": "shop_womens",
+    "ID": 18
   },
   {
     "swatches": [
@@ -432,7 +470,9 @@
       }
     ],
     "name": "River Shorts - Women's",
-    "price": "$79.00"
+    "price": "$79.00",
+    "shop": "shop_womens",
+    "ID": 19
   },
   {
     "swatches": [
@@ -453,7 +493,9 @@
       }
     ],
     "name": "Bandana - Print",
-    "price": "$18.00"
+    "price": "$18.00",
+    "shop": "shop_womens",
+    "ID": 20
   },
   {
     "swatches": [
@@ -469,7 +511,9 @@
       }
     ],
     "name": "Sherpa Jacket - Women's",
-    "price": "$149.00"
+    "price": "$149.00",
+    "shop": "shop_womens",
+    "ID": 21
   },
   {
     "swatches": [
@@ -495,7 +539,9 @@
       }
     ],
     "name": "Sport Socks",
-    "price": "$15.00"
+    "price": "$15.00",
+    "shop": "shop_womens",
+    "ID": 22
   },
   {
     "swatches": [
@@ -511,7 +557,9 @@
       }
     ],
     "name": "Dirt Shirt - Women's",
-    "price": "$89.00"
+    "price": "$89.00",
+    "shop": "shop_womens",
+    "ID": 23
   },
   {
     "swatches": [
@@ -532,7 +580,9 @@
       }
     ],
     "name": "Tech Pants - Women's",
-    "price": "$119.00"
+    "price": "$119.00",
+    "shop": "shop_womens",
+    "ID": 24
   },
   {
     "swatches": [
@@ -548,7 +598,9 @@
       }
     ],
     "name": "Sport Hat",
-    "price": "$32.00"
+    "price": "$32.00",
+    "shop": "shop_womens",
+    "ID": 25
   },
   {
     "swatches": [
@@ -564,7 +616,9 @@
       }
     ],
     "name": "Climber Tee - Women's",
-    "price": "$36.00"
+    "price": "$36.00",
+    "shop": "shop_womens",
+    "ID": 26
   },
   {
     "swatches": [
@@ -590,7 +644,9 @@
       }
     ],
     "name": "Global Shorts - Women's",
-    "price": "$59.00"
+    "price": "$59.00",
+    "shop": "shop_womens",
+    "ID": 27
   },
   {
     "swatches": [
@@ -616,7 +672,9 @@
       }
     ],
     "name": "Classic Tee - Women's",
-    "price": "$36.00"
+    "price": "$36.00",
+    "shop": "shop_womens",
+    "ID": 28
   },
   {
     "swatches": [
@@ -637,7 +695,9 @@
       }
     ],
     "name": "Sun Tee - Women's",
-    "price": "$36.00"
+    "price": "$36.00",
+    "shop": "shop_womens",
+    "ID": 29
   },
   {
     "swatches": [
@@ -658,7 +718,9 @@
       }
     ],
     "name": "Gear Tee - Women's",
-    "price": "$36.00"
+    "price": "$36.00",
+    "shop": "shop_womens",
+    "ID": 30
   },
   {
     "swatches": [
@@ -694,7 +756,9 @@
       }
     ],
     "name": "Watch Cap",
-    "price": "$22.00"
+    "price": "$22.00",
+    "shop": "shop_womens",
+    "ID": 31
   },
   {
     "swatches": [
@@ -710,7 +774,9 @@
       }
     ],
     "name": "Wind Jacket - Women's",
-    "price": "$149.00"
+    "price": "$149.00",
+    "shop": "shop_womens",
+    "ID": 32
   },
   {
     "swatches": [
@@ -731,7 +797,9 @@
       }
     ],
     "name": "Snapback Hat",
-    "price": "$32.00"
+    "price": "$32.00",
+    "shop": "shop_womens",
+    "ID": 33
   },
   {
     "swatches": [
@@ -752,7 +820,9 @@
       }
     ],
     "name": "Big Puffer Vest - Women's",
-    "price": "$179.00"
+    "price": "$179.00",
+    "shop": "shop_womens",
+    "ID": 34
   },
   {
     "swatches": [
@@ -768,7 +838,9 @@
       }
     ],
     "name": "Mountain Shirt - Chambray - Women's",
-    "price": "$89.00"
+    "price": "$89.00",
+    "shop": "shop_womens",
+    "ID": 35
   },
   {
     "swatches": [
@@ -789,7 +861,9 @@
       }
     ],
     "name": "Oversized Shirt - Short Sleeve - Women's",
-    "price": "$29.00"
+    "price": "$29.00",
+    "shop": "shop_womens",
+    "ID": 36
   },
   {
     "swatches": [
@@ -805,7 +879,9 @@
       }
     ],
     "name": "Chore Shorts - Women's",
-    "price": "$69.00"
+    "price": "$69.00",
+    "shop": "shop_womens",
+    "ID": 37
   },
   {
     "swatches": [
@@ -831,7 +907,9 @@
       }
     ],
     "name": "Work Cap",
-    "price": "$22.00"
+    "price": "$22.00",
+    "shop": "shop_womens",
+    "ID": 38
   },
   {
     "swatches": [
@@ -847,6 +925,8 @@
       }
     ],
     "name": "Tech Turtleneck - Women's",
-    "price": "$64.00"
+    "price": "$64.00",
+    "shop": "shop_womens",
+    "ID": 39
   }
 ]

@@ -68,11 +68,13 @@ function menu_scroll() {
     let currentY = window.pageYOffset;
     let header = document.querySelector("header");
     if(header){
+    let searchForm = document.querySelector(".search");
     let header_height = header.offsetHeight;
     if(currentY<header_height)
     {
         header.classList.remove("header__mobile--onFix");
         header.classList.remove("header__pc--onFix");
+        
     }
     else
     {
@@ -84,7 +86,12 @@ function menu_scroll() {
             header.classList.remove("header__mobile--onFix")
             header.classList.add("header__pc--onFix", currentY >= header_height)
         }
-    }}
+    }
+    if(searchForm){
+        searchForm.style.top = `${header_height}px`;
+        searchForm.style.height = `calc(100vh - ${header_height}px)`;
+    }
+}
 }
 ////
 //Show menu dropdown on PC

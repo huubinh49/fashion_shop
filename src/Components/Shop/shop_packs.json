@@ -33,7 +33,9 @@
       }
     ],
     "name": "Rover Pack - Mini",
-    "price": "$69.00"
+    "price": "$69.00",
+    "shop": "shop_packs",
+    "ID": 0
   },
   {
     "swatches": [
@@ -54,7 +56,9 @@
       }
     ],
     "name": "Trail Shorts - Sport - Men's",
-    "price": "$59.00"
+    "price": "$59.00",
+    "shop": "shop_packs",
+    "ID": 1
   },
   {
     "swatches": [
@@ -80,7 +84,9 @@
       }
     ],
     "name": "Ultralight Jacket - Women's",
-    "price": "$89.00"
+    "price": "$89.00",
+    "shop": "shop_packs",
+    "ID": 2
   },
   {
     "swatches": [
@@ -106,7 +112,9 @@
       }
     ],
     "name": "Taco Bag",
-    "price": "$19.00"
+    "price": "$19.00",
+    "shop": "shop_packs",
+    "ID": 3
   },
   {
     "swatches": [
@@ -117,7 +125,9 @@
       }
     ],
     "name": "Topo Designs x So iLL Cosmos Pack",
-    "price": "$105.00"
+    "price": "$105.00",
+    "shop": "shop_packs",
+    "ID": 4
   },
   {
     "swatches": [
@@ -128,7 +138,9 @@
       }
     ],
     "name": "Topo Designs x So iLL Accessory Bag",
-    "price": "$19.00"
+    "price": "$19.00",
+    "shop": "shop_packs",
+    "ID": 5
   },
   {
     "swatches": [
@@ -139,7 +151,9 @@
       }
     ],
     "name": "Topo Designs x So iLL Chalk Bucket",
-    "price": "$49.00"
+    "price": "$49.00",
+    "shop": "shop_packs",
+    "ID": 6
   },
   {
     "swatches": [
@@ -150,7 +164,9 @@
       }
     ],
     "name": "Topo Designs x Danner Mountain Pack",
-    "price": "$189.00"
+    "price": "$189.00",
+    "shop": "shop_packs",
+    "ID": 7
   },
   {
     "swatches": [
@@ -181,7 +197,9 @@
       }
     ],
     "name": "Standard Pack",
-    "price": "$99.00"
+    "price": "$99.00",
+    "shop": "shop_packs",
+    "ID": 8
   },
   {
     "swatches": [
@@ -247,7 +265,9 @@
       }
     ],
     "name": "Rover Pack - Classic",
-    "price": "$99.00"
+    "price": "$99.00",
+    "shop": "shop_packs",
+    "ID": 9
   },
   {
     "swatches": [
@@ -258,7 +278,9 @@
       }
     ],
     "name": "Rover Pack - Premium",
-    "price": "$169.00"
+    "price": "$169.00",
+    "shop": "shop_packs",
+    "ID": 10
   },
   {
     "swatches": [
@@ -289,7 +311,9 @@
       }
     ],
     "name": "Commuter Briefcase",
-    "price": "$189.00 – $199.00"
+    "price": "$189.00 – $199.00",
+    "shop": "shop_packs",
+    "ID": 11
   },
   {
     "swatches": [
@@ -335,7 +359,9 @@
       }
     ],
     "name": "Daypack",
-    "price": "$149.00 – $179.00"
+    "price": "$149.00 – $179.00",
+    "shop": "shop_packs",
+    "ID": 12
   },
   {
     "swatches": [
@@ -361,7 +387,9 @@
       }
     ],
     "name": "Rover Pack - Tech",
-    "price": "$129.00"
+    "price": "$129.00",
+    "shop": "shop_packs",
+    "ID": 13
   },
   {
     "swatches": [
@@ -392,7 +420,9 @@
       }
     ],
     "name": "Core Pack",
-    "price": "$129.00"
+    "price": "$129.00",
+    "shop": "shop_packs",
+    "ID": 14
   },
   {
     "swatches": [
@@ -413,7 +443,9 @@
       }
     ],
     "name": "Travel Bag Roller",
-    "price": "$289.00 – $299.00"
+    "price": "$289.00 – $299.00",
+    "shop": "shop_packs",
+    "ID": 15
   },
   {
     "swatches": [
@@ -444,7 +476,9 @@
       }
     ],
     "name": "Mountain Pack",
-    "price": "$169.00"
+    "price": "$169.00",
+    "shop": "shop_packs",
+    "ID": 16
   },
   {
     "swatches": [
@@ -480,7 +514,9 @@
       }
     ],
     "name": "Rover Pack - Mini",
-    "price": "$69.00"
+    "price": "$69.00",
+    "shop": "shop_packs",
+    "ID": 17
   },
   {
     "swatches": [
@@ -501,7 +537,9 @@
       }
     ],
     "name": "Travel Bag - 40L",
-    "price": "$229.00 – $239.00"
+    "price": "$229.00 – $239.00",
+    "shop": "shop_packs",
+    "ID": 18
   },
   {
     "swatches": [
@@ -537,7 +575,9 @@
       }
     ],
     "name": "Global Briefcase",
-    "price": "$129.00 – $139.00"
+    "price": "$129.00 – $139.00",
+    "shop": "shop_packs",
+    "ID": 19
   },
   {
     "swatches": [
@@ -588,7 +628,9 @@
       }
     ],
     "name": "Klettersack",
-    "price": "$169.00 – $199.00"
+    "price": "$169.00 – $199.00",
+    "shop": "shop_packs",
+    "ID": 20
   },
   {
     "swatches": [
@@ -629,7 +671,9 @@
       }
     ],
     "name": "Accessory Bags",
-    "price": "$15.00 – $19.00"
+    "price": "$15.00 – $19.00",
+    "shop": "shop_packs",
+    "ID": 21
   },
   {
     "swatches": [
@@ -640,7 +684,9 @@
       }
     ],
     "name": "Travel Bag Roller - Premium",
-    "price": "$349.00"
+    "price": "$349.00",
+    "shop": "shop_packs",
+    "ID": 22
   },
   {
     "swatches": [
@@ -666,7 +712,9 @@
       }
     ],
     "name": "Rover Pack - Heritage",
-    "price": "$159.00 – $169.00"
+    "price": "$159.00 – $169.00",
+    "shop": "shop_packs",
+    "ID": 23
   },
   {
     "swatches": [
@@ -677,7 +725,9 @@
       }
     ],
     "name": "Topo Designs x Coors Light Quick Pack",
-    "price": "$79.00"
+    "price": "$79.00",
+    "shop": "shop_packs",
+    "ID": 24
   },
   {
     "swatches": [
@@ -713,7 +763,9 @@
       }
     ],
     "name": "Quick Pack",
-    "price": "$69.00"
+    "price": "$69.00",
+    "shop": "shop_packs",
+    "ID": 25
   },
   {
     "swatches": [
@@ -749,7 +801,9 @@
       }
     ],
     "name": "Y-Pack",
-    "price": "$79.00"
+    "price": "$79.00",
+    "shop": "shop_packs",
+    "ID": 26
   },
   {
     "swatches": [
@@ -800,7 +854,9 @@
       }
     ],
     "name": "Dopp Kit",
-    "price": "$34.00"
+    "price": "$34.00",
+    "shop": "shop_packs",
+    "ID": 27
   },
   {
     "swatches": [
@@ -811,7 +867,9 @@
       }
     ],
     "name": "Topo Designs x Coors Light Light Pack",
-    "price": "$79.00"
+    "price": "$79.00",
+    "shop": "shop_packs",
+    "ID": 28
   },
   {
     "swatches": [
@@ -837,7 +895,9 @@
       }
     ],
     "name": "Camera Cube",
-    "price": "$59.00"
+    "price": "$59.00",
+    "shop": "shop_packs",
+    "ID": 29
   },
   {
     "swatches": [
@@ -878,7 +938,9 @@
       }
     ],
     "name": "Mini Quick Pack",
-    "price": "$49.00"
+    "price": "$49.00",
+    "shop": "shop_packs",
+    "ID": 30
   },
   {
     "swatches": [
@@ -899,7 +961,9 @@
       }
     ],
     "name": "Dopp Kit - Heritage",
-    "price": "$49.00"
+    "price": "$49.00",
+    "shop": "shop_packs",
+    "ID": 31
   },
   {
     "swatches": [
@@ -930,7 +994,9 @@
       }
     ],
     "name": "Smash Pack",
-    "price": "$69.00"
+    "price": "$69.00",
+    "shop": "shop_packs",
+    "ID": 32
   },
   {
     "swatches": [
@@ -951,7 +1017,9 @@
       }
     ],
     "name": "Bike Bag",
-    "price": "$49.00"
+    "price": "$49.00",
+    "shop": "shop_packs",
+    "ID": 33
   },
   {
     "swatches": [
@@ -972,7 +1040,9 @@
       }
     ],
     "name": "Travel Bag - 30L",
-    "price": "$189.00 – $199.00"
+    "price": "$189.00 – $199.00",
+    "shop": "shop_packs",
+    "ID": 34
   },
   {
     "swatches": [
@@ -1008,7 +1078,9 @@
       }
     ],
     "name": "Global Briefcase 3-Day",
-    "price": "$159.00 – $169.00"
+    "price": "$159.00 – $169.00",
+    "shop": "shop_packs",
+    "ID": 35
   },
   {
     "swatches": [
@@ -1064,7 +1136,9 @@
       }
     ],
     "name": "Light Pack",
-    "price": "$69.00"
+    "price": "$69.00",
+    "shop": "shop_packs",
+    "ID": 36
   },
   {
     "swatches": [
@@ -1085,7 +1159,9 @@
       }
     ],
     "name": "Pack Bag - 10L",
-    "price": "$24.00"
+    "price": "$24.00",
+    "shop": "shop_packs",
+    "ID": 37
   },
   {
     "swatches": [
@@ -1096,7 +1172,9 @@
       }
     ],
     "name": "Global Briefcase - Premium",
-    "price": "$179.00"
+    "price": "$179.00",
+    "shop": "shop_packs",
+    "ID": 38
   },
   {
     "swatches": [
@@ -1117,6 +1195,8 @@
       }
     ],
     "name": "Trip Pack",
-    "price": "$89.00 – $99.00"
+    "price": "$89.00 – $99.00",
+    "shop": "shop_packs",
+    "ID": 39
   }
 ]

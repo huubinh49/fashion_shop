@@ -1,9 +1,0 @@
-"homepage":"http://huubinh49.github.io/fashion_shop",
-
-
-
-
-,
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"

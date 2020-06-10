@@ -33,7 +33,9 @@
       }
     ],
     "name": "Rover Pack - Mini",
-    "price": "$69.00"
+    "price": "$69.00",
+    "shop": "shop_accessories",
+    "ID": 0
   },
   {
     "swatches": [
@@ -54,7 +56,9 @@
       }
     ],
     "name": "Trail Shorts - Sport - Men's",
-    "price": "$59.00"
+    "price": "$59.00",
+    "shop": "shop_accessories",
+    "ID": 1
   },
   {
     "swatches": [
@@ -80,7 +84,9 @@
       }
     ],
     "name": "Ultralight Jacket - Women's",
-    "price": "$89.00"
+    "price": "$89.00",
+    "shop": "shop_accessories",
+    "ID": 2
   },
   {
     "swatches": [
@@ -106,7 +112,9 @@
       }
     ],
     "name": "Taco Bag",
-    "price": "$19.00"
+    "price": "$19.00",
+    "shop": "shop_accessories",
+    "ID": 3
   },
   {
     "swatches": [
@@ -117,7 +125,9 @@
       }
     ],
     "name": "Topo Designs x So iLL Accessory Bag",
-    "price": "$19.00"
+    "price": "$19.00",
+    "shop": "shop_accessories",
+    "ID": 4
   },
   {
     "swatches": [
@@ -128,7 +138,9 @@
       }
     ],
     "name": "Topo Designs x So iLL Climbing Shoe",
-    "price": "$149.00"
+    "price": "$149.00",
+    "shop": "shop_accessories",
+    "ID": 5
   },
   {
     "swatches": [
@@ -139,7 +151,9 @@
       }
     ],
     "name": "Topo Designs x Danner Trail 2650 - Men's",
-    "price": "$159.95"
+    "price": "$159.95",
+    "shop": "shop_accessories",
+    "ID": 6
   },
   {
     "swatches": [
@@ -150,7 +164,9 @@
       }
     ],
     "name": "Topo Designs x Danner Trail 2650 - Women's",
-    "price": "$159.95"
+    "price": "$159.95",
+    "shop": "shop_accessories",
+    "ID": 7
   },
   {
     "swatches": [
@@ -176,7 +192,9 @@
       }
     ],
     "name": "Face Mask",
-    "price": "$16.00"
+    "price": "$16.00",
+    "shop": "shop_accessories",
+    "ID": 8
   },
   {
     "swatches": [
@@ -197,7 +215,9 @@
       }
     ],
     "name": "Bandana - Print",
-    "price": "$18.00"
+    "price": "$18.00",
+    "shop": "shop_accessories",
+    "ID": 9
   },
   {
     "swatches": [
@@ -223,7 +243,9 @@
       }
     ],
     "name": "Global Hat",
-    "price": "$32.00"
+    "price": "$32.00",
+    "shop": "shop_accessories",
+    "ID": 10
   },
   {
     "swatches": [
@@ -264,7 +286,9 @@
       }
     ],
     "name": "Accessory Bags",
-    "price": "$15.00 – $19.00"
+    "price": "$15.00 – $19.00",
+    "shop": "shop_accessories",
+    "ID": 11
   },
   {
     "swatches": [
@@ -295,7 +319,9 @@
       }
     ],
     "name": "Web Belt - 1.5",
-    "price": "$39.00"
+    "price": "$39.00",
+    "shop": "shop_accessories",
+    "ID": 12
   },
   {
     "swatches": [
@@ -346,7 +372,9 @@
       }
     ],
     "name": "Dopp Kit",
-    "price": "$34.00"
+    "price": "$34.00",
+    "shop": "shop_accessories",
+    "ID": 13
   },
   {
     "swatches": [
@@ -367,7 +395,9 @@
       }
     ],
     "name": "Pack Bag - 10L",
-    "price": "$24.00"
+    "price": "$24.00",
+    "shop": "shop_accessories",
+    "ID": 14
   },
   {
     "swatches": [
@@ -388,7 +418,9 @@
       }
     ],
     "name": "Global Case",
-    "price": "$49.00"
+    "price": "$49.00",
+    "shop": "shop_accessories",
+    "ID": 15
   },
   {
     "swatches": [
@@ -414,7 +446,9 @@
       }
     ],
     "name": "Camera Cube",
-    "price": "$59.00"
+    "price": "$59.00",
+    "shop": "shop_accessories",
+    "ID": 16
   },
   {
     "swatches": [
@@ -445,7 +479,9 @@
       }
     ],
     "name": "Nylon Camp Hat",
-    "price": "$32.00"
+    "price": "$32.00",
+    "shop": "shop_accessories",
+    "ID": 17
   },
   {
     "swatches": [
@@ -471,7 +507,9 @@
       }
     ],
     "name": "Taco Bag",
-    "price": "$19.00"
+    "price": "$19.00",
+    "shop": "shop_accessories",
+    "ID": 18
   },
   {
     "swatches": [
@@ -497,7 +535,9 @@
       }
     ],
     "name": "Square Bag",
-    "price": "$19.00"
+    "price": "$19.00",
+    "shop": "shop_accessories",
+    "ID": 19
   },
   {
     "swatches": [
@@ -518,7 +558,9 @@
       }
     ],
     "name": "Laptop Sleeve",
-    "price": "$35.00"
+    "price": "$35.00",
+    "shop": "shop_accessories",
+    "ID": 20
   },
   {
     "swatches": [
@@ -544,7 +586,9 @@
       }
     ],
     "name": "Camera Strap",
-    "price": "$29.00"
+    "price": "$29.00",
+    "shop": "shop_accessories",
+    "ID": 21
   },
   {
     "swatches": [
@@ -555,7 +599,9 @@
       }
     ],
     "name": "Dopp Kit - Premium",
-    "price": "$49.00"
+    "price": "$49.00",
+    "shop": "shop_accessories",
+    "ID": 22
   },
   {
     "swatches": [
@@ -576,7 +622,9 @@
       }
     ],
     "name": "Pack Bag - 5L",
-    "price": "$19.00"
+    "price": "$19.00",
+    "shop": "shop_accessories",
+    "ID": 23
   },
   {
     "swatches": [
@@ -587,7 +635,9 @@
       }
     ],
     "name": "Accessory Bags - Premium",
-    "price": "$29.00"
+    "price": "$29.00",
+    "shop": "shop_accessories",
+    "ID": 24
   },
   {
     "swatches": [
@@ -613,7 +663,9 @@
       }
     ],
     "name": "Sport Socks",
-    "price": "$15.00"
+    "price": "$15.00",
+    "shop": "shop_accessories",
+    "ID": 25
   },
   {
     "swatches": [
@@ -639,7 +691,9 @@
       }
     ],
     "name": "Key Clip",
-    "price": "$12.00"
+    "price": "$12.00",
+    "shop": "shop_accessories",
+    "ID": 26
   },
   {
     "swatches": [
@@ -660,7 +714,9 @@
       }
     ],
     "name": "Topo Designs x MiiR Water Bottle",
-    "price": "$32.95"
+    "price": "$32.95",
+    "shop": "shop_accessories",
+    "ID": 27
   },
   {
     "swatches": [
@@ -671,7 +727,9 @@
       }
     ],
     "name": "Accessory Bags - Heritage",
-    "price": "$15.00 – $19.00"
+    "price": "$15.00 – $19.00",
+    "shop": "shop_accessories",
+    "ID": 28
   },
   {
     "swatches": [
@@ -702,16 +760,22 @@
       }
     ],
     "name": "Velcro Wallet",
-    "price": "$25.00"
+    "price": "$25.00",
+    "shop": "shop_accessories",
+    "ID": 29
   },
   {
-    "swatches":[{
-      "img": "//cdn.shopify.com/s/files/1/0277/0693/products/TD_x_MiiR_TravelTumbler_1024x1024.jpg?v=1566492373",
+    "swatches": [
+      {
+        "img": "//cdn.shopify.com/s/files/1/0277/0693/products/TD_x_MiiR_TravelTumbler_1024x1024.jpg?v=1566492373",
         "color": "//cdn.shopify.com/s/files/1/0277/0693/t/119/assets/white_20x20.png?v=14252705173538808448",
         "color_name": "white"
-    }],
+      }
+    ],
     "name": "Topo Designs x MiiR Travel Tumbler",
-    "price": "$24.95"
+    "price": "$24.95",
+    "shop": "shop_accessories",
+    "ID": 30
   },
   {
     "swatches": [
@@ -732,7 +796,9 @@
       }
     ],
     "name": "Pack Bag - 10L Cube",
-    "price": "$24.00"
+    "price": "$24.00",
+    "shop": "shop_accessories",
+    "ID": 31
   },
   {
     "swatches": [
@@ -768,7 +834,9 @@
       }
     ],
     "name": "Watch Cap",
-    "price": "$22.00"
+    "price": "$22.00",
+    "shop": "shop_accessories",
+    "ID": 32
   },
   {
     "swatches": [
@@ -784,7 +852,9 @@
       }
     ],
     "name": "Sport Hat",
-    "price": "$32.00"
+    "price": "$32.00",
+    "shop": "shop_accessories",
+    "ID": 33
   },
   {
     "swatches": [
@@ -805,7 +875,9 @@
       }
     ],
     "name": "Dopp Kit - Heritage",
-    "price": "$49.00"
+    "price": "$49.00",
+    "shop": "shop_accessories",
+    "ID": 34
   },
   {
     "swatches": [
@@ -846,7 +918,9 @@
       }
     ],
     "name": "Accessory Shoulder Bag",
-    "price": "$36.00"
+    "price": "$36.00",
+    "shop": "shop_accessories",
+    "ID": 35
   },
   {
     "swatches": [
@@ -867,7 +941,9 @@
       }
     ],
     "name": "Snapback Hat",
-    "price": "$32.00"
+    "price": "$32.00",
+    "shop": "shop_accessories",
+    "ID": 36
   },
   {
     "swatches": [
@@ -893,7 +969,9 @@
       }
     ],
     "name": "Bi-Fold Wallet",
-    "price": "$18.00"
+    "price": "$18.00",
+    "shop": "shop_accessories",
+    "ID": 37
   },
   {
     "swatches": [
@@ -919,7 +997,9 @@
       }
     ],
     "name": "Work Cap",
-    "price": "$22.00"
+    "price": "$22.00",
+    "shop": "shop_accessories",
+    "ID": 38
   },
   {
     "swatches": [
@@ -950,6 +1030,8 @@
       }
     ],
     "name": "Nylon Ball Cap",
-    "price": "$32.00"
+    "price": "$32.00",
+    "shop": "shop_accessories",
+    "ID": 39
   }
 ]

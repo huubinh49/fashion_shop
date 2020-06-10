@@ -5,6 +5,7 @@ import Shop from '../Components/Shop/Shop'
 import ProductDetail from '../Components/ProductDetail/ProductDetail'
 import LookBook from "../Components/Lookbook/LookBook"
 import LoadingComponent from '../Components/HOC/Loadding'
+
 export default class MyRoute extends Component {
     render() {
         return (
