@@ -18,7 +18,7 @@ const cartReducer = (state= initialState, action)=>{
             let pos = new_cart.findIndex(item => item.name===action.product.name&&item.color===action.product.color&&item.size===action.product.size);
             if(pos !==-1){
                 let new_product = {...new_cart[pos]};
-                new_product.quantity=new_cart[pos].quantity+action.product.quantity;   
+                new_product.quantity=parseInt(new_cart[pos].quantity)+parseInt(action.product.quantity);   
                 new_cart[pos] = new_product;
             }
             else

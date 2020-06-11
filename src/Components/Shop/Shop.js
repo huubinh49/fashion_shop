@@ -11,14 +11,13 @@ export class Shop extends Component {
     }
     componentDidMount = () =>{
       
-      if(!this.props.products){  
+      if(this.props.match.params.slug!=="search_result"){  
         var data = require(`./${this.props.match.params.slug}.json`)
         this.setState({products: data});
       }
       else{
         this.setState({products: this.props.products});
       }
-      console.log(this.props)
         setTimeout(()=>this.props.doneLoading(),2000);
     }
     render() {

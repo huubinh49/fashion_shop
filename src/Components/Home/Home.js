@@ -65,7 +65,7 @@ export default class Home extends Component {
                   </div>
                   <div className="shops_content">
                     <h2>New packs &amp; bags</h2>
-                    <div className="btn btn-danger">Shop bags</div>
+                    <a href="/shop/shop_packs" className="btn btn-danger">Shop bags</a>
                   </div>
                 </div>
                 <div className="shops shop_men">

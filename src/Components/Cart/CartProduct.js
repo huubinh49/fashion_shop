@@ -30,7 +30,7 @@ class CartProduct extends Component {
               max={21}
               min={1}
               onChange={(event)=> this.props.update_cart({...this.props.product, quantity:event.target.value})}
-              defaultValue = {this.props.product.quantity}
+              value = {this.props.product.quantity}
             />
             <strong className="product__price">${parseFloat(this.props.product.price.split("").slice(1).join(""))*this.props.product.quantity}</strong>
           </div>
