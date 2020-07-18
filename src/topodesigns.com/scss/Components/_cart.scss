@@ -147,29 +147,36 @@
     display: flex;
     flex-flow: column;
     width: 50%;
-    a {
+    div {
         display: flex;
         justify-content: space-between;
-        color: black;
+        a{
+            color: black;
+            font-weight: bold;
+            font-size: 1.2em;
+            &:hover {
+                
+                text-decoration: none;
+                color: rgb(83, 6, 128);
+            }
+        }
 
         i {
+            cursor: pointer;
             color: rgb(199, 167, 87);
+            &:hover {
+                color: rgb(245, 51, 51);
+            }
         }
 
-        i:hover {
-            color: rgb(245, 51, 51);
-        }
+        
     }
 
     .product__name {
         font-size: 1em;
     }
 
-    a:hover {
-        text-decoration: none;
-        color: rgb(199, 167, 87);
-
-    }
+   
 }
 
 

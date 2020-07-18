@@ -1,16 +1,6 @@
 .plus--rotate{
-    animation: rotate 0.5s ease-out 0s 1 normal forwards;
+    transform: rotateZ(45deg) !important;
 }
 .plus--rotate--reverse{
-    animation: rotate 0.5s ease-out 0s 1 reverse forwards;
-}
-
-
-@keyframes rotate{
-    from{
-        transform: rotateZ(0deg);
-    }
-    to{
-        transform: rotateZ(1025deg);
-    }
+    transform: rotateZ(360deg) !important;
 }

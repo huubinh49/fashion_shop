@@ -14,10 +14,10 @@ class CartProduct extends Component {
           />
         </div>
         <div className="product__info">
-          <a href ="/" onClick = {(event)=> event.preventDefault()}>
-            <h3 className="product__name">{this.props.product.name}</h3>
+          <div >
+            <a href={`/product/${this.props.product["shop"]}/${this.props.product["name"].split("").filter(item => item !== " ").join("")}/${this.props.product["ID"]}`} className="product__name">{this.props.product.name}</a>
             <i className="fa fa-times" aria-hidden="true" onClick={()=>this.props.delete_cart(this.props.product)}/>
-          </a>
+          </div>
           <div className="product__info--detail">
             <strong className="product__info-text">{this.props.product.color.toUpperCase()}</strong>
         <strong className="product__info-text">{this.props.product.size}</strong>

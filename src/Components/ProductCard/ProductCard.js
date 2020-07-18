@@ -39,8 +39,8 @@ export default class ProductCard extends Component {
                 <div className="badge__wrapper">
                   <strong className="card__badge">NEW</strong>
                 </div>
-                <a href={`/product/${this.props.shop}/${this.props.product["name"].split("").filter(item => item !== " ").join("")}/${this.props.ID}`} className="img__wrapper">
-                  <img alt="product" className="card__img" src={`/img/img_${this.props.shop}/asset/${convertName(this.state.product_img)}`} />
+                <a href={`/product/${this.props.product["shop"]}/${this.props.product["name"].split("").filter(item => item !== " ").join("")}/${this.props.product["ID"]}`} className="img__wrapper">
+                  <img alt="product" className="card__img" src={`/img/img_${this.props.product["shop"]}/asset/${convertName(this.state.product_img)}`} />
                 </a>
                 <div className="info__wrapper">
                   <ul className="color__wrapper">
@@ -53,7 +53,7 @@ export default class ProductCard extends Component {
                               <li key={index} onClick={()=>this.changeWatch(item["color_name"])} style={{
                                 //`${this.props.product["name"]}_${item["color_name"]}_color.png`
                                 //techshirtpopover-women's_khaki_color.png
-                                backgroundImage:`url(/img/img_${this.props.shop}/asset/${convertName(`${this.props.product["name"]}_${item["color_name"]}_color.png`)})`,
+                                backgroundImage:`url(/img/img_${this.props.product["shop"]}/asset/${convertName(`${this.props.product["name"]}_${item["color_name"]}_color.png`)})`,
                                 backgroundPosition:"center",
                                 backgroundSize : "cover"
                                 }}>
@@ -63,7 +63,7 @@ export default class ProductCard extends Component {
                       )
                     })}
                   </ul>
-                  <a href={`/product/${this.props.shop}/${convertName(this.props.product["name"])}`} className="card__title">
+                  <a href={`/product/${this.props.product["shop"]}/${convertName(this.props.product["name"])}`} className="card__title">
                     <p>{this.props.product["name"]}</p>
                   </a>
                   <strong className="card__price">{this.props.product["price"]}</strong>

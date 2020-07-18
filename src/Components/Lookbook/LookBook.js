@@ -18,8 +18,8 @@ export default function LookBook(props) {
               <div className="bg_img">
                 <img src="/img/img_lookbooks/model1.webp" alt=" model"/>
                 <div className="outfit">
-                  <strong><a href="/">Coverall</a></strong>
-                  <strong><a href="/">Mini Quick Pack</a></strong>
+                  <strong><em href="/">Coverall</em></strong>
+                  <strong><em href="/">Mini Quick Pack</em></strong>
                 </div>
               </div>
             </div>
@@ -34,8 +34,8 @@ export default function LookBook(props) {
                     <div className="bg_img bg_img--notFull">
                       <img alt = " model"src="/img/img_lookbooks/model2.webp" />
                       <div className="outfit">
-                        <strong><a href="/">Coverall</a></strong>
-                        <strong><a href="/">Mini Quick Pack</a></strong>
+                        <strong><em href="/">Coverall</em></strong>
+                        <strong><em href="/">Mini Quick Pack</em></strong>
                       </div>
                     </div>
                   </div>
@@ -47,8 +47,8 @@ export default function LookBook(props) {
                     <div className="bg_img">
                       <img alt = " model"src="/img/img_lookbooks/model3.webp" />
                       <div className="outfit">
-                        <strong><a href="/">Coverall</a></strong>
-                        <strong><a href="/">Mini Quick Pack</a></strong>
+                        <strong><em href="/">Coverall</em></strong>
+                        <strong><em href="/">Mini Quick Pack</em></strong>
                       </div>
                     </div>
                   </div>
@@ -62,8 +62,8 @@ export default function LookBook(props) {
                     <div className="bg_img">
                       <img alt = " model"src="/img/img_lookbooks/model4.webp" />
                       <div className="outfit">
-                        <strong><a href="/">Coverall</a></strong>
-                        <strong><a href="/">Mini Quick Pack</a></strong>
+                        <strong><em href="/">Coverall</em></strong>
+                        <strong><em href="/">Mini Quick Pack</em></strong>
                       </div>
                     </div>
                   </div>
@@ -75,8 +75,8 @@ export default function LookBook(props) {
                     <div className="bg_img bg_img--notFull">
                       <img alt = " model"src="/img/img_lookbooks/model5.webp" />
                       <div className="outfit">
-                        <strong><a href="/">Coverall</a></strong>
-                        <strong><a href="/">Mini Quick Pack</a></strong>
+                        <strong><em href="/">Coverall</em></strong>
+                        <strong><em href="/">Mini Quick Pack</em></strong>
                       </div>
                     </div>
                   </div>
@@ -95,8 +95,8 @@ export default function LookBook(props) {
               <div className="bg_img">
                 <img src="/img/img_lookbooks/model1.webp" alt=" model"/>
                 <div className="outfit">
-                  <strong><a href="/">Coverall</a></strong>
-                  <strong><a href="/">Mini Quick Pack</a></strong>
+                  <strong><em href="/">Coverall</em></strong>
+                  <strong><em href="/">Mini Quick Pack</em></strong>
                 </div>
               </div>
             </div>
@@ -111,8 +111,8 @@ export default function LookBook(props) {
                     <div className="bg_img bg_img--notFull">
                       <img alt = " model"src="/img/img_lookbooks/model2.webp" />
                       <div className="outfit">
-                        <strong><a href="/">Coverall</a></strong>
-                        <strong><a href="/">Mini Quick Pack</a></strong>
+                        <strong><em href="/">Coverall</em></strong>
+                        <strong><em href="/">Mini Quick Pack</em></strong>
                       </div>
                     </div>
                   </div>
@@ -124,8 +124,8 @@ export default function LookBook(props) {
                     <div className="bg_img">
                       <img alt = " model"src="/img/img_lookbooks/model3.webp" />
                       <div className="outfit">
-                        <strong><a href="/">Coverall</a></strong>
-                        <strong><a href="/">Mini Quick Pack</a></strong>
+                        <strong><em href="/">Coverall</em></strong>
+                        <strong><em href="/">Mini Quick Pack</em></strong>
                       </div>
                     </div>
                   </div>
@@ -139,8 +139,8 @@ export default function LookBook(props) {
                     <div className="bg_img">
                       <img alt = " model"src="/img/img_lookbooks/model4.webp" />
                       <div className="outfit">
-                        <strong><a href="/">Coverall</a></strong>
-                        <strong><a href="/">Mini Quick Pack</a></strong>
+                        <strong><em href="/">Coverall</em></strong>
+                        <strong><em href="/">Mini Quick Pack</em></strong>
                       </div>
                     </div>
                   </div>
@@ -152,8 +152,8 @@ export default function LookBook(props) {
                     <div className="bg_img bg_img--notFull">
                       <img alt = " model"src="/img/img_lookbooks/model5.webp" />
                       <div className="outfit">
-                        <strong><a href="/">Coverall</a></strong>
-                        <strong><a href="/">Mini Quick Pack</a></strong>
+                        <strong><em href="/">Coverall</em></strong>
+                        <strong><em href="/">Mini Quick Pack</em></strong>
                       </div>
                     </div>
                   </div>
@@ -172,8 +172,8 @@ export default function LookBook(props) {
               <div className="bg_img">
                 <img src="/img/img_lookbooks/model1.webp" alt=" model"/>
                 <div className="outfit">
-                  <strong><a href="/">Coverall</a></strong>
-                  <strong><a href="/">Mini Quick Pack</a></strong>
+                  <strong><em href="/">Coverall</em></strong>
+                  <strong><em href="/">Mini Quick Pack</em></strong>
                 </div>
               </div>
             </div>
@@ -188,8 +188,8 @@ export default function LookBook(props) {
                     <div className="bg_img bg_img--notFull">
                       <img alt = " model"src="/img/img_lookbooks/model2.webp" />
                       <div className="outfit">
-                        <strong><a href="/">Coverall</a></strong>
-                        <strong><a href="/">Mini Quick Pack</a></strong>
+                        <strong><em href="/">Coverall</em></strong>
+                        <strong><em href="/">Mini Quick Pack</em></strong>
                       </div>
                     </div>
                   </div>
@@ -201,8 +201,8 @@ export default function LookBook(props) {
                     <div className="bg_img">
                       <img alt = " model"src="/img/img_lookbooks/model3.webp" />
                       <div className="outfit">
-                        <strong><a href="/">Coverall</a></strong>
-                        <strong><a href="/">Mini Quick Pack</a></strong>
+                        <strong><em href="/">Coverall</em></strong>
+                        <strong><em href="/">Mini Quick Pack</em></strong>
                       </div>
                     </div>
                   </div>
@@ -216,8 +216,8 @@ export default function LookBook(props) {
                     <div className="bg_img">
                       <img alt = " model"src="/img/img_lookbooks/model4.webp" />
                       <div className="outfit">
-                        <strong><a href="/">Coverall</a></strong>
-                        <strong><a href="/">Mini Quick Pack</a></strong>
+                        <strong><em href="/">Coverall</em></strong>
+                        <strong><em href="/">Mini Quick Pack</em></strong>
                       </div>
                     </div>
                   </div>
@@ -229,8 +229,8 @@ export default function LookBook(props) {
                     <div className="bg_img bg_img--notFull">
                       <img alt = " model"src="/img/img_lookbooks/model5.webp" />
                       <div className="outfit">
-                        <strong><a href="/">Coverall</a></strong>
-                        <strong><a href="/">Mini Quick Pack</a></strong>
+                        <strong><em href="/">Coverall</em></strong>
+                        <strong><em href="/">Mini Quick Pack</em></strong>
                       </div>
                     </div>
                   </div>

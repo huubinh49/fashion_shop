@@ -29,6 +29,7 @@
         flex-flow: row wrap;
         margin-top: 10px;
         .color {
+            cursor: pointer;
             position: relative;
             height: 20px;
             width: 20px;
@@ -77,6 +78,7 @@
         margin-top: 5px;
         display: flex;
         .size {
+            cursor: pointer;
             margin-right: 5px;
             input {
                 display: none;
@@ -151,23 +153,14 @@
                 }
             }
             .plus {
-                position: relative;
-                width: 12px;
-                height: 2px;
-                background-color: gray;
+                display: block;
+                margin-right: 5px;
+                padding: 0;
                 
-            }
-            .plus::before {
-                content: "";
-                position: absolute;
-                
-                width: 12px;
-                height: 2px;
-                transform-origin: center center;
-                
-                top: 0px;
-                transform: rotateZ(90deg);
-                background-color: gray;
+                transform: rotateZ(45deg);
+                color: gray;
+                font-size:1.2em;
+                transition: 1s;
             }
             .accordian__toggle:hover {
                 text-decoration: none;

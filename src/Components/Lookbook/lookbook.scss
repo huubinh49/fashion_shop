@@ -8,7 +8,7 @@
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
     position: relative;
-    background-image: url("wall-bricks-220182.jpg");
+    background-image: url("background.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -22,19 +22,14 @@
         
         
         h1{
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
             text-transform: uppercase;
             font-size: 3em;
             text-align: center;
             color: white;
             font-weight: 500;
+            font-family: 'Courier New', Courier, monospace;
         }    
-    }
-    strong{
-        color:white;
-        a {
-            color:white;
-        }
     }
     
     
@@ -42,8 +37,16 @@
         display: flex;
         flex-flow: column;
         position: absolute;
-        top:0;
-        left: 0;
+        top:10px;
+        left: 15px;
+        strong{
+            color:white;
+            em {
+                color:white;
+                
+            }
+        }
+        
     }
      
     .row{

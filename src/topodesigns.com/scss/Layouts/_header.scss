@@ -3,7 +3,7 @@
 $nav_width:100%;
 $logo_width:50px;
 $logo_margin:25px;
-$header_action_width:120px;
+$header_action_width:50px;
 $header_color : white;
 header{
     position: relative;
@@ -58,12 +58,16 @@ header{
                 
                 // Menu Dropdown
                 .dropdown__menu{
-
+                padding: 0 20px;
+                box-shadow: 0 1px 5px gray;
                 transition-duration: 0.3s;
-                    list-style-type: none;
-                    display: none;
-                    li{
-                        padding:10px 0;
+                list-style-type: none;
+                display: none;
+                    li.dropdown__item{
+                        padding: 0;
+                        display: flex;
+                        flex-flow: row;
+                        align-items: center;
                     }
                 }
 
@@ -80,6 +84,7 @@ header{
                         padding: 10px 0; 
                         ul{
                             @extend .dropdown__menu--huge;
+                            box-shadow: none;
                         }
                     }
                     .dropdown__footer{
@@ -198,9 +203,9 @@ header{
         padding:15px 0;
     }
     .header__action{
-        width: 60px !important;
+        width: 60px;
         i{
-            font-size: 1em;
+            font-size: 1.2em;
             cursor: pointer;
         }
     }
@@ -231,11 +236,10 @@ header{
     .header__action{
         padding:0;
         flex-wrap: wrap;
-        width: 120px !important;
+        width: $header_action_width;
         top:0;
         right: 50px;
         z-index: 1000;
-        width: $header_action_width;
         a{
             display: block;
         }
@@ -249,7 +253,7 @@ header{
     $nav_width:100%;
     $logo_width:50px;
     $logo_margin:25px;
-    $header_action_width:150px;
+    $header_action_width:50px;
     $header_color : white;
     header{
         //Extend position :relative on mobile
@@ -274,7 +278,7 @@ header{
             position: absolute !important;
             left: $logo_width+$logo_margin*2;
             // minus width logo and action Signin
-            width: -webkit-calc(100% - 150px - 100px) !important;
+            width: -webkit-calc(100% - 50px - 100px) !important;
             height: 100%;
 
             padding: 0;
@@ -336,7 +340,7 @@ header{
             top:0;
             right: 0;
             z-index: 100;
-            width: 120px;
+            width: $header_action_width;
             a{
                 display: block;
             }
@@ -354,8 +358,6 @@ header{
         }
     }
     .dropdown__menu--huge{
-        // Da extend dropdown_menu trong file _header.scss
-        
         .menu--huge{
             display: flex;
             flex-flow: row;

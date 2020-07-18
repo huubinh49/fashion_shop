@@ -31,7 +31,7 @@ export class Shop extends Component {
         <main className="container--96">
           <div className="row">
              {
-                 this.state.products.map((product, index )=> <ProductCard ID={index} shop={product["shop"]} product={product} />)
+                 this.state.products.map((product, index )=> <ProductCard product={product} />)
              }
           </div>
         </main>

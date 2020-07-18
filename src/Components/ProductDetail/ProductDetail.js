@@ -3,8 +3,6 @@ import * as eventSlide from "./slide_gallery";
 import { connect } from 'react-redux';
 import { addToCart } from '../../Redux/Cart/action';
 
-const {plus_rotate} = require("./news_details");
-
 function convertName(str){
   return str.toLowerCase().split("").filter(item => item!==" ").join("").replace("'","");
 }
@@ -21,6 +19,27 @@ function convertName(str){
       quantity:1
     }
   }
+  plus_rotate = (card_header)=>{
+    let my_plus = card_header.querySelector(".plus");
+    let my_status = card_header.querySelector("a");
+    // If 
+    if (my_status.classList.contains("collapsed")) {
+        my_plus
+            .classList
+            .remove("plus--rotate--reverse");
+        my_plus
+            .classList
+            .add("plus--rotate");
+            
+    } else {
+        my_plus
+            .classList
+            .remove("plus--rotate");
+        my_plus
+            .classList
+            .add("plus--rotate--reverse");
+    }
+}
   changeWatch = (color)=>{
     this.setState((state)=>({
       product_img: `${state.product["name"]}_${color}_img.jpg`,
@@ -40,7 +59,9 @@ function convertName(str){
       size:this.state.size,
       price: this.state.product["price"],
       quantity:this.state.quantity,
-      img_src : `/img/img_${this.props.match.params.shop}/asset/${convertName(this.state.product["name"])}_${convertName(this.state.color_name)}_img.jpg`
+      img_src : `/img/img_${this.props.match.params.shop}/asset/${convertName(this.state.product["name"])}_${convertName(this.state.color_name)}_img.jpg`,
+      ID: this.state.product["ID"],
+      shop:this.state.product["shop"]
     }
     this.props.add_to_cart(payload);
   }
@@ -85,7 +106,7 @@ function convertName(str){
   render=()=>(
   <main className="container--96">
     { 
-      this.props.isLoading && <div style={{width: '100vw', height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor:"white", position:"absolute", zIndex:"9999999"}}>
+      this.props.isLoading && <div style={{width: '100vw', height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor:"white",  position:"fixed", top:"0", left:"0", zIndex:"9999999"}}>
         <img src="/preloader.gif" alt="preloader" />
       </div>
     }
@@ -258,7 +279,7 @@ function convertName(str){
           <div className="card">
             <div
               onClick={(event) => {
-                plus_rotate(document.querySelector("#section1HeaderId"));
+                this.plus_rotate(document.querySelector("#section1HeaderId"));
               }}
               className="card-header"
               role="tab"
@@ -274,7 +295,7 @@ function convertName(str){
                   aria-controls="section1ContentId"
                 >
                   <h6>Description</h6>
-                  <div className="plus" />
+                  <i class="fa fa-times plus" aria-hidden="true"></i>
                 </a>
               </h5>
             </div>
@@ -302,7 +323,7 @@ function convertName(str){
           <div className="card">
             <div
               onClick={(event) => {
-                plus_rotate(document.querySelector("#section2HeaderId"));
+                this.plus_rotate(document.querySelector("#section2HeaderId"));
               }}
               className="card-header"
               role="tab"
@@ -318,7 +339,7 @@ function convertName(str){
                   aria-controls="section2ContentId"
                 >
                   <h6>Features &amp; Specs</h6>
-                  <div className="plus" />
+                  <i class="fa fa-times plus" aria-hidden="true"></i>
                 </a>
               </h5>
             </div>

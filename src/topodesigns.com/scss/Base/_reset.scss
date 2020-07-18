@@ -17,6 +17,9 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
+a:hover{
+    text-decoration: none;
+}
 #root{
     width: 100%;
 }
