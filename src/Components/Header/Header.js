@@ -77,16 +77,14 @@ class Header extends Component {
                       <strong>lookbook</strong>
                     </a>
                   </li>
-
                   <hr />
-
                 </ul>
               </nav>
 
               <div className="header__action">
                 <i className="fa fa-search" aria-hidden="true" onClick = {()=> {this.setState({showSearch:!this.state.showSearch})}}/>
                 <div className="shopping-cart" >
-                  <i onClick={()=>this.props.collapse_cart()} data-quantity = {this.props.cart.length} className="fa fa-shopping-cart" aria-hidden="true"/>
+                  <i onClick={()=>this.props.collapse_cart()} data-quantity = {this.props.cart.reduce((sum, item) => sum+parseInt(item['quantity']), 0)} className="fa fa-shopping-cart" aria-hidden="true"/>
                 </div>
               </div>
             </header>

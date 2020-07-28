@@ -11,9 +11,9 @@ const LoadingComponent = (WrappedComponent)=>{
         }
         render(){
             return (
-            <WrappedComponent {...this.props} isLoading={this.state.isLoading} doneLoading = {()=>this.LoadedContent()}/>
-        )
-            }
+                <WrappedComponent {...this.props} isLoading={this.state.isLoading} doneLoading = {()=>this.LoadedContent()}/>
+            )
+        }
     }
 }
 export default LoadingComponent;

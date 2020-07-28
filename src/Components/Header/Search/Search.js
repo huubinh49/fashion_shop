@@ -14,11 +14,11 @@ export class Search extends Component {
     }
      componentDidMount = ()=>{
         let fetchData = async ()=>{
-            const data_shop_accessories = await require(`./../../Shop/shop_accessories.json`);
-            const data_shop_news = await require(`./../../Shop/shop_news.json`);
-            const data_shop_womens = await require(`./../../Shop/shop_womens.json`);
-            const data_shop_mens = await require(`./../../Shop/shop_mens.json`);
-            const data_shop_packs = await require(`./../../Shop/shop_packs.json`);
+            const data_shop_accessories = require(`./../../Shop/shop_accessories.json`);
+            const data_shop_news = require(`./../../Shop/shop_news.json`);
+            const data_shop_womens = require(`./../../Shop/shop_womens.json`);
+            const data_shop_mens = require(`./../../Shop/shop_mens.json`);
+            const data_shop_packs = require(`./../../Shop/shop_packs.json`);
             return [...data_shop_accessories, ...data_shop_mens, ...data_shop_news, ...data_shop_packs, data_shop_womens]
           }
           
@@ -31,8 +31,6 @@ export class Search extends Component {
             ) 
      }
     search = (query)=>{
-        // console.log(this.state.data)
-        // let res  = this.state.data.filter(item => {if(item["name"]) return item["name"].includes(query); else return false})
         let res= [];
         if(query !== "")
         this.state.data.forEach(item=> {if(item["name"]&&item["name"].toLowerCase().includes(query.toLowerCase()))res.push(item)})
