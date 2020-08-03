@@ -1,23 +1,27 @@
-@import 'topodesigns.com/scss/Base/reset';  
-@import 'topodesigns.com/scss/Base/typography';
-@import 'topodesigns.com/scss/Base/animations';
-@import 'topodesigns.com/scss/Base/utilities';
+//Bootstrap
+@import 'View/scss/Vendors/bootstrap';
+@import 'View/scss/Vendors/scss/font-awesome.scss';
+//
+@import 'View/scss/Base/reset';  
+@import 'View/scss/Base/typography';
+@import 'View/scss/Base/animations';
+@import 'View/scss/Base/utilities';
 
 //Page main
-@import 'topodesigns.com/scss/Components/content';
-@import 'topodesigns.com/scss/Components/img_wraper';
-@import 'topodesigns.com/scss/Components/shops_content';
+@import 'View/scss/Components/content';
+@import 'View/scss/Components/img_wraper';
+@import 'View/scss/Components/shops_content';
 //Page shop
-@import 'topodesigns.com/scss/Components/card';
-@import 'topodesigns.com/scss/Components/banner';
+@import 'View/scss/Components/card';
+@import 'View/scss/Components/banner';
 // Page detail
-@import 'topodesigns.com/scss/Components/card--detail';
-@import 'topodesigns.com/scss/Components/slide_gallery';
+@import 'View/scss/Components/card--detail';
+@import 'View/scss/Components/slide_gallery';
 //Header Footer
-@import 'topodesigns.com/scss/Components/cart';
-@import 'topodesigns.com/scss/Layouts/header';
-@import 'topodesigns.com/scss/Layouts/footer';
+@import 'View/scss/Components/cart';
+@import 'View/scss/Layouts/header';
+@import 'View/scss/Layouts/footer';
 //Pages
-@import 'topodesigns.com/scss/Pages/home';
+@import 'View/scss/Pages/home';
 //Search Form
-@import 'topodesigns.com/scss/Components/Search';
+@import 'View/scss/Components/Search';
