@@ -1,4 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import ImageLoader from 'react-load-image';
+import Preloader from '../LoaddingScreen';
 function convertName(str){
   return str.toLowerCase().split("").filter(item => item!==" ").join("").replace("'","");
 }
@@ -6,11 +8,11 @@ export default class ProductCard extends Component {
   constructor(props) {
     super(props);
     this.state ={
-      product_img:`${this.props.product["name"]}_${this.props.product["swatches"][0]["color_name"]}_img.jpg` ,
+      product_img: `${this.props.product["name"]}_${this.props.product["swatches"][0]["color_name"]}_img.jpg`,
       isShow:true
     }
   }
-    changeWatch = (color)=>{
+    changeWatch = (color)=>{  
       this.setState({
         product_img: `${this.props.product["name"]}_${color}_img.jpg`
         })
@@ -30,17 +32,21 @@ export default class ProductCard extends Component {
           this.setState({isShow:true})
         }
       })
-      
+
     }
+
     render() {
         return (
             <div className={"card col-lg-3 col-md-4 col-sm-6"} style = {(this.props.inHeader)? (this.state.isShow===false)?{display:"none"}:{borderLeft:"1px solid gray"}:{}}>
-              
                 <div className="badge__wrapper">
                   <strong className="card__badge">NEW</strong>
                 </div>
                 <a href={`/product/${this.props.product["shop"]}/${this.props.product["name"].split("").filter(item => item !== " ").join("")}/${this.props.product["ID"]}`} className="img__wrapper">
-                  <img alt="product" className="card__img" src={`/img/img_${this.props.product["shop"]}/asset/${convertName(this.state.product_img)}`} />
+                  <ImageLoader alt="product-loadding" className="card__img" src={`/img/img_${this.props.product["shop"]}/asset/${convertName(this.state.product_img)}`} >
+                    <img alt="product" className="card__img"/> {/*1st element will be rendered if loaded image*/}
+                    <Preloader/> {/*2nd element will be rendered if occur error*/}
+                    <Preloader/> {/*3rd element is preloader*/}
+                  </ImageLoader>
                 </a>
                 <div className="info__wrapper">
                   <ul className="color__wrapper">

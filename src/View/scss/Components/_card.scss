@@ -29,10 +29,8 @@
     .info__wrapper{
         width: 100%;
         margin: 0;
-        display: flex;
+        @include align__center--flex;
         flex-flow: column;
-        justify-content: center;
-        align-items: center;
         .color__wrapper{
             list-style-type: none;
             @include align__center--flex;

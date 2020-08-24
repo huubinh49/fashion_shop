@@ -1,7 +1,9 @@
-import React, { Component } from 'react'
-import ProductCard from '../ProductCard/ProductCard'
-import { connect } from 'react-redux';
+import React, { Component, Suspense,lazy } from 'react'
 
+import { connect } from 'react-redux';
+import Preloader from '../LoaddingScreen';
+
+const ProductCard = lazy(()=>import('../ProductCard/ProductCard')) 
 export class Shop extends Component {
     constructor(props){
         super(props);
@@ -18,12 +20,10 @@ export class Shop extends Component {
       else{
         this.setState({products: this.props.products});
       }
-        setTimeout(()=>this.props.doneLoading(),2000);
     }
+
     render() {
-      return (this.props.isLoading)?  ( <div style={{width: '100vw', height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor:"white"}}>
-      <img src="/preloader.gif" alt="" />
-    </div>): (
+      return (
         <section id="shop--news">
         <div className="banner">
           <h1>{this.props.match.params.slug.replace("_", " ")}</h1>
@@ -31,7 +31,11 @@ export class Shop extends Component {
         <main className="container--96">
           <div className="row">
              {
-                 this.state.products.map((product, index )=> <ProductCard product={product} />)
+                 this.state.products.map((product, index )=> 
+                 <Suspense fallback = {<Preloader />}>
+                   <ProductCard product={product} />
+                </Suspense>
+                 )
              }
           </div>
         </main>
