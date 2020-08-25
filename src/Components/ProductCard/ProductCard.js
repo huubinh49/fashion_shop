@@ -42,7 +42,7 @@ export default class ProductCard extends Component {
                   <strong className="card__badge">NEW</strong>
                 </div>
                 <a href={`/product/${this.props.product["shop"]}/${this.props.product["name"].split("").filter(item => item !== " ").join("")}/${this.props.product["ID"]}`} className="img__wrapper">
-                  <ImageLoader alt="product-loadding" className="card__img" src={`/img/img_${this.props.product["shop"]}/asset/${convertName(this.state.product_img)}`} >
+                  <ImageLoader alt="product-loadding" className="card__img" src={`https://res.cloudinary.com/dvrdu6gxa/img/img_${this.props.product["shop"]}/${convertName(this.state.product_img)}`} >
                     <img alt="product" className="card__img"/> {/*1st element will be rendered if loaded image*/}
                     <Preloader/> {/*2nd element will be rendered if occur error*/}
                     <Preloader/> {/*3rd element is preloader*/}
@@ -59,7 +59,7 @@ export default class ProductCard extends Component {
                               <li key={index} onClick={()=>this.changeWatch(item["color_name"])} style={{
                                 //`${this.props.product["name"]}_${item["color_name"]}_color.png`
                                 //techshirtpopover-women's_khaki_color.png
-                                backgroundImage:`url(/img/img_${this.props.product["shop"]}/asset/${convertName(`${this.props.product["name"]}_${item["color_name"]}_color.png`)})`,
+                                backgroundImage:`url(https://res.cloudinary.com/dvrdu6gxa/img/img_${this.props.product["shop"]}/${convertName(`${this.props.product["name"]}_${item["color_name"]}_color.png`)})`,
                                 backgroundPosition:"center",
                                 backgroundSize : "cover"
                                 }}>

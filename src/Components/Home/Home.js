@@ -14,7 +14,7 @@ export default class Home extends Component {
                 <div className="shop_sale">
                   <div className="img-wrapper">
                     <img
-                      src="/img/img_home/shop_sales.jpg"
+                      src="https://res.cloudinary.com/dvrdu6gxa/img/img_home/shop_sales.jpg"
                       alt="something"
                     />
                   </div>
@@ -29,7 +29,7 @@ export default class Home extends Component {
                 <div className="shop_lookbook">
                   <div className="img-wrapper">
                     <img
-                      src="/img/img_home/shop_lookbook.jpg"
+                      src="https://res.cloudinary.com/dvrdu6gxa/img/img_home/shop_lookbook.jpg"
                       alt="something"
                     />
                   </div>
@@ -44,7 +44,7 @@ export default class Home extends Component {
                 <div className="earn_rewards">
                   <div className="img-wrapper">
                     <img
-                      src="/img/img_home/earn_rewards.jpg"
+                      src="https://res.cloudinary.com/dvrdu6gxa/img/img_home/earn_rewards.jpg"
                       alt="something"
                     />
                   </div>
@@ -59,7 +59,7 @@ export default class Home extends Component {
                 <div className="shops shop_bags">
                   <div className="img-wrapper img_shops">
                     <img
-                      src="/img/img_home/shop_bags.jpg"
+                      src="https://res.cloudinary.com/dvrdu6gxa/img/img_home/shop_bags.jpg"
                       alt="something"
                     />
                   </div>
@@ -71,7 +71,7 @@ export default class Home extends Component {
                 <div className="shops shop_men">
                   <div className="img-wrapper img_shops">
                     <img
-                      src="/img/img_home/shop_mens.jpg"
+                      src="https://res.cloudinary.com/dvrdu6gxa/img/img_home/shop_mens.jpg"
                       alt="something"
                     />
                   </div>
@@ -83,7 +83,7 @@ export default class Home extends Component {
                 <div className="shops shop_women">
                   <div className="img-wrapper img_shops">
                     <img
-                      src="/img/img_home/shop_womens.jpg"
+                      src="https://res.cloudinary.com/dvrdu6gxa/img/img_home/shop_womens.jpg"
                       alt="something"
                     />
                   </div>
@@ -95,7 +95,7 @@ export default class Home extends Component {
                 <div className="shop_rovers">
                   <div className="img-wrapper img_shops">
                     <img
-                      src="/img/img_home/shop_packs.jpg"
+                      src="https://res.cloudinary.com/dvrdu6gxa/img/img_home/shop_packs.jpg"
                       alt="something"
                     />
                   </div>
@@ -110,7 +110,7 @@ export default class Home extends Component {
                 <div className="read_more">
                   <div className="img-wrapper img_shops">
                     <img
-                      src="/img/img_home/read_mores.jpg"
+                      src="https://res.cloudinary.com/dvrdu6gxa/img/img_home/read_mores.jpg"
                       alt="something"
                     />
                   </div>

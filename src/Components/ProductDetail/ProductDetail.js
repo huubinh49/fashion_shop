@@ -59,7 +59,7 @@ function convertName(str){
       size:this.state.size,
       price: this.state.product["price"],
       quantity:this.state.quantity,
-      img_src : `/img/img_${this.props.match.params.shop}/asset/${convertName(this.state.product["name"])}_${convertName(this.state.color_name)}_img.jpg`,
+      img_src : `https://res.cloudinary.com/dvrdu6gxa/img/img_${this.props.match.params.shop}/asset/${convertName(this.state.product["name"])}_${convertName(this.state.color_name)}_img.jpg`,
       ID: this.state.product["ID"],
       shop:this.state.product["shop"]
     }
@@ -123,7 +123,7 @@ function convertName(str){
                 <div className="img" key = {index}>
                 <img
                   onClick={()=> eventSlide.show_img(index)}
-                  src={`/img/img_${this.props.match.params.shop}/asset/${convertName(this.state.product["name"])}_${convertName(swatch["color_name"])}_img.jpg`}
+                  src={`https://res.cloudinary.com/dvrdu6gxa/img/img_${this.props.match.params.shop}/${convertName(this.state.product["name"])}_${convertName(swatch["color_name"])}_img.jpg`}
                   alt = "slide-product"
                 />
               </div> 
@@ -147,7 +147,7 @@ function convertName(str){
           <div className="slide__current" aria-selected="false">
             <img
               id="img__current"
-              src={`/img/img_${this.props.match.params.shop}/asset/${convertName(this.state.product_img)}`}
+              src={`https://res.cloudinary.com/dvrdu6gxa/img/img_${this.props.match.params.shop}/${convertName(this.state.product_img)}`}
               alt = "slide-product"
             />
             <i
@@ -191,7 +191,7 @@ function convertName(str){
                   <label className="color" key={index} style={{
                     //`${this.props.product["name"]}_${item["color_name"]}_color.png`
                     //techshirtpopover-women's_khaki_color.png
-                    backgroundImage:`url(/img/img_${this.props.match.params.shop}/asset/${convertName(`${this.state.product["name"]}_${swatch["color_name"]}_color.png`)})`,
+                    backgroundImage:`url(https://res.cloudinary.com/dvrdu6gxa/img/img_${this.props.match.params.shop}/${convertName(`${this.state.product["name"]}_${swatch["color_name"]}_color.png`)})`,
                     backgroundPosition:"center",
                     backgroundSize : "cover"
                     }}
@@ -209,7 +209,7 @@ function convertName(str){
                   <label className="color" key = {index} style={{
                     //`${this.props.product["name"]}_${item["color_name"]}_color.png`
                     //techshirtpopover-women's_khaki_color.png
-                    backgroundImage:`url(/img/img_${this.props.match.params.shop}/asset/${convertName(`${this.state.product["name"]}_${swatch["color_name"]}_color.png`)})`,
+                    backgroundImage:`url(https://res.cloudinary.com/dvrdu6gxa/img/img_${this.props.match.params.shop}/${convertName(`${this.state.product["name"]}_${swatch["color_name"]}_color.png`)})`,
                     backgroundPosition:"center",
                     backgroundSize : "cover"
                     }}

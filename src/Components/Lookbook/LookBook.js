@@ -16,7 +16,7 @@ export default function LookBook(props) {
           <div className="book">
             <div className="book_detail">
               <div className="bg_img">
-                <img src="/img/img_lookbooks/model1.webp" alt=" model"/>
+                <img src="https://res.cloudinary.com/dvrdu6gxa/img/img_lookbooks/model1.webp" alt=" model"/>
                 <div className="outfit">
                   <strong><em href="/">Coverall</em></strong>
                   <strong><em href="/">Mini Quick Pack</em></strong>
@@ -32,7 +32,7 @@ export default function LookBook(props) {
                 <div className="book">
                   <div className="book_detail">
                     <div className="bg_img bg_img--notFull">
-                      <img alt = " model"src="/img/img_lookbooks/model2.webp" />
+                      <img alt = " model"src="https://res.cloudinary.com/dvrdu6gxa/img/img_lookbooks/model2.webp" />
                       <div className="outfit">
                         <strong><em href="/">Coverall</em></strong>
                         <strong><em href="/">Mini Quick Pack</em></strong>
@@ -45,7 +45,7 @@ export default function LookBook(props) {
                 <div className="book">
                   <div className="book_detail">
                     <div className="bg_img">
-                      <img alt = " model"src="/img/img_lookbooks/model3.webp" />
+                      <img alt = " model"src="https://res.cloudinary.com/dvrdu6gxa/img/img_lookbooks/model3.webp" />
                       <div className="outfit">
                         <strong><em href="/">Coverall</em></strong>
                         <strong><em href="/">Mini Quick Pack</em></strong>
@@ -60,7 +60,7 @@ export default function LookBook(props) {
                 <div className="book">
                   <div className="book_detail">
                     <div className="bg_img">
-                      <img alt = " model"src="/img/img_lookbooks/model4.webp" />
+                      <img alt = " model"src="https://res.cloudinary.com/dvrdu6gxa/img/img_lookbooks/model4.webp" />
                       <div className="outfit">
                         <strong><em href="/">Coverall</em></strong>
                         <strong><em href="/">Mini Quick Pack</em></strong>
@@ -73,7 +73,7 @@ export default function LookBook(props) {
                 <div className="book">
                   <div className="book_detail">
                     <div className="bg_img bg_img--notFull">
-                      <img alt = " model"src="/img/img_lookbooks/model5.webp" />
+                      <img alt = " model"src="https://res.cloudinary.com/dvrdu6gxa/img/img_lookbooks/model5.webp" />
                       <div className="outfit">
                         <strong><em href="/">Coverall</em></strong>
                         <strong><em href="/">Mini Quick Pack</em></strong>
@@ -93,7 +93,7 @@ export default function LookBook(props) {
           <div className="book">
             <div className="book_detail">
               <div className="bg_img">
-                <img src="/img/img_lookbooks/model1.webp" alt=" model"/>
+                <img src="https://res.cloudinary.com/dvrdu6gxa/img/img_lookbooks/model1.webp" alt=" model"/>
                 <div className="outfit">
                   <strong><em href="/">Coverall</em></strong>
                   <strong><em href="/">Mini Quick Pack</em></strong>
@@ -109,7 +109,7 @@ export default function LookBook(props) {
                 <div className="book">
                   <div className="book_detail">
                     <div className="bg_img bg_img--notFull">
-                      <img alt = " model"src="/img/img_lookbooks/model2.webp" />
+                      <img alt = " model"src="https://res.cloudinary.com/dvrdu6gxa/img/img_lookbooks/model2.webp" />
                       <div className="outfit">
                         <strong><em href="/">Coverall</em></strong>
                         <strong><em href="/">Mini Quick Pack</em></strong>
@@ -122,7 +122,7 @@ export default function LookBook(props) {
                 <div className="book">
                   <div className="book_detail">
                     <div className="bg_img">
-                      <img alt = " model"src="/img/img_lookbooks/model3.webp" />
+                      <img alt = " model"src="https://res.cloudinary.com/dvrdu6gxa/img/img_lookbooks/model3.webp" />
                       <div className="outfit">
                         <strong><em href="/">Coverall</em></strong>
                         <strong><em href="/">Mini Quick Pack</em></strong>
@@ -137,7 +137,7 @@ export default function LookBook(props) {
                 <div className="book">
                   <div className="book_detail">
                     <div className="bg_img">
-                      <img alt = " model"src="/img/img_lookbooks/model4.webp" />
+                      <img alt = " model"src="https://res.cloudinary.com/dvrdu6gxa/img/img_lookbooks/model4.webp" />
                       <div className="outfit">
                         <strong><em href="/">Coverall</em></strong>
                         <strong><em href="/">Mini Quick Pack</em></strong>
@@ -150,7 +150,7 @@ export default function LookBook(props) {
                 <div className="book">
                   <div className="book_detail">
                     <div className="bg_img bg_img--notFull">
-                      <img alt = " model"src="/img/img_lookbooks/model5.webp" />
+                      <img alt = " model"src="https://res.cloudinary.com/dvrdu6gxa/img/img_lookbooks/model5.webp" />
                       <div className="outfit">
                         <strong><em href="/">Coverall</em></strong>
                         <strong><em href="/">Mini Quick Pack</em></strong>
@@ -170,7 +170,7 @@ export default function LookBook(props) {
           <div className="book">
             <div className="book_detail">
               <div className="bg_img">
-                <img src="/img/img_lookbooks/model1.webp" alt=" model"/>
+                <img src="https://res.cloudinary.com/dvrdu6gxa/img/img_lookbooks/model1.webp" alt=" model"/>
                 <div className="outfit">
                   <strong><em href="/">Coverall</em></strong>
                   <strong><em href="/">Mini Quick Pack</em></strong>
@@ -186,7 +186,7 @@ export default function LookBook(props) {
                 <div className="book">
                   <div className="book_detail">
                     <div className="bg_img bg_img--notFull">
-                      <img alt = " model"src="/img/img_lookbooks/model2.webp" />
+                      <img alt = " model"src="https://res.cloudinary.com/dvrdu6gxa/img/img_lookbooks/model2.webp" />
                       <div className="outfit">
                         <strong><em href="/">Coverall</em></strong>
                         <strong><em href="/">Mini Quick Pack</em></strong>
@@ -199,7 +199,7 @@ export default function LookBook(props) {
                 <div className="book">
                   <div className="book_detail">
                     <div className="bg_img">
-                      <img alt = " model"src="/img/img_lookbooks/model3.webp" />
+                      <img alt = " model"src="https://res.cloudinary.com/dvrdu6gxa/img/img_lookbooks/model3.webp" />
                       <div className="outfit">
                         <strong><em href="/">Coverall</em></strong>
                         <strong><em href="/">Mini Quick Pack</em></strong>
@@ -214,7 +214,7 @@ export default function LookBook(props) {
                 <div className="book">
                   <div className="book_detail">
                     <div className="bg_img">
-                      <img alt = " model"src="/img/img_lookbooks/model4.webp" />
+                      <img alt = " model"src="https://res.cloudinary.com/dvrdu6gxa/img/img_lookbooks/model4.webp" />
                       <div className="outfit">
                         <strong><em href="/">Coverall</em></strong>
                         <strong><em href="/">Mini Quick Pack</em></strong>
@@ -227,7 +227,7 @@ export default function LookBook(props) {
                 <div className="book">
                   <div className="book_detail">
                     <div className="bg_img bg_img--notFull">
-                      <img alt = " model"src="/img/img_lookbooks/model5.webp" />
+                      <img alt = " model"src="https://res.cloudinary.com/dvrdu6gxa/img/img_lookbooks/model5.webp" />
                       <div className="outfit">
                         <strong><em href="/">Coverall</em></strong>
                         <strong><em href="/">Mini Quick Pack</em></strong>
