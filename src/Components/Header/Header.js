@@ -82,6 +82,7 @@ class Header extends Component {
               </nav>
 
               <div className="header__action">
+                <a href="/account/signup" className="dropdown__toggle">Join/Signin</a>
                 <i className="fa fa-search" aria-hidden="true" onClick = {()=> {this.setState({showSearch:!this.state.showSearch})}}/>
                 <div className="shopping-cart" >
                   <i onClick={()=>this.props.collapse_cart()} data-quantity = {this.props.cart.reduce((sum, item) => sum+parseInt(item['quantity']), 0)} className="fa fa-shopping-cart" aria-hidden="true"/>

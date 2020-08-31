@@ -1,0 +1,119 @@
+.account{
+    padding:0 3vw;
+    width:100vw;
+    .account_signup, .account_signin{
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        form{
+            width: 30vw;
+            display: flex;
+            flex-flow: column nowrap;
+            .form__input{
+                label{
+                    margin:10px 0 0 0;
+                }
+                input{
+                    width:100%;
+                    height: 45px;
+                    
+                    margin:0 0 5px 0;
+                    padding: 0 10px;
+                    border: 0.5px solid rgb(211, 211, 211);
+                }
+                .form__error{
+                    color:red;
+                }
+                &:last-of-type{
+                    margin-bottom:50px;
+                }
+            }
+            a.lost_password{
+                color:red;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            p{
+                margin: 20px 0;
+                text-align: center;
+            }
+            .button{
+                display: block;
+                width: 100%;
+                height: 50px;
+                margin: 5px 0;
+                
+                cursor: pointer;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                color:white;
+                font-size:0.8rem;
+                font-weight: 500;
+                
+                border:none;
+
+                &:last-of-type{
+                    margin-bottom:10px;
+                }
+                &:hover{
+                    opacity: 0.6;
+                }
+                transition: all 0.3s;
+            }
+            .button{
+                &__submit{
+                    background-color: rgb(220, 0, 0);
+                }
+                &__signin{
+                    text-align: center;
+                    color:black;
+                    border:1px solid black;
+                    &:hover{
+                        color:white;
+                        background-color:black;
+                    }
+                }
+                &__socialLink{
+                    position: relative;
+                    i{
+                        position: absolute;
+                        font-size: 1.5rem;
+                        right: 20px;
+                    }
+                    &.facebookLink{
+                        background-color:rgb(89, 89, 255);
+                    }
+                    &.googleLink{
+                        background-color:rgb(220, 0, 0);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .account{
+        .account_signup, .account_signin{
+            form{
+                width: 60vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px){
+    .account{
+        .account_signup, .account_signin{
+            form{
+                width: 90vw;
+            }
+        }
+    }
+}

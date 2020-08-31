@@ -31,7 +31,7 @@ import { connect } from 'react-redux';
         this.props.products.map((product, index) => <CartProduct key = {index} product = {product}/>) 
       }
     </div>
-    <div className="cart__body--sideinfo">
+    <div className="cart__body--sideinfo">  
       <div className="cart__body--subtotal">
         <h3>SUBTOTAL</h3>
       <strong>${this.props.products.reduce((sum, cur)=>sum+cur.quantity*parseFloat(cur.price.split("").slice(1).join("")),0)}</strong>

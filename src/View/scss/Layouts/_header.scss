@@ -1,9 +1,11 @@
-@import './../Abstracts/variables';
-
+$header_height:112px;
+$nav--collapse_width:260px;
 $nav_width:100%;
 $logo_width:50px;
 $logo_margin:25px;
-$header_action_width:50px;
+
+$header_action_width:80px;
+
 $header_color : white;
 header{
     position: relative;
@@ -129,16 +131,16 @@ header{
     }
     .header__action{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         float: right;
         height: 100%;
-        width: 60px;
-        padding: 0 0 0 15px;
+        width: $header_action_width;
+        padding: 0 15px 0 0;
         //Sign in / Cart
         a{
             display: none;
-           
+           width: fit-content;
         }
         i{
          cursor: pointer;       
@@ -203,7 +205,7 @@ header{
         padding:15px 0;
     }
     .header__action{
-        width: 60px;
+        width: $header_action_width;
         i{
             font-size: 1.2em;
             cursor: pointer;
@@ -214,6 +216,7 @@ header{
 .header__pc--onFix{
     @extend .header__mobile--onFix;
     height: 76px;
+    $header_action_width: 120px;
     .header__brand--mobile{
         display: block;
         left: 0;
@@ -226,7 +229,7 @@ header{
     }
     nav{
         left: 170px+$logo_margin*2;
-        width: -webkit-calc(100% - 150px - 220px) !important;
+        width: calc(100% - 150px - 220px) !important;
         .nav__item{
             a{
                 font-size: 15px;
@@ -235,13 +238,13 @@ header{
     }
     .header__action{
         padding:0;
-        flex-wrap: wrap;
+        flex-flow: row nowrap;
         width: $header_action_width;
         top:0;
         right: 50px;
         z-index: 1000;
         a{
-            display: block;
+            display: inline-block;
         }
     }
 }///
@@ -253,7 +256,7 @@ header{
     $nav_width:100%;
     $logo_width:50px;
     $logo_margin:25px;
-    $header_action_width:50px;
+    $header_action_width:120px;
     $header_color : white;
     header{
         //Extend position :relative on mobile
@@ -278,7 +281,7 @@ header{
             position: absolute !important;
             left: $logo_width+$logo_margin*2;
             // minus width logo and action Signin
-            width: -webkit-calc(100% - 50px - 100px) !important;
+            width: calc(100% - 120px - 100px) !important;
             height: 100%;
 
             padding: 0;
@@ -335,14 +338,13 @@ header{
         .header__action{
             padding:0;
             position: absolute;
-            justify-content: space-between;
             flex-wrap: wrap;
             top:0;
             right: 0;
             z-index: 100;
             width: $header_action_width;
             a{
-                display: block;
+                display: inline-block;
             }
         }
     
