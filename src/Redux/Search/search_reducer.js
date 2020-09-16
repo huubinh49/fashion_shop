@@ -12,13 +12,12 @@ const initialize = getLocalState();
 const result= (products)=>({
     type:"SEND_RESULT_SEARCH",
     payload:{
-        products
+        products:products
     }
 })
 
 const searchReducer = (state = initialize, action)=>{
     if(action.type === "SEND_RESULT_SEARCH"){
-        console.log(action)
         return [...action.payload.products];
     }
     else

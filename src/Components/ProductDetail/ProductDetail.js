@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import * as eventSlide from "./slide_gallery";
 import { connect } from 'react-redux';
-import { addToCart } from '../../Redux/Cart/action';
+import { addToCart } from '../../Redux/Cart/cart_action';
+import productAPI from '../../API/productAPI';
 
 function convertName(str){
   return str.toLowerCase().split("").filter(item => item!==" ").join("").replace("'","");
@@ -61,26 +62,24 @@ function convertName(str){
       quantity:this.state.quantity,
       img_src : `https://res.cloudinary.com/dvrdu6gxa/img/img_${this.props.match.params.shop}/asset/${convertName(this.state.product["name"])}_${convertName(this.state.color_name)}_img.jpg`,
       ID: this.state.product["ID"],
-      shop:this.state.product["shop"]
+      shop:this.props.match.params.shop
     }
     this.props.add_to_cart(payload);
   }
   componentDidMount = ()=>{
     let fetchData = async ()=>{
-      const data_shop = await require(`./../Shop/${this.props.match.params.shop}.json`);
-      return data_shop
+      const product_data = await productAPI.get(parseInt(this.props.match.params.id));
+      return product_data;
     }
     
     fetchData().then(
-      (data_shop)=>{
-        const product_data = data_shop[parseInt(this.props.match.params.id)];
+      (product_data)=>{
         this.setState({
           product:product_data,
-          product_img:`${product_data["name"]}_${product_data["swatches"][0]["color_name"]}_img.jpg`,
-          color_name:product_data["swatches"][0]["color_name"]
-        
+          product_img:`${convertName(product_data["name"])}_${product_data["swatches"][0]["name"]}_img.jpg`,
+          color_name:product_data["swatches"][0]["name"]
         });
-       setTimeout(()=>this.props.doneLoading(),2000);
+        this.props.doneLoading()
       })
     
   }
@@ -123,7 +122,7 @@ function convertName(str){
                 <div className="img" key = {index}>
                 <img
                   onClick={()=> eventSlide.show_img(index)}
-                  src={`https://res.cloudinary.com/dvrdu6gxa/img/img_${this.props.match.params.shop}/${convertName(this.state.product["name"])}_${convertName(swatch["color_name"])}_img.jpg`}
+                  src={`https://res.cloudinary.com/dvrdu6gxa/img/img_${this.props.match.params.shop}/${convertName(this.state.product["name"])}_${convertName(swatch["name"])}_img.jpg`}
                   alt = "slide-product"
                 />
               </div> 
@@ -169,7 +168,7 @@ function convertName(str){
       <h3 className="card__name">{this.state.product["name"]}</h3>
       <div className="card__detail">
         <div className="card__detail--price">
-          <strong className="price">{this.state.product["price"]}</strong>
+          <strong className="price">${this.state.product["price"]}</strong>
           <p className="other__price">
             or 4 interest-free installments of $17.25 by
             <img
@@ -189,16 +188,14 @@ function convertName(str){
                 if(index===0)
                 return(
                   <label className="color" key={index} style={{
-                    //`${this.props.product["name"]}_${item["color_name"]}_color.png`
-                    //techshirtpopover-women's_khaki_color.png
-                    backgroundImage:`url(https://res.cloudinary.com/dvrdu6gxa/img/img_${this.props.match.params.shop}/${convertName(`${this.state.product["name"]}_${swatch["color_name"]}_color.png`)})`,
+                    backgroundImage:`url(https://res.cloudinary.com/dvrdu6gxa/img/img_${this.props.match.params.shop}/${convertName(`${this.state.product["name"]}_${swatch["name"]}_color.png`)})`,
                     backgroundPosition:"center",
                     backgroundSize : "cover"
                     }}
                     // this.changeWatch(swatch["color_name"])
                     onClick ={()=>{
                       eventSlide.show_img(index); 
-                      this.changeWatch(swatch["color_name"])
+                      this.changeWatch(swatch["name"])
                       }}
                     >
                     <input type="radio" name="color" defaultChecked="checked" />
@@ -207,15 +204,13 @@ function convertName(str){
                 )
                 else return(
                   <label className="color" key = {index} style={{
-                    //`${this.props.product["name"]}_${item["color_name"]}_color.png`
-                    //techshirtpopover-women's_khaki_color.png
-                    backgroundImage:`url(https://res.cloudinary.com/dvrdu6gxa/img/img_${this.props.match.params.shop}/${convertName(`${this.state.product["name"]}_${swatch["color_name"]}_color.png`)})`,
+                    backgroundImage:`url(https://res.cloudinary.com/dvrdu6gxa/img/img_${this.props.match.params.shop}/${convertName(`${this.state.product["name"]}_${swatch["name"]}_color.png`)})`,
                     backgroundPosition:"center",
                     backgroundSize : "cover"
                     }}
                     onClick ={()=>{
                       eventSlide.show_img(index);
-                      this.changeWatch(swatch["color_name"])
+                      this.changeWatch(swatch["name"])
                     }}
                     >
                     <input type="radio" name="color" />

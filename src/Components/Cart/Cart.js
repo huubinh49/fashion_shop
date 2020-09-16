@@ -34,7 +34,7 @@ import { connect } from 'react-redux';
     <div className="cart__body--sideinfo">  
       <div className="cart__body--subtotal">
         <h3>SUBTOTAL</h3>
-      <strong>${this.props.products.reduce((sum, cur)=>sum+cur.quantity*parseFloat(cur.price.split("").slice(1).join("")),0)}</strong>
+      <strong>${this.props.products.reduce((sum, cur)=>sum+cur.quantity*parseFloat(cur.price),0)}</strong>
       </div>
       <div className="cart__body--buy">
         <button type="button" className="btn btn-danger">

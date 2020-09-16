@@ -1,11 +1,21 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class SubMenu extends Component {
-    render() {
+export default function SubMenu (props) {
+    
         return (
-        <ul className="dropdown__menu">
+        <ul onMouseEnter = {()=>{
+            if(props.drop_downMenu && window.innerWidth >=992){
+              props.drop_downMenu(true)
+            }
+          }} 
+          onMouseLeave = {()=>{
+            if(props.drop_downMenu  && props.isSubmenu && window.innerWidth >=992){
+              props.drop_downMenu(false)
+            }
+          }} 
+           className="dropdown__menu">
             {
-                this.props.menu.map((listItem, index) => {
+                props.menu.map((listItem, index) => {
                     return(
                     <li key={index} className="dropdown__item">
                       <a href={listItem.url}>{listItem.title}</a>
@@ -15,5 +25,4 @@ export default class SubMenu extends Component {
             }
         </ul>
         )
-    }
 }

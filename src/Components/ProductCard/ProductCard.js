@@ -1,48 +1,43 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect } from 'react';
+import { useState } from 'react';
 import ImageLoader from 'react-load-image';
 import Preloader from '../LoaddingScreen';
 function convertName(str){
   return str.toLowerCase().split("").filter(item => item!==" ").join("").replace("'","");
 }
-export default class ProductCard extends Component {
-  constructor(props) {
-    super(props);
-    this.state ={
-      product_img: `${this.props.product["name"]}_${this.props.product["swatches"][0]["color_name"]}_img.jpg`,
-      isShow:true
+export default function ProductCard(props){
+
+  const [productImg, setProductImg] = useState(`${props.product["name"]}_${props.product["swatches"][0]["name"]}_img.jpg`);
+  const [isMenu, setIsMenu] = useState(true);
+    const changeWatch = (color)=>{  
+      setProductImg(`${props.product["name"]}_${color}_img.jpg`)
     }
-  }
-    changeWatch = (color)=>{  
-      this.setState({
-        product_img: `${this.props.product["name"]}_${color}_img.jpg`
-        })
-    }
-    componentDidMount = ()=>{
-      if(window.innerWidth<989){
-        this.setState({isShow:false})
-      }else
-      {
-        this.setState({isShow:true})
-      }
-      window.addEventListener("resize", ()=>{
+    useEffect(()=>{
+      setProductImg(`${props.product["name"]}_${props.product["swatches"][0]["name"]}_img.jpg`)
+    }, [props.product])
+    useEffect(() => {
+      const adjust = ()=>{
         if(window.innerWidth<989){
-          this.setState({isShow:false})
+          setIsMenu(false);
         }else
         {
-          this.setState({isShow:true})
+          setIsMenu(true)
         }
-      })
+      }
+      adjust();
+      window.addEventListener("resize", adjust)
+      return () => {
+        window.removeEventListener("resize", adjust)
+      }
+    }, [])
 
-    }
-
-    render() {
         return (
-            <div className={"card col-lg-3 col-md-4 col-sm-6"} style = {(this.props.inHeader)? (this.state.isShow===false)?{display:"none"}:{borderLeft:"1px solid gray"}:{}}>
+            <div className={`card ${!props.inHeader? "col-lg-3 col-md-4 col-sm-6":""}`} style = {(props.inHeader)? (isMenu===false)?{display:"none"}:{borderLeft:"1px solid gray"}:{}}>
                 <div className="badge__wrapper">
                   <strong className="card__badge">NEW</strong>
                 </div>
-                <a href={`/product/${this.props.product["shop"]}/${this.props.product["name"].split("").filter(item => item !== " ").join("")}/${this.props.product["ID"]}`} className="img__wrapper">
-                  <ImageLoader alt="product-loadding" className="card__img" src={`https://res.cloudinary.com/dvrdu6gxa/img/img_${this.props.product["shop"]}/${convertName(this.state.product_img)}`} >
+                <a href={`/product/${props.product["shop"]}/${props.product["name"].split("").filter(item => item !== " ").join("")}/${props.product["id"]}`} className="img__wrapper">
+                  <ImageLoader alt="product-loadding" className="card__img" src={`https://res.cloudinary.com/dvrdu6gxa/img/img_${props.product["shop"]}/${convertName(productImg)}`} >
                     <img alt="product" className="card__img"/> {/*1st element will be rendered if loaded image*/}
                     <Preloader/> {/*2nd element will be rendered if occur error*/}
                     <Preloader/> {/*3rd element is preloader*/}
@@ -50,16 +45,11 @@ export default class ProductCard extends Component {
                 </a>
                 <div className="info__wrapper">
                   <ul className="color__wrapper">
-                    {this.props.product["swatches"].map((item, index) =>{
+                    {props.product["swatches"].map((item, index) =>{
                       
                       return (
-                        //image_name = "{0}_{1}_img.jpg".format(product_name, d[i]["swatches"][j]["color_name"])
-                        // color_name = "{0}_{1}_color.png".format(product_name, d[i]["swatches"][j]["color_name"])
-                        // ${productitem["colorcolor_name"]}
-                              <li key={index} onClick={()=>this.changeWatch(item["color_name"])} style={{
-                                //`${this.props.product["name"]}_${item["color_name"]}_color.png`
-                                //techshirtpopover-women's_khaki_color.png
-                                backgroundImage:`url(https://res.cloudinary.com/dvrdu6gxa/img/img_${this.props.product["shop"]}/${convertName(`${this.props.product["name"]}_${item["color_name"]}_color.png`)})`,
+                              <li key={index} onClick={()=>changeWatch(item["name"])} style={{
+                                backgroundImage:`url(https://res.cloudinary.com/dvrdu6gxa/img/img_${props.product["shop"]}/${convertName(`${props.product["name"]}_${item["name"]}_color.png`)})`,
                                 backgroundPosition:"center",
                                 backgroundSize : "cover"
                                 }}>
@@ -69,12 +59,11 @@ export default class ProductCard extends Component {
                       )
                     })}
                   </ul>
-                  <a href={`/product/${this.props.product["shop"]}/${convertName(this.props.product["name"])}`} className="card__title">
-                    <p>{this.props.product["name"]}</p>
+                  <a href={`/product/${props.product["shop"]}/${convertName(props.product["name"])}`} className="card__title">
+                    <p>{props.product["name"]}</p>
                   </a>
-                  <strong className="card__price">{this.props.product["price"]}</strong>
+                  <strong className="card__price">${props.product["price"]}</strong>
                 </div>
           </div>
         )
-    }
 }

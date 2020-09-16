@@ -8,8 +8,11 @@
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.19.2",
     "cheerio": "^1.0.0-rc.3",
+    "jwt-decode": "^3.0.0-beta.2",
     "node-fetch": "^2.6.0",
+    "query-string": "^6.13.1",
     "react": "^16.13.1",
+    "react-cookies": "^0.1.1",
     "react-dom": "^16.13.1",
     "react-load-image": "^0.1.7",
     "react-redux": "^7.2.0",
@@ -46,6 +49,7 @@
     "file-loader": "^6.0.0",
     "gh-pages": "^3.0.0",
     "node-sass": "^4.14.1",
+    "redux-thunk": "^2.3.0",
     "url-loader": "^4.1.0"
   }
 }

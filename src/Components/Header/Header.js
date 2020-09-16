@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import Toggle from './Toggle'
 import Headerdata from './../headerData.json'
 import SubMenu from './SubMenu'
@@ -7,6 +7,7 @@ import Cart from './../Cart/Cart'
 import * as event_header from './header_event'
 import { connect } from 'react-redux'
 import Search from './Search/Search'
+import * as authAction from './../../Redux/authenticate/auth_action'
 class Header extends Component {
     constructor(props){
       super(props);
@@ -78,11 +79,19 @@ class Header extends Component {
                     </a>
                   </li>
                   <hr />
+                  <li className = "nav__item header_action">
+                    {(this.props.isAuthenticated)?
+                    <Fragment><a href = "/account">My Account</a>/<a href = "/account">Sign Out</a></Fragment>:
+                    <Fragment><a href ="/account/signup/">Sign Up/Login</a></Fragment>
+                    }
+                  </li>
                 </ul>
               </nav>
 
-              <div className="header__action">
-                <a href="/account/signup" className="dropdown__toggle">Join/Signin</a>
+              <div className="header_action">
+                {this.props.isAuthenticated? 
+                <div><a href="/">My Account</a>/<a href="/" onClick = {()=>authAction.authLogout()} className="dropdown__toggle">Logout</a></div> : 
+                <a href="/account/signup" >Join/Signin</a>}
                 <i className="fa fa-search" aria-hidden="true" onClick = {()=> {this.setState({showSearch:!this.state.showSearch})}}/>
                 <div className="shopping-cart" >
                   <i onClick={()=>this.props.collapse_cart()} data-quantity = {this.props.cart.reduce((sum, item) => sum+parseInt(item['quantity']), 0)} className="fa fa-shopping-cart" aria-hidden="true"/>

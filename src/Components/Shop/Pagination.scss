@@ -1,0 +1,37 @@
+section.pagination{
+    padding: 10px 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    ul{
+        margin: 0;
+        width: fit-content;
+        list-style-type: none;
+        display: flex;
+        flex-flow: row nowrap;
+        li{
+            width: 32px;
+            height:32px;
+            margin: 0 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.3s;
+            cursor: pointer;
+            &.list_page{
+            border-bottom: 1px solid gray;
+            }
+            &.active{
+                background-color: black;
+                color:white;
+            }
+            &:hover{
+                border: 1px solid gray;
+                transition: 0.3s;
+            }
+            &.arrow.disable{
+                display: none;
+            }
+        }
+    }
+}
