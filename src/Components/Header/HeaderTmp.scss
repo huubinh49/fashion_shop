@@ -5,7 +5,6 @@ $header__mobile--onFix :62px;
 
 $nav--collapse:270px;
 $nav__item--collapse:60px;
-//mobile first
 
 @keyframes dropdown_menu_show{
     from{
@@ -36,15 +35,13 @@ $nav__item--collapse:60px;
     }
 }
 header{
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+    box-shadow: 1px 1px 10px rgb(216, 214, 214);
     ul{
         list-style-type: none;
     }
 
     background-color: white;
-    width: 100vw;
+    width: 100%;
     height: $header__mobile--onFix;
     display: flex;
     justify-content: center;
@@ -75,7 +72,11 @@ header{
             flex: 30%;
             display: inline-flex;
             justify-content: flex-end;
+            align-items: center;
             gap:10px;
+            .action{
+                display: none;
+            }
             i{
                 cursor: pointer;       
             }
@@ -102,9 +103,10 @@ header{
         }
         .nav__collapse--open{
             flex: 30%;
-            // i{
-            //     padding: 0 15px;
-            // }
+            i{
+                font-size: 1rem;
+                padding: 5px;
+            }
             cursor: pointer;
         }
         nav{
@@ -148,6 +150,12 @@ header{
                             i{
                                 font-size: 2rem;
                             }
+                        }
+                    }
+                    .nav__item-action--collapse{
+                        .action{
+                            display: flex;
+                        gap: 10px;
                         }
                     }
                     .nav__item--dropdown{
@@ -241,9 +249,9 @@ header{
             .header__action{
                 gap:10px;
 
-                a{
-                    display:none; //Join/Signin 
-                }
+               .action{
+                   display: none;
+               }
             }
             .nav__collapse--open{
                 display: none;
@@ -311,6 +319,35 @@ header{
                 display: inline-flex;
                 justify-content: flex-end;
                 gap:10px;
+                .action{
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    a{
+                        position: relative;
+                        &::after{
+                            position: absolute;
+
+                            content: "";
+                            height: 0.5px;
+                            width: 100%;
+                            transform: scaleX(0);
+                            background-color: black;
+                            transform-origin:  0%;
+                            bottom: 1px;
+                            left: 0;
+                            transition: 0.3s;
+                        }
+                        &:hover{
+                            &::after{
+                                transform: scaleX(1);
+                                transform-origin:  100%;
+                               
+                                transition: 0.3s;
+                            }         
+                        }
+                    }
+                }
             }
             .nav__collapse--open{
                 display: none;
@@ -413,7 +450,7 @@ header{
                                 }
                             }
                             & > .dropdown__menu{
-                                box-shadow: 1px 1px 5px black;
+                                box-shadow: 1px 1px 2px gray;
 
                                 position: absolute;
                                 top: $header__pc--onFix;
@@ -437,7 +474,7 @@ header{
                                 }
                             }
                             .dropdown__menu--huge{
-                                box-shadow: 1px 1px 5px black;
+                                box-shadow: 1px 1px 2px gray;
                                 background-color: white;
 
                                 opacity: 0;

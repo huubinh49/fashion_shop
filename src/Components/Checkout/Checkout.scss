@@ -1,0 +1,167 @@
+.checkout{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    .container{
+        padding: 25px 0 100px 0;
+
+        .brand{
+            display: flex;
+            justify-content: center;
+            margin: 25px 0 50px 0;
+            img{
+                width: 216px;
+            }
+        }
+        .breadcrumb{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            ul{
+                display: flex;
+                list-style-type: none;
+                margin: 0;
+                li{
+                    a{
+                        color: black;
+                    }
+                    &:not(:last-child){
+                        &::after{
+                            content: ">";
+                            margin: 0 5px;
+                        }    
+                    }
+                    &.active{
+                        a{
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+        .checkout__express{
+            h2{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin: 0;
+                font-size: 1.2rem;
+                &::before{
+                    content: "";
+                    flex:auto;
+                    align-self: flex-end;
+                    height: 0.6rem;
+                    border-top:1px solid gray;
+                    border-left:1px solid gray;
+                }
+                &::after{
+                    content: "";
+                    flex: auto;
+                    align-self: flex-end;
+                    height: 0.6rem;
+                    border-top:1px solid gray;
+                    border-right:1px solid gray;
+                }
+
+            }
+            &-option{
+                border:1px solid gray;
+                border-top: unset;
+                width: 100%;
+                display: flex;
+                gap: 10px;
+                padding: 10px;
+
+                .option{
+                    flex: 50%;
+                    display: flex;
+                    justify-content: center;
+                    border-radius: 5px;
+                    background-color: whitesmoke;
+                    cursor: pointer;
+                    &:nth-child(2){
+                        background-color: rgb(253, 220, 150);
+                    }
+                    height: 50px;
+                    img{
+                        width: 50px;
+                    }
+                }
+            }
+        }
+        .checkout__alternative{
+            margin: 30px 0;
+            display: flex;
+            justify-content: center;
+            span{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                width: 100%;
+                &::before{
+                    flex: auto;
+                    content: "";
+                    height: 1px;
+                    background-color: gray;
+                }
+                &::after{
+                    flex: auto;
+                    content: "";
+                    height: 1px;
+                    background-color: gray;
+                }
+            }
+        }
+        .checkout__form{
+            display: flex;
+            flex-flow: column nowrap;
+            gap: 20px;
+            button{
+                padding: 15px 25px;
+                margin: 15px;
+                border: unset;
+                background-color: black;
+                color: white;
+                align-self: center;
+                width: 200px;
+            }
+            .form__input{
+                border: 1px solid gray;
+                padding: 5px 8px;
+                display: flex;
+
+                flex-flow: column-reverse;
+                label{
+                    height: 0;
+                    font-size: 0.8rem;
+                    margin: 0;
+                    color: gray;
+                    transition: 0.3s;
+                    overflow: hidden;
+                }
+                
+                input{
+                    height: 100%;
+                    border: unset;
+                    &:focus{
+                        height: 100%;
+                        outline: none;
+                        display: block;
+                        & + label{
+                            height: 100%;
+                        }
+                    }
+                    &.typed{
+                        & + label{
+                            height: 100%;
+                        }
+                    }
+                }
+                .form__error{
+                    color: red;
+                }
+            }
+        }
+    }
+
+}

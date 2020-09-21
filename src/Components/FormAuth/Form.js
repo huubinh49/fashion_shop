@@ -1,8 +1,9 @@
-import React, {useState, useRef, useEffect} from 'react'
+import React, {useState, useRef} from 'react'
 import './Form.scss'
 import InputField from './InputField';
 import { useDispatch } from 'react-redux';
-import * as authActions from './../../Redux/authenticate/auth_action'
+import * as authActions from '../../Redux/authenticate/auth_action'
+import FacebookLogin from 'react-facebook-login'
 function Form(props){
     const {mode} = props.match.params
 
@@ -28,6 +29,7 @@ function Form(props){
             [field]:errorMessage
         }))
     }
+    
     const onSubmitForm = (event)=>{
         event.preventDefault();
         for(let i = 0; i<inputRef.current.length; i++){
@@ -64,11 +66,15 @@ function Form(props){
             dispatch(authActions.authLogin(formData.get('email'), formData.get('password1')));
         }
     }   
+    const handleResultOAuth = (response, provider) => {
+        console.log("hehe")
+        dispatch(authActions.OAuthLogin(response,provider))
+    }
     return(
         <section className = "account">
             {(mode==='signup')?
             <div className = "account_signup">
-                <h4>Create Account</h4>
+                <h3 className = "title">Create Account</h3>
                 <form onSubmit = {onSubmitForm}>
                     <InputField ref = {inputRef.current[0]} rules = "required|max:50" onChange = {onChangeForm} type = "text" label = "First Name" name = "firstname"/>
                     <InputField ref = {inputRef.current[1]} onChange = {onChangeForm} type = "text" label = "Last Name" name = "lastname" />
@@ -86,7 +92,7 @@ function Form(props){
                 </form>
             </div>:(mode==='signin')?
             <div className = "account_signin">
-                <h4>Create Account</h4>
+                <h3 className = "title">Login</h3>
                 <form  onSubmit = {onSubmitForm}>
                     <InputField ref = {inputRef.current[0]} rules = "required|max:50" onChange = {onChangeForm} type = "email" label = "Email Address" name = "email" />
                     <InputField ref = {inputRef.current[1]} rules = "required|max:50" onChange = {onChangeForm} type = "password" label = "Password" name = "password1" />
@@ -95,8 +101,17 @@ function Form(props){
                     <button className = "button button__submit" type="submit">SIGN IN</button>
                     <a href = "/account/signup" className = "button button__signin">CREATE ACCOUNT</a>
                     <p>Or login with</p>
-                    <button className = "button button__socialLink facebookLink">Facebook <i className="fa fa-facebook" aria-hidden="true"></i></button>
-                    <button className = "button button__socialLink googleLink">Google <i className="fa fa-google" aria-hidden="true"></i></button>
+                    <FacebookLogin
+                        autoLoad = {true}
+                        appId = "669828326988343"
+                        cssClass = "button button__socialLink facebookLink"
+                        textButton = "Login with Facebook"
+                        callback = {(res)=>handleResultOAuth(res, 'facebook')}
+                        icon = "fa fa-facebook"
+                        fields = "email, first_name, last_name"
+                    ></FacebookLogin>
+                    <div onClick = "FB.login()" className = "button button__socialLink facebookLink">Facebook <i className="fa fa-facebook" aria-hidden="true"></i></div>
+                    <div className = "button button__socialLink googleLink">Google <i className="fa fa-google" aria-hidden="true"></i></div>
                 </form>
             </div>:
             <div></div>

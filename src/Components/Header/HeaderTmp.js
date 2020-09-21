@@ -121,16 +121,23 @@ export default function HeaderTmp(props){
                             </li>
                             <hr />
                             <li className = "nav__item nav__item-action--collapse">
-                              {(props.isAuthenticated)?
-                              <Fragment><a href = "/account">My Account</a>/<a onClick = {()=>authAction.authLogout()} href = "/account">Sign Out</a></Fragment>:
-                              <Fragment><a href ="/account/signup/">Sign Up/Login</a></Fragment>
+                              {
+                              (props.isAuthenticated)?
+                              (<div className = "action"><a href = "/account">My Account</a><span>/</span><a onClick = {()=>authAction.authLogout()} href = "/account">Log Out</a></div>):
+                              (<div className = "action"><a href ="/account/signup/">Join</a><span>/</span><a href ="/account/signin/">Sign in</a></div>)
                               }
                             </li>
                         </ul>
                     </div>
                 </nav>
                 <div className = "header__action">
-                    <a href="/account/signup" >Join/Signin</a>
+                    {
+                        (props.isAuthenticated)?
+                        ((<div className = "action"><a href = "/account">My Account</a><span>/</span><a onClick = {()=>authAction.authLogout()} href = "/account">Log Out</a></div>)):
+                        (<div className = "action"><a href ="/account/signup/">Join</a><span>/</span><a href ="/account/signin/">Sign in</a></div>)
+
+                    }
+                    
                     <i onClick = {()=> setShow(true)} className="fa fa-search" aria-hidden="true" />
                     <div className="shopping-cart" >
                       <i onClick = {collapse_cart} className="fa fa-shopping-cart" aria-hidden="true" data-quantity = {cart.reduce((sum, cur)=>sum+parseInt(cur['quantity']), 0)}/>

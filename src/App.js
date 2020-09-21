@@ -25,7 +25,6 @@ function App() {
     <Router>
       <div className="App">
           <HeaderTmp {...reduxProps} />
-          {/* <Header {...reduxProps}></Header> */}
           <MyRoute {...reduxProps}/>
           <Footer></Footer>
       </div>

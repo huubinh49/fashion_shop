@@ -43,7 +43,7 @@ export const checkAuthentication = ()=>{
             }else{
                 const exp_access = decode(access).exp;
                 if(exp_access*1000 <= new Date().getTime()){
-                    obtainNewToken(refresh);
+                    dispatch(obtainNewToken(refresh))
                     return;
                 }
             }
@@ -98,7 +98,6 @@ export const authLogin = (email, password)=>{
                 const token = res;
                 localStorage.setItem('token', token.access)
                 localStorage.setItem('refresh_token', token.refresh)
-                console.log(token)
                 dispatch(authSuccess(token))
             }
         )
@@ -129,7 +128,43 @@ export const obtainNewToken = (refresh_token)=>{
         )
         .catch(
             err =>{
+                console.log(err)
                 dispatch(authFail(err));
+            }
+        )
+    }
+}
+
+
+export const OAuthLogin = (form, provider)=>{
+    return dispatch =>{
+        dispatch(authStart());
+        const formData = new FormData();
+        formData.append('email', form.email);
+        formData.append('token', form.accessToken);
+        formData.append('grant_type', 'convert_token');
+        formData.append('backend', provider);
+        formData.append('first_name', form.first_name);
+        formData.append('last_name', form.last_name);
+        formData.append('client_id', '5ozL2bena0HozPaXUbScpO6Ds5z3hIZoUMlhaEHQ');
+        formData.append('client_secret', 'ymeBopFsc2SyCGZgdSzHLR5pYNKQRExdHQ34UnQ5R37cuaS3zfNcfJr1LeRf6uAWzeyjn7KY30a4b8igIG9GTHHtOliMH1EdnuOOqxGVoto7J8i8d9ZgJ4R6sVYm9Ctd');
+        axiosClient.post('auth/convert-token/',formData,{
+            headers: {
+                "Content-Type": "multipart/form-data",
+            }
+        })
+        .then(
+            res =>{
+                const token = res;
+                localStorage.setItem('token', token.access_token)
+                localStorage.setItem('refresh_token', token.refresh_token)
+                dispatch(authSuccess(token))
+            }
+        )
+        .catch(
+            err =>{
+                console.log(err)
+                dispatch(authFail(err))
             }
         )
     }

@@ -50,9 +50,9 @@ const InputField = forwardRef((props, ref)=>{
     }
     return(
         <div className = 'form__input'>
-            <label htmlFor = {`${props.name}`}>{props.label}</label>
-            <input onBlur = {validate} onChange = {handleChange} type = {`${props.type}`} name = {`${props.name}`} value = {value} />
             <span className = "form__error">{error}</span>
+            <input placeholder = {`${(props.placeholder)? props.placeholder:""}`} onBlur = {validate} onChange = {handleChange} type = {`${props.type}`} name = {`${props.name}`} value = {value} className = {`${(value)? "typed":""}`} />
+            <label htmlFor = {`${props.name}`}>{props.label}</label>
         </div>
     )
 })
