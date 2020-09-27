@@ -1,0 +1,84 @@
+$gray :  rgb(230, 230, 230);
+.account{
+    padding: 100px 0;
+    .control_panel{
+        ul{
+            list-style-type: none;
+            li{
+                cursor: pointer;
+                padding: 15px 20px;
+                &:first-child{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    pointer-events: none;
+
+                    background-color: red;
+                    color: white;
+                    font-weight: 800;
+                }
+                &:hover, &.active{
+                    background-color: $gray;
+                }
+            }
+        }
+    }
+    .account_info{
+        h3{
+            height: 60px;
+            display: flex;
+            align-items: center;
+            font-size: 0.8rem;
+        }
+        .account_info__comp{
+            padding: 0;
+            .title{
+                padding: 15px;
+                background-color: $gray;
+                font-weight: 700;
+            }
+            &.orders{
+                .order__bill{
+                    list-style-type: none;
+                    display: flex;
+                    flex-flow: column;
+                    padding: 15px 0;
+                    table{
+                        width: 100%;
+                        thead{
+                            width: 100%;
+                            .row{
+                                margin:0;
+                            }
+                        }
+                        tbody{
+                            width: 100%;
+                            tr.row{
+                                margin: 0;
+                                td{
+                                    word-wrap: break-word;
+                                    word-break: keep-all;
+                                }
+                            }
+                           
+                        }
+                    }
+                }
+            }
+            &.details{
+                .details__child{
+                    margin: 0;
+                    border-bottom: 1px solid rgb(219, 219, 219);
+                    h4, p{
+                        margin: 0;
+                        padding: 15px;
+                    }   
+                    h4{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}

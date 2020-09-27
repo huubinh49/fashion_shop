@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './App.scss';
-import HeaderTmp from './Components/Header/HeaderTmp';
+import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 
 import { BrowserRouter as Router } from 'react-router-dom'
@@ -24,7 +24,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-          <HeaderTmp {...reduxProps} />
+          <Header {...reduxProps} />
           <MyRoute {...reduxProps}/>
           <Footer></Footer>
       </div>

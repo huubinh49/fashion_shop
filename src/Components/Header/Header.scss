@@ -19,7 +19,7 @@ $nav__item--collapse:60px;
 .header__mobile--onScroll{
     height: $header__mobile--onScroll;
     position: fixed;
-    z-index: 10;
+    z-index: 100;
     top:0;
     left: 0;
     
@@ -117,7 +117,7 @@ header{
             overflow-x: hidden;
 
             position: fixed;
-            z-index: 10;
+            z-index: 100;
             left: 0;
             top:0;
 
@@ -232,7 +232,7 @@ header{
         position: fixed;
         top: 0;
         left: 0;
-        z-index: 10;
+        z-index: 100;
 
         height: $header__pc--onScroll;
         .header__content{
@@ -484,7 +484,7 @@ header{
                                 position: fixed;
                                 top: 112px;
                                 left: 0;
-                                z-index: 10;
+                                z-index: 100;
                                 display: flex;
                                 justify-content: center;
                                 & > ul{

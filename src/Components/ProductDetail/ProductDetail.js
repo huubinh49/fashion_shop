@@ -61,7 +61,7 @@ function convertName(str){
       price: this.state.product["price"],
       quantity:this.state.quantity,
       img_src : `https://res.cloudinary.com/dvrdu6gxa/img/img_${this.props.match.params.shop}/asset/${convertName(this.state.product["name"])}_${convertName(this.state.color_name)}_img.jpg`,
-      ID: this.state.product["ID"],
+      id: this.state.product["id"],
       shop:this.props.match.params.shop
     }
     this.props.add_to_cart(payload);

@@ -7,16 +7,15 @@ const axiosClient = axios.create({
     headers:{
         "Content-Type": "application/json",
         "X-CSRFTOKEN": cookie.load("csrftoken")
-        // 'Authorization': "Token 88cf7c95ce9204f6d8ee0190011caaa8c872d938"
     },
     paramsSerializer: params => queryString.stringify(params),
 });
 
 axiosClient.interceptors.request.use(function(config){
-    const token = /*localStorageService.getAccessToken(); */ "88cf7c95ce9204f6d8ee0190011caaa8c872d938";
-    if(token){
-        config.headers['Authorization'] = "Token 88cf7c95ce9204f6d8ee0190011caaa8c872d938";
-    }
+    // const token = localStorage.getItem('token');
+    // if(token){
+    //     config.headers['Authorization'] = `JWT ${token}`;
+    // }
     //config.headers["Content-Type"] = "application/json"           
     return config;
 }, err=>{

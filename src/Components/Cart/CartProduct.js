@@ -8,7 +8,7 @@ class CartProduct extends Component {
     render() {
         return (
     <div className="cart__product">
-        <div className="product__img--wrapper">
+        <div className="product__img-wrapper">
           <img
             src={`https://res.cloudinary.com/dvrdu6gxa/img/img_${this.props.product["shop"]}/${convertName(`${this.props.product["name"]}_${this.props.product["color"]}_img.jpg`)}`}
             alt="product"
@@ -20,7 +20,7 @@ class CartProduct extends Component {
             <a href={`/product/${this.props.product["shop"]}/${this.props.product["name"].split("").filter(item => item !== " ").join("")}/${this.props.product["ID"]}`} className="product__name">{this.props.product.name}</a>
             <i className="fa fa-times" aria-hidden="true" onClick={()=>this.props.delete_cart(this.props.product)}/>
           </div>
-          <div className="product__info--detail">
+          <div className="product__info-detail">
             <strong className="product__info-text">{this.props.product.color.toUpperCase()}</strong>
             <strong className="product__info-text">{this.props.product.size}</strong>
           </div>

@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react'
+import BillAPI from './../../API/billAPI'
 import InputField from '../FormAuth/InputField'
 
 export default function Form(props){
@@ -31,10 +32,9 @@ export default function Form(props){
                 inputRef.current[i].current.validate();
             }
         }
-        let validForm = true;
         Object.values(errorMessages).forEach(mess =>{
             if(mess.length){
-                validForm = false;
+                return;
             }
         })
         
@@ -48,6 +48,8 @@ export default function Form(props){
                 formData.append(name, formValue[name]);
             }
         }
+        if(localStorage.getItem('cart').length)
+        BillAPI.post(formData);
     }   
     return(
         <form className = "checkout__form" onSubmit = {onSubmitForm}>

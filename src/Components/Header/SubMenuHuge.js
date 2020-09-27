@@ -1,7 +1,6 @@
 import React, { Fragment, useState } from 'react'
 import SubMenu from './SubMenu'
 import Toggle from './Toggle'
-import ProductCard from '../ProductCard/ProductCard'
 
 export default function SubMenuHuge (props) {
         const [dropdownState, setDropdownState] = useState(new Array(props.menuHuge.length).fill(false));

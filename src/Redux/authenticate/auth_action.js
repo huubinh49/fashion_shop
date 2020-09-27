@@ -45,10 +45,11 @@ export const checkAuthentication = ()=>{
                 if(exp_access*1000 <= new Date().getTime()){
                     dispatch(obtainNewToken(refresh))
                     return;
+                }else{
+                    dispatch(authSuccess(access))
                 }
             }
         }
-        dispatch(authSuccess(access))
     }
 }
 
@@ -146,8 +147,8 @@ export const OAuthLogin = (form, provider)=>{
         formData.append('backend', provider);
         formData.append('first_name', form.first_name);
         formData.append('last_name', form.last_name);
-        formData.append('client_id', '5ozL2bena0HozPaXUbScpO6Ds5z3hIZoUMlhaEHQ');
-        formData.append('client_secret', 'ymeBopFsc2SyCGZgdSzHLR5pYNKQRExdHQ34UnQ5R37cuaS3zfNcfJr1LeRf6uAWzeyjn7KY30a4b8igIG9GTHHtOliMH1EdnuOOqxGVoto7J8i8d9ZgJ4R6sVYm9Ctd');
+        formData.append('client_id', 'ZGvLLVFRd0ONcCERQM8XIdhCoTBJKxf0GVRV3BPB');
+        formData.append('client_secret', 'r8ZWGrwPoTGla2WILYLvVEsBAczpa1Sol1k6pVdII2Vc7qhATMaqlEavoDWmGsOa0L5AXQuCuM51VvNBeGnjQCJNYKLtqQEPIaeW9AbGpOuhm6GBUf5YGSsE9RoARS0C');
         axiosClient.post('auth/convert-token/',formData,{
             headers: {
                 "Content-Type": "multipart/form-data",

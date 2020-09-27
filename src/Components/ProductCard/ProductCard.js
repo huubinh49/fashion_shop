@@ -1,4 +1,4 @@
-import React, { Component, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useState } from 'react';
 import ImageLoader from 'react-load-image';
 import Preloader from '../LoaddingScreen';

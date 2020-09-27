@@ -1,8 +1,9 @@
-import React, { Component, lazy } from 'react'
+import React, { lazy } from 'react'
 import { Redirect, Route, Switch} from 'react-router-dom';
 import LoadingComponent from '../Components/HOC/Loading';
 import Form from '../Components/FormAuth/Form';
 import Checkout from '../Components/Checkout/Checkout';
+import Account from '../Components/Account/Account';
 const Home = lazy(()=>import ('../Components/Home/Home'))
 const Shop = lazy(()=>import ('../Components/Shop/Shop'))
 const ProductDetail = lazy(()=>import ('../Components/ProductDetail/ProductDetail'))
@@ -17,11 +18,12 @@ export default function MyRoute (props){
                 <Route path = "/lookbook" component = {LoadingComponent(LookBook)}/>
                 <Route path = "/account/:mode"
                 children={({ match }) => (
-                    (props.isAuthenticated)? <Redirect match = {match} to ="/"></Redirect> : <Form match = {match}></Form>
+                    (props.isAuthenticated)? <Redirect match = {match} to ="account/"></Redirect> : <Form match = {match}></Form>
                 )}
                 >
                 </Route>
                 <Route path = "/checkout" component = {Checkout} />
+                <Route path = "/account" component = {Account} />
             </Switch>
         )
 }
