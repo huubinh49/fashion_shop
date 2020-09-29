@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import CartProduct from './CartProduct';
 import { connect } from 'react-redux';
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
+import './Cart.scss';
 
  class Cart extends Component {
   componentDidUpdate = ()=>{

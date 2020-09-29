@@ -24,7 +24,7 @@ class CartProduct extends Component {
             <strong className="product__info-text">{this.props.product.color.toUpperCase()}</strong>
             <strong className="product__info-text">{this.props.product.size}</strong>
           </div>
-          <div className="product__quantity">
+          <div className="product__info-quantity">
             <input
               className="product__info-text"
               type="number"

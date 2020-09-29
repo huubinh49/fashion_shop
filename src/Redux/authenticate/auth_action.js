@@ -141,14 +141,27 @@ export const OAuthLogin = (form, provider)=>{
     return dispatch =>{
         dispatch(authStart());
         const formData = new FormData();
-        formData.append('email', form.email);
-        formData.append('token', form.accessToken);
-        formData.append('grant_type', 'convert_token');
-        formData.append('backend', provider);
-        formData.append('first_name', form.first_name);
-        formData.append('last_name', form.last_name);
-        formData.append('client_id', 'ZGvLLVFRd0ONcCERQM8XIdhCoTBJKxf0GVRV3BPB');
-        formData.append('client_secret', 'r8ZWGrwPoTGla2WILYLvVEsBAczpa1Sol1k6pVdII2Vc7qhATMaqlEavoDWmGsOa0L5AXQuCuM51VvNBeGnjQCJNYKLtqQEPIaeW9AbGpOuhm6GBUf5YGSsE9RoARS0C');
+        if(provider == 'facebook'){
+            formData.append('email', form.email);
+            formData.append('token', form.accessToken);
+            formData.append('grant_type', 'convert_token');
+            formData.append('backend', provider);
+            formData.append('first_name', form.first_name);
+            formData.append('last_name', form.last_name);
+            formData.append('client_id', 'ZGvLLVFRd0ONcCERQM8XIdhCoTBJKxf0GVRV3BPB');
+            formData.append('client_secret', 'r8ZWGrwPoTGla2WILYLvVEsBAczpa1Sol1k6pVdII2Vc7qhATMaqlEavoDWmGsOa0L5AXQuCuM51VvNBeGnjQCJNYKLtqQEPIaeW9AbGpOuhm6GBUf5YGSsE9RoARS0C');
+        }else if (provider == 'google-oauth2'){
+            formData.append('email', form.profileObj.email);
+            formData.append('token', form.accessToken);
+            formData.append('grant_type', 'convert_token');
+            formData.append('backend', provider);
+            formData.append('first_name', form.profileObj.familyName);
+            formData.append('last_name', form.profileObj.givenName);
+            formData.append('client_id', 'ZGvLLVFRd0ONcCERQM8XIdhCoTBJKxf0GVRV3BPB');
+            formData.append('client_secret', 'r8ZWGrwPoTGla2WILYLvVEsBAczpa1Sol1k6pVdII2Vc7qhATMaqlEavoDWmGsOa0L5AXQuCuM51VvNBeGnjQCJNYKLtqQEPIaeW9AbGpOuhm6GBUf5YGSsE9RoARS0C');
+        }else
+        return;
+
         axiosClient.post('auth/convert-token/',formData,{
             headers: {
                 "Content-Type": "multipart/form-data",

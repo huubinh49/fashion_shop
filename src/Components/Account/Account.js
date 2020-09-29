@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import UserAPI from './../../API/userAPI'
 import './Account.scss'
+import * as authAction from '../../Redux/authenticate/auth_action';
 export default function Account(props){
     const [userData, setUserData] = useState({
         'username': "",
@@ -25,14 +26,15 @@ export default function Account(props){
         )
     }, [])
     return(
+        
         <section className = "container account">
             <div className = "row content-wrapper">
                 <div className = "col-md-4 col-sm-12 control_panel">
                     <ul>
-                        <li>MY ACCOUNT</li>
-                        <li className = "active">Dashboard</li>
-                        <li>Addresses</li>
-                        <li>Sign Out</li>
+                        <li><a href = "/account">MY ACCOUNT</a></li>
+                        <li className = "active"><a href = "/account">Dashboard</a></li>
+                        <li><a href = "/account">Addresses</a></li>
+                        <li><a href = "/account/signin" onClick = {()=>authAction.authLogout()}>Sign Out</a></li>
                     </ul>
                 </div>
                 <div className = "col-md-8 col-sm-12 account_info">
@@ -51,7 +53,8 @@ export default function Account(props){
                                 </tr>
                               </thead>
                               <tbody>
-                                  {
+                                  {userData.bills.length?
+                                  
                                       userData.bills.map(bill=>(
                                         <tr className="row">
                                           <td  className = "col-sm-1">{bill.id}</td>
@@ -67,9 +70,14 @@ export default function Account(props){
                                                 }
                                               </ul>
                                           </td>
-                                            <td  className = "col-sm-2">{bill.price}</td>
+                                            <td  className = "col-sm-2">{bill.orders.reduce((sum, cur)=>sum+cur.price*cur.quantity, 0)}</td>
                                         </tr>
-                                      ))
+                                      )):
+                                      <tr className="row" role="alert"> 
+                                        <td className="col-sm-12 alert alert-success">
+                                            No order has been made yet!
+                                        </td>
+                                      </tr>
                                   }
                               </tbody>
                             </table>

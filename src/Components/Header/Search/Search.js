@@ -5,6 +5,7 @@ import ListSearch from './ListSearch'
 import { result } from '../../../Redux/Search/search_reducer'
 import {  useDispatch } from 'react-redux'
 import productAPI from './../../../API/productAPI'
+import './Search.scss'
 export default function Search (props) {
     const [res, setResult] = useState([])
     const [error, setError] = useState([])

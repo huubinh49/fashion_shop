@@ -1,7 +1,9 @@
 import React, { useRef, useState } from 'react'
 import BillAPI from './../../API/billAPI'
 import InputField from '../FormAuth/InputField'
-
+import {cleanCart} from './../../Redux/Cart/cart_action'
+import { useHistory } from "react-router-dom";
+import { useDispatch } from 'react-redux';
 export default function Form(props){
     
     const inputRef = useRef([
@@ -11,8 +13,10 @@ export default function Form(props){
         React.createRef(),
         React.createRef()
     ])
+    const history = useHistory();
     const [formValue, setFormValue] = useState({})
     const [errorMessages, setErrorMessages] = useState({})
+    const dispatch = useDispatch();
 
     const onChangeForm = (field, value, errorMessage)=>{
         setFormValue(prevForm =>({
@@ -49,7 +53,20 @@ export default function Form(props){
             }
         }
         if(localStorage.getItem('cart').length)
-        BillAPI.post(formData);
+        BillAPI
+        .post(formData)
+        .then(
+            res=>dispatch(cleanCart())
+        )
+        .then(
+            res => {
+                history.push('/account');
+            }
+        )
+        .catch(
+            err => alert(err)
+        )
+       
     }   
     return(
         <form className = "checkout__form" onSubmit = {onSubmitForm}>

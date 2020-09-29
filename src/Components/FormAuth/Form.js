@@ -4,6 +4,7 @@ import InputField from './InputField';
 import { useDispatch } from 'react-redux';
 import * as authActions from '../../Redux/authenticate/auth_action'
 import FacebookLogin from 'react-facebook-login'
+import GoogleLogin from 'react-google-login'
 function Form(props){
     const {mode} = props.match.params
 
@@ -65,9 +66,9 @@ function Form(props){
             formData.append('password1', formValue['password1'])
             dispatch(authActions.authLogin(formData.get('email'), formData.get('password1')));
         }
+        props.history.push('/account');
     }   
     const handleResultOAuth = (response, provider) => {
-        console.log("hehe")
         dispatch(authActions.OAuthLogin(response,provider))
     }
     return(
@@ -102,7 +103,6 @@ function Form(props){
                     <a href = "/account/signup" className = "button button__signin">CREATE ACCOUNT</a>
                     <p>Or login with</p>
                     <FacebookLogin
-                        autoLoad = {true}
                         appId = "669828326988343"
                         cssClass = "button button__socialLink facebookLink"
                         textButton = "Login with Facebook"
@@ -110,8 +110,18 @@ function Form(props){
                         icon = "fa fa-facebook"
                         fields = "email, first_name, last_name"
                     ></FacebookLogin>
-                    <div onClick = "FB.login()" className = "button button__socialLink facebookLink">Facebook <i className="fa fa-facebook" aria-hidden="true"></i></div>
-                    <div className = "button button__socialLink googleLink">Google <i className="fa fa-google" aria-hidden="true"></i></div>
+                    <GoogleLogin
+                      clientId="165049280458-7cihmgo1bbbiq3oaea2bm2l3glgfsmo4.apps.googleusercontent.com"
+                      buttonText="Login with Google"
+                      icon = {true}
+                      render={renderProps => (
+                        <div onClick = {renderProps.onClick} disabled={renderProps.disabled} className = "button button__socialLink googleLink">Login with Google<i className="fa fa-google" aria-hidden="true"></i></div>
+                      )}
+                      onSuccess={(res)=>handleResultOAuth(res, 'google-oauth2')}
+                      onFailure={(res)=>handleResultOAuth(res, 'google-oauth2')}
+                      cookiePolicy={'single_host_origin'}
+                    />,
+                    
                 </form>
             </div>:
             <div></div>

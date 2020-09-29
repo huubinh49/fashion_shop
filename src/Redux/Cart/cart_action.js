@@ -23,4 +23,14 @@ const updateCart  = (product) =>{
         }
     )
 }
-export {addToCart, deleteCart, updateCart};
+//async action
+const cleanCart = ()=>{
+    return dispatch =>{ 
+        localStorage.removeItem('cart');
+        dispatch({
+            type : "CLEAN_CART"
+        })
+    }
+}
+ 
+export {addToCart, deleteCart, updateCart, cleanCart};
