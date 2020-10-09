@@ -2,8 +2,7 @@
     width: 100vw;
     display: flex;
     justify-content: center;
-    .container{
-        padding: 25px 0 100px 0;
+    padding: 25px 0 100px 0;
 
         .brand{
             display: flex;
@@ -13,33 +12,8 @@
                 width: 216px;
             }
         }
-        .breadcrumb{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            ul{
-                display: flex;
-                list-style-type: none;
-                margin: 0;
-                li{
-                    a{
-                        color: black;
-                    }
-                    &:not(:last-child){
-                        &::after{
-                            content: ">";
-                            margin: 0 5px;
-                        }    
-                    }
-                    &.active{
-                        a{
-                            font-weight: 600;
-                        }
-                    }
-                }
-            }
-        }
-        .checkout__express{
+        .row{
+            .checkout__express{
             h2{
                 display: flex;
                 align-items: center;
@@ -88,8 +62,8 @@
                     }
                 }
             }
-        }
-        .checkout__alternative{
+            }
+            .checkout__alternative{
             margin: 30px 0;
             display: flex;
             justify-content: center;
@@ -111,8 +85,8 @@
                     background-color: gray;
                 }
             }
-        }
-        .checkout__form{
+            }
+            .checkout__form{
             display: flex;
             flex-flow: column nowrap;
             gap: 20px;
@@ -129,6 +103,7 @@
                 border: 1px solid gray;
                 padding: 5px 8px;
                 display: flex;
+                
 
                 flex-flow: column-reverse;
                 label{
@@ -141,10 +116,9 @@
                 }
                 
                 input{
-                    height: 100%;
+                    height: 35px;
                     border: unset;
                     &:focus{
-                        height: 100%;
                         outline: none;
                         display: block;
                         & + label{
@@ -161,7 +135,47 @@
                     color: red;
                 }
             }
+            }
+        }
+
+}
+
+.cart-preview{
+    h2{
+        display: flex;
+        font-size: 1.2rem;
+        margin: 0;
+        align-items: flex-end;
+        gap: 10px;
+        &::before{
+            content: "";
+            flex: auto;
+            border-top: 1px solid black;
+            border-left:1px solid black;
+            height: 0.6rem;
+        }
+        &::after{
+            content: "";
+            flex: auto;
+            border-top: 1px solid black;
+            border-right:1px solid black;
+            height: 0.6rem;
         }
     }
-
+    .cart__body{
+        border: 1px solid black;
+        border-top: unset;
+        height: 100%;
+        max-height: 60vh;
+        
+        &-product{
+            height: 100%;
+            //hide scrollbar
+            -ms-overflow-style: none;
+            &::-webkit-scrollbar{
+                display: none;
+                scrollbar-width: none;
+            }
+        }
+    }
 }

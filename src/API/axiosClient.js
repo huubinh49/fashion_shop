@@ -3,7 +3,7 @@ import axios from 'axios'
 import queryString from 'query-string'
 import cookie from 'react-cookies'
 const axiosClient = axios.create({
-    baseURL: "http://127.0.0.1:8000/",
+    baseURL: "https://fashionshop-api.herokuapp.com/",
     headers:{
         "Content-Type": "application/json",
         "X-CSRFTOKEN": cookie.load("csrftoken")

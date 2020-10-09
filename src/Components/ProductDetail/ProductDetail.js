@@ -83,9 +83,9 @@ function convertName(str){
       })
     
   }
-  // componentDidUpdate = ()=>{
-  //     eventSlide.adjustment()
-  // }
+  componentDidUpdate = ()=>{
+      eventSlide.adjustment()
+  }
   changeQuantityByKey = (event)=>{
     switch (event.key) {
       case "ArrowUp":

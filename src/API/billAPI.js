@@ -1,5 +1,3 @@
-import queryString from 'query-string'
-
 const { default: axiosClient } = require("./axiosClient");
 
 class billAPI{

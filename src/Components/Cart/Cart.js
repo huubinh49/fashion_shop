@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import {Link} from 'react-router-dom';
 import './Cart.scss';
 
- class Cart extends Component {
+class Cart extends Component {
   componentDidUpdate = ()=>{
     // 400px
     if(this.props.display_cart===true){

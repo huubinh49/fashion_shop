@@ -24,7 +24,7 @@ export default function Shop(props) {
         }
       )
     }
-  }, [pagination._curPage])
+  })
   useEffect(() => {
     
     if(props.match.params.slug!=="search_result"){ 
@@ -44,7 +44,7 @@ export default function Shop(props) {
     else{
       setProducts(result_search);
     }
-  }, [])
+  },[props.match.params.slug, result_search])
 
   return (
     <section id="shop--news">
