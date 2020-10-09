@@ -111,7 +111,7 @@ function Form(props){
                         fields = "email, first_name, last_name"
                     ></FacebookLogin>
                     <GoogleLogin
-                      clientId="165049280458-7cihmgo1bbbiq3oaea2bm2l3glgfsmo4.apps.googleusercontent.com"
+                      clientId="165049280458-01beqj9i1gc4jr8trsjtr5pgk83p41p3.apps.googleusercontent.com"
                       buttonText="Login with Google"
                       icon = {true}
                       render={renderProps => (
