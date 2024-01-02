@@ -2,6 +2,7 @@ This project is the **client** of Fashion Shop project. It is built with ReactJS
 
 In this project, I use as few libraries as possible. All things such as form validation, slides, pagination are built from scratch.
 
+The backend is stored in [the repo](https://github.com/huubinh49/fashion_shop_BE)
 ## Demo
 [![Demo of this web app](https://img.youtube.com/vi/1Yi5AtTvnGY/0.jpg)](https://www.youtube.com/watch?v=1Yi5AtTvnGY)
 
